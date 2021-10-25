@@ -1,0 +1,75 @@
+@using System.Text.RegularExpressions
+@using System.Web.Http
+@using System.Web.Http.Controllers
+@using System.Web.Http.Description
+@using EOS2.Web.Areas.Help
+@using EOS2.WebAPI.Areas.Help
+@model IGrouping<HttpControllerDescriptor, ApiDescription>
+
+@{
+    var controllerDocumentation = ViewBag.DocumentationProvider != null ? 
+        ViewBag.DocumentationProvider.GetDocumentation(Model.Key) : 
+        null;
+}
+<div class="panel panel-default">
+    <div class="panel-heading clearfix">
+        <h2 id="@Model.Key.ControllerName">@Regex.Replace(Model.Key.ControllerName.Replace("Api", string.Empty), "([a-z](?=[A-Z])|[A-Z](?=[A-Z][a-z]))", "$1 ")</h2>
+        @if (!String.IsNullOrEmpty(controllerDocumentation))
+        {
+            <p style="white-space: pre-line">@controllerDocumentation</p>
+        }
+    </div>
+    <div class="panel-body">
+        <table class="table table-condensed table-hover table-striped">
+            <thead>
+                <tr><th>API</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var api in Model)
+                {
+                    <tr>
+                        <td ><a href="@Url.Action("Api", "Help", new { apiId = api.GetFriendlyId() })">@api.HttpMethod.Method @api.RelativePath</a></td>
+                        <td >
+                            @if (api.Documentation != null)
+                            {
+                                <p>@api.Documentation</p>
+                            }
+                            else
+                            {
+                                <p>No documentation available.</p>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+    @*<h2 class="panel-heading" id="@Model.Key.ControllerName">@Model.Key.ControllerName.Replace("Api", string.Empty)</h2>
+    @if (!String.IsNullOrEmpty(controllerDocumentation))
+    {
+        <p>@controllerDocumentation</p>
+    }
+    <table class="help-page-table">
+        <thead>
+            <tr><th>API</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var api in Model)
+            {
+                <tr>
+                    <td class="api-name"><a href="@Url.Action("Api", "Help", new { apiId = api.GetFriendlyId() })">@api.HttpMethod.Method @api.RelativePath</a></td>
+                    <td class="api-documentation">
+                        @if (api.Documentation != null)
+                        {
+                            <p>@api.Documentation</p>
+                        }
+                        else
+                        {
+                            <p>No documentation available.</p>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>*@

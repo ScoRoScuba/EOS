@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="EOS2.Identity" />
+  <setParameter name="EOS2Database-Web.config Connection String" value="Data Source=localhost;Initial Catalog=EOS2DB;User ID=EOSTestUser;Password=EOSTestUser" />
+  <setParameter name="elmahLoggingdb-Web.config Connection String" value="Data Source=localhost;Initial Catalog=EOS2DB;User ID=EOSTestUser;Password=EOSTestUser" />
+  <setParameter name="EOS.Identity-Web.config Connection String" value="Data Source=localhost;Initial Catalog=EOS.Identity;User ID=EOSTestUser;Password=EOSTestUser" />
+  <setParameter name="DefaultConnection-Web.config Connection String" value="DefaultConnection_ConnectionString" />
+</parameters>

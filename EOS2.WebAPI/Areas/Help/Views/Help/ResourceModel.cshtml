@@ -1,0 +1,21 @@
+@using EOS2.Web.Areas.Help.ModelDescriptions
+@model ModelDescription
+
+<div id="body" class="help-page container">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <span>@Html.ActionLink("Home", "Index", null, new { @class = "glyphicon glyphicon-home" })</span>
+            </p>
+        </div>
+    </section>
+    <div class="panel panel-default">
+        <div class="panel-heading clearfix"><h1>@Model.Name</h1></div>
+        <div class="panel-body">
+            <p>@Model.Documentation</p>
+            <section class="content-wrapper main-content clear-fix">
+                @Html.DisplayFor(m => Model)
+            </section>
+        </div>
+    </div>
+</div>

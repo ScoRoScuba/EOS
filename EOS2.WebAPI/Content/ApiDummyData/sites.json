@@ -1,0 +1,44 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Worthing Main Site",
+    "Address": "Faraday Close, Worthing, West Sussex",
+    "PostalCode": "BN13 3PL",
+    "CustomerId": 1
+  },
+  {
+    "Id": 2,
+    "Name": "Worthing Satellite Site",
+    "Address": "Westinghouse Gate, Worthing, West Sussex",
+    "PostalCode": "BN11 3NW",
+    "CustomerId": 1
+  },
+  {
+    "Id": 3,
+    "Name": "London Satellite Site",
+    "Address": "Edison Road, London",
+    "PostalCode": "SW1A 2BS",
+    "CustomerId": 1
+  },
+  {
+    "Id": 4,
+    "Name": "Maui Satellite Site",
+    "Address": "Tesla Court, 2605 Kaanapali Parkway, Kaanapali, United States",
+    "PostalCode": "HI 96761",
+    "CustomerId": 1
+  },
+  {
+    "Id": 5,
+    "Name": "Edinburgh Main Site",
+    "Address": "18 Forbes Boulavard, Castlehill, Edinburgh",
+    "PostalCode": "EH1 2NG",
+    "CustomerId": 2
+  },
+  {
+    "Id": 6,
+    "Name": "Sodor Satellite Site",
+    "Address": "Knapford Sheds, Tidmouth, Sodor",
+    "PostalCode": "SI3 5RT ",
+    "CustomerId": 3
+  },
+]

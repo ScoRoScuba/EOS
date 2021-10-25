@@ -1,0 +1,125 @@
+﻿@using EOS2.Common.Extensions
+@model EOS2.Web.Areas.Organizations.ViewModels.Users.UserEditViewModel
+
+@{
+    var title = string.Empty;
+
+    if (Model.Id > 0)
+    {
+        if (Model.OrganizationType.HasValue)
+        {
+            title = string.Format("[[[%0 - %1 - User Details - %2|||{0}|||{1}|||{2}]]]", Model.OrganizationName, Model.OrganizationType.ToDescription(), Model.Name ?? Model.UserName);
+        }
+        else
+        {
+            title = string.Format("[[[%0 - User Details - %1|||{0}|||{1}]]]", Model.OrganizationName, Model.Name ?? Model.UserName);            
+        }
+    }
+    else
+    {
+        if (Model.OrganizationType.HasValue)
+        {
+            title = string.Format("[[[%0 - %1 - New User|||{0}|||{1}]]]", Model.OrganizationName, Model.OrganizationType.ToDescription()); 
+        }
+        else
+        {
+            title = string.Format("[[[%0 - New User|||{0}]]]", Model.OrganizationName); 
+        }        
+        
+    }
+    ViewBag.Title = title;    
+}
+
+<h2>@title</h2>
+
+<hr />
+
+@using (Html.BeginForm( (Model.Id > 0 ? "Update" : "Create"), "Users"))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.OrganizationName)
+
+    if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessage"] as string))
+    {
+        <div class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert"
+                    aria-hidden="true">
+                &times;
+            </button>
+            @(TempData["ControllerActionMessage"] as string)
+        </div>
+    }
+
+    <fieldset>
+        <div class="form-group">
+            @Html.LabelFor(m => m.UserName)
+            @{
+                var htmlAttributes = new Dictionary<string, object>();
+                
+                htmlAttributes.Add("class", "form-control input-medium");
+                if (Model.Id > 0)
+                {
+                    htmlAttributes.Add("readonly", "true"); 
+                }
+
+            }
+            @Html.TextBoxFor(m => m.UserName, @htmlAttributes)
+            @Html.ValidationMessageFor(m => m.UserName)
+        </div>
+    </fieldset>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control input-medium" })
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.MiddleName)
+        @Html.TextBoxFor(m => m.MiddleName, new { @class = "form-control input-mini" })
+        @Html.ValidationMessageFor(m => m.MiddleName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.FamilyName)
+        @Html.TextBoxFor(m => m.FamilyName, new { @class = "form-control input-medium" })
+        @Html.ValidationMessageFor(m => m.FamilyName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.PhoneNumber)
+        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control input-medium" })
+        @Html.ValidationMessageFor(m => m.PhoneNumber)
+    </div>
+
+    <fieldset>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control input-large" })
+            @Html.ValidationMessageFor(m => m.Email)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmationEmail)
+            @Html.TextBoxFor(m => m.ConfirmationEmail, new { @class = "form-control input-large" })
+            @Html.ValidationMessageFor(m => m.ConfirmationEmail)
+        </div>
+    </fieldset>    
+
+    <div class="form-group input-options">
+        <button type="submit" class="btn btn-primary">[[[Save]]]</button>
+        
+        @if (Model.OrganizationId.HasValue && Model.OrganizationType.HasValue)
+        {
+
+            @Html.RouteLink( "[[[Cancel]]]", "OrganizationUsers", new { controller = "Users", action = "Index", organizationId = @Model.OrganizationId, organizationType = @Model.OrganizationType }, new { @class = "btn btn-default" })                           
+        }
+        else
+        {
+            @Html.RouteLink("[[[Cancel]]]", "Organizations_default", new { controller = "Users", action = "Index" }, new { @class = "btn btn-default" })
+        }       
+
+
+
+    </div>
+}

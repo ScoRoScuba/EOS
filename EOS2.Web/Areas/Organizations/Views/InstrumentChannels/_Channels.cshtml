@@ -1,0 +1,138 @@
+﻿@using System.Globalization
+@using EOS2.Web.Areas.Organizations.ViewModels.InstrumentChannels
+@using EOS2.Web.Areas.Organizations.ViewModels.Common
+@using EOS2.Web.Extensions
+@model ChannelsViewModel
+
+<div class="channels panel panel-default">
+    <div class="panel-heading clearfix">
+        <h3 class="panel-title">[[[Channels]]]</h3>
+    </div>
+    <div class="panel-body">
+
+        @if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessageInstrument"] as string))
+        {
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert"
+                        aria-hidden="true">
+                    &times;
+                </button>
+                @(TempData["ControllerActionMessageInstrument"] as string)
+            </div>
+        }
+
+
+@if (Model.Channels.Any())
+{
+    <div class=".table-responsive">
+        <table class="table table-condensed table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>[[[Number]]]</th>
+                    <th>[[[Name]]]</th>
+                    <th>[[[Channel Type]]]</th>
+                    <th>[[[Attached to equipment]]]</th>
+                    <th>[[[Calibation Schedule]]]</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @{                   
+                    foreach(ChannelViewModel channel in Model.Channels) {
+                    
+                        channel.InstrumentId = Model.InstrumentId;
+                        channel.SiteId = Model.SiteId;
+                        channel.PlantAreaId = Model.PlantAreaId;
+                        channel.CustomerId = Model.CustomerId;
+
+                        channel.ChannelTypes = Model.ChannelTypes;
+                        channel.Equipment = Model.Equipment;
+                        channel.ScheduleFrequency = Model.ScheduleType;
+                                           
+                        using(Html.BeginRouteForm("CustomerOrganization_SitePlantAreaInstrumentsSaveChannel", new {Model.CustomerId, Model.SiteId, Model.PlantAreaId, Model.InstrumentId})) {                        
+                            @Html.EditorFor(m => channel, "Channel")
+                        }
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="create-channels-group row">
+        <div class="col-md-10">
+            <div class="create-channels-info">
+                <h4>[[[Add channels]]]</h4>
+                <p>[[[Please use the form below to set up the initial set of channels for the Instrument]]]</p>
+                <p>[[[You must enter the number of channels on the instrument, what type of channels to create, the name of the equipment the channels are connected to (if any) and the initial scheduling frequency]]]</p>
+                <p>&nbsp;</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <div class="create-channels-form center-block">
+
+                @using(Html.BeginRouteForm("CustomerOrganization_SitePlantAreaInstrumentsCreateChannels",
+                    new {
+                            Model.CustomerId, Model.SiteId, Model.PlantAreaId, Model.InstrumentId
+                        },
+                    FormMethod.Post,
+                    new {
+                            @class = "form-inline", role = "form"
+                        })) {
+                            <div class="@(ViewData.ModelState.IsValidField("NumberOfChannels") ? "form-group" : "form-group has-error")">
+                                <div class=" input-group">
+                                    @Html.TextBoxFor(m => m.NumberOfChannels,new {
+                                                                                     @class = "form-control"
+                                                                                 })
+                                </div>
+                            </div>
+                            <div class="@(ViewData.ModelState.IsValidField("SelectedChannelTypeId") ? "form-group" : "form-group has-error")">
+                                <div class="input-group">
+                                    @Html.DropDownListI18NFor(m => m.SelectedChannelTypeId,new SelectList(Model.ChannelTypes,"Id","Name"),"[[[Please Select ...]]]",new {
+                                                                                                                                                                            @class = "form-control"
+                                                                                                                                                                        })
+                                </div>
+                            </div>
+                            <div class="@(ViewData.ModelState.IsValidField("SelectedEquipmentId") ? "form-group" : "form-group has-error")">
+                                <div class="input-group">
+                                    @Html.DropDownListI18NFor(m => m.SelectedEquipmentId,new SelectList(Model.Equipment,"Id","Name"),"[[[Please Select ...]]]",new {
+                                                                                                                                                                       @class = "form-control"
+                                                                                                                                                                   })
+                                </div>
+                            </div>
+                            <div class="@(ViewData.ModelState.IsValidField("SelectedScheduleTypeId") ? "form-group" : "form-group has-error")">
+                                <div class="input-group">
+                                    @Html.DropDownListI18NFor(m => m.SelectedScheduleTypeId,new SelectList(Model.ScheduleType,"Id","Name"),"[[[Please Select ...]]]",new {
+                                                                                                                                                                             @class = "form-control"
+                                                                                                                                                                         })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <button type="submit" class="btn btn-primary">[[[Save]]]</button>
+                                </div>
+                            </div>
+                        }
+            </div>
+            
+        </div>
+    </div>
+        if(!ViewData.ModelState.IsValid) {
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="help-block">
+                        <p>[[[You are missing some required values, please complete and try again]]]</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        }
+}
+    </div>
+</div>

@@ -1,0 +1,57 @@
+﻿@model EOS2.Web.Areas.Organizations.ViewModels.Instruments.InstrumentEditViewModel
+
+<div class="panel panel-default">
+    <div class="panel-heading clearfix">
+        <h3 class="panel-title">[[[Equipment Attached]]]</h3>
+    </div>
+
+    <div class="panel-body">
+
+        @if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessageEquipment"] as string))
+        {
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    &times;
+                </button>
+                @(TempData["ControllerActionMessageEquipment"] as string)
+            </div>
+        }
+
+        @if (Model.AttachedEquipment.Any())
+        {
+            <table class="table table-condensed table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(m => m.AttachedEquipment.FirstOrDefault().Name)</th>
+                        <th>@Html.DisplayNameFor(m => m.AttachedEquipment.FirstOrDefault().Type)</th>
+                        <th>@Html.DisplayNameFor(m => m.AttachedEquipment.FirstOrDefault().Model)</th>
+                        <th>@Html.DisplayNameFor(m => m.AttachedEquipment.FirstOrDefault().SerialNumber)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var equipment in Model.AttachedEquipment)
+                    {
+                        <tr>
+                            @{
+                        var currentItem = equipment;
+                            }
+                            <td>@Html.DisplayFor(i => currentItem.Name)</td>
+                            <td>@Html.DisplayFor(i => currentItem.Type.Name)</td>
+                            <td>@Html.DisplayFor(i => currentItem.Model)</td>
+                            <td>@Html.DisplayFor(i => currentItem.SerialNumber)</td>
+                            <td>
+                                @Html.ActionLink("[[[Detach]]]", "DetachEquipment", "Instruments", new { @instrumentId = Model.Id, @equipmentId = currentItem.Id, @equipmentName = currentItem.Name }, new { @class = "btn btn-default btn-sm" })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+
+
+
+

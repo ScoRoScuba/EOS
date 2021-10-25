@@ -1,0 +1,164 @@
+﻿@using EOS2.Web.Areas.Organizations.ViewModels.Common
+@using EOS2.Web.Extensions
+@model EOS2.Web.Areas.Organizations.ViewModels.EquipmentChannels.EquipmentChannelsViewModel
+
+@{
+    ViewBag.Title = "[[[Index]]]";
+}
+<h2>[[[Allocated Channels]]]</h2>
+<hr />
+<div>
+    <div class="row">
+        <h3>Instrument Details</h3>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Name</label>
+                <div class="col-sm-7">
+                    <p class="form-control-static">@Html.DisplayTextFor(m => m.Instrument.Name)</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Make</label>
+                <div class="col-sm-7">
+                    <p class="form-control-static">@Html.DisplayTextFor(m => m.Instrument.Make)</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Model</label>
+                <div class="col-sm-7">
+                    <p class="form-control-static">@Html.DisplayTextFor(m => m.Instrument.Model)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Serial Number</label>
+                <div class="col-sm-7">
+                    <p class="form-control-static">@Html.DisplayTextFor(m => m.Instrument.SerialNumber)</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Instrument Type</label>
+                <div class="col-sm-7">
+                    <p class="form-control-static">@Html.DisplayTextFor(m => m.Instrument.Type.Name)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group input-options pull-right">
+                @Html.RouteLink("[[[Back]]]", "CustomerOrganization_SitePlantAreaEquipment", new { Model.CustomerId, Model.SiteId, Model.PlantAreaId, Model.EquipmentId }, new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="channels panel panel-default">
+            <div class="panel-heading clearfix">
+                <h3 class="panel-title">[[[Channels]]]</h3>
+            </div>
+            <div class="panel-body">
+
+                @if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessageInstrument"] as string))
+                {
+                    <div class="alert alert-success alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert"
+                                aria-hidden="true">
+                            &times;
+                        </button>
+                        @(TempData["ControllerActionMessageInstrument"] as string)
+                    </div>
+                }
+
+
+                @if (Model.Channels.Any())
+                {
+                    <div class=".table-responsive">
+                        <table class="table table-condensed table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>[[[Number]]]</th>
+                                    <th>[[[Name]]]</th>
+                                    <th>[[[Channel Type]]]</th>
+                                    <th>[[[Attached to equipment]]]</th>
+                                    <th>[[[Calibation Schedule]]]</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (ChannelViewModel channel in Model.Channels)
+                                {
+                                    channel.InstrumentId = Model.InstrumentId;
+                                    channel.SiteId = Model.SiteId;
+                                    channel.PlantAreaId = Model.PlantAreaId;
+                                    channel.CustomerId = Model.CustomerId;
+
+                                    channel.ChannelTypes = Model.ChannelTypes;
+                                    channel.Equipment = Model.Equipment;
+                                    channel.ScheduleFrequency = Model.ScheduleType;
+
+                                    using (Html.BeginForm("SaveChannel", "EquipmentChannels", new { Model.EquipmentId, Model.InstrumentId }))
+                                    {
+                                        @Html.EditorFor(m => channel, "EquipmentChannel")
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="create-channels-group row">
+                        <div class="col-md-10">
+                            <div class="create-channels-info">
+                                <h4>[[[Add channels]]]</h4>
+                                <p>[[[Please use the form below to set up the channels for the Instrument]]]</p>
+                            </div>
+                            <div class="create-channels-form center-block">
+
+                                @using (Html.BeginRouteForm("CustomerOrganization_SitePlantAreaInstrumentsCreateChannels", new { CustomerId = Model.CustomerId, SiteId = Model.SiteId, PlantAreaId = Model.PlantAreaId, InstrumentId = Model.InstrumentId }, FormMethod.Post, new { @class = "form-inline", role = "form" }))
+                                {
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <label class="sr-only" for="NumberOfChannels">Number of Channels</label>
+                                            @Html.TextBoxFor(m => m.NumberOfChannels, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <label class="sr-only" for="SelectedChannelTypeId">Number of Channels</label>
+                                            @Html.DropDownListI18NFor(m => m.SelectedChannelTypeId, new SelectList(Model.ChannelTypes, "Id", "Name"), "[[[Please Select ...]]]", new { @class = "form-control" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <label class="sr-only" for="SelectedEquipmentTypeId">Number of Channels</label>
+                                            @Html.DropDownListI18NFor(m => m.SelectedEquipmentId, new SelectList(Model.Equipment, "Id", "Name"), "[[[Please Select ...]]]", new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <label class="sr-only" for="SelectedScheduleTypeId">Number of Channels</label>
+                                            @Html.DropDownListI18NFor(m => m.SelectedScheduleTypeId, new SelectList(Model.ScheduleType, "Id", "Name"), "[[[Please Select ...]]]", new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <button type="submit" class="btn btn-primary">[[[Save]]]</button>
+                                        </div>
+                                    </div>
+
+                                    @Html.ValidationSummary()
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+

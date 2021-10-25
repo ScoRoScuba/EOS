@@ -1,0 +1,75 @@
+﻿@using EOS2.Model.Enums
+@using EOS2.Web.Areas.Organizations.ViewModels.Certificate
+@using EOS2.Web.Enums
+@using EOS2.Web.Extensions
+@model CertificateEditViewModel
+
+
+@if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessageCertificate"] as string))
+{
+    <div class="alert alert-success alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        @(TempData["ControllerActionMessageCertificate"] as string)
+    </div>
+}
+@if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessageCertificateFailure"] as string))
+{
+    <div class="alert alert-danger alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        @(TempData["ControllerActionMessageCertificateFailure"] as string)
+    </div>
+}
+
+
+@using (Html.BeginForm("Upload", "Certificate", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(m => m.InstrumentId)
+    @Html.HiddenFor(m => m.Id)
+    if (Model.Type.Id != (int)CertificateType.Undefined)
+        {
+        @Html.HiddenFor(m => m.Type.Id)
+        }
+    else
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.Type)
+            @Html.DropDownListI18NFor(m => m.Type.Id, new SelectList(Model.CertificateTypes, "Id", "Name"), "[[[Please Select ...]]]", new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Type)
+        </div>
+    }
+    <div class="form-group">
+        @Html.LabelFor(m => m.CertificateNumber)
+        @Html.TextBoxFor(m => m.CertificateNumber, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.CertificateNumber)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.StartDate)
+        @Html.TextBox("StartDate",  Model.StartDate.HasValue ? Convert.ToDateTime(Model.StartDate).ToShortDateString() : "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.StartDate)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.EndDate)
+        @Html.TextBox("EndDate",  Model.EndDate.HasValue ? Convert.ToDateTime(Model.EndDate).ToShortDateString() : "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.EndDate)
+    </div>
+    if (Model.Id > 0)
+        {
+            <div class="form-group">
+                @Html.RouteLink("[[[View PDF]]]", "CustomerOrganization_SitePlantAreaInstrumentCertificateDownload", new { CustomerId = Model.CustomerId, SiteId = Model.SiteId, PlantAreaId = Model.PlantAreaId, InstrumentId = Model.InstrumentId, CertificateId = Model.Id, controllerAction = ControllerAction.CertificateCertificateEdit }, new { @class = "btn btn-default btn-sm" })
+
+            </div>
+        }
+    <div class="form-group">
+        @if (Model.Id > 0)
+        {
+            @Html.Label("[[[Choose a new ]]]")
+        }
+        @Html.LabelFor(m => m.DetailViewModel.File)
+        @Html.TextBoxFor(m => m.DetailViewModel.File, new { type = "file", @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.DetailViewModel)
+    </div>
+    <button type="submit" class="btn btn-primary">@(Model.Id > 0 ? "[[[Save]]]" : "[[[Upload]]]")</button>
+    @Html.RouteLink("[[[Cancel]]]", "CustomerOrganization_SitePlantAreaInstrument", new { CustomerId = Model.Id, SiteId = Model.SiteId, PlantAreaId = Model.PlantAreaId, InstrumentId = Model.InstrumentId }, new { @class = "btn btn-default" })
+
+}
+   

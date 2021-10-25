@@ -1,0 +1,18 @@
+@model EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel
+
+@{
+    var description = Model.ApiDescription;
+    ViewBag.Title = description.HttpMethod.Method + " " + description.RelativePath;
+}
+<div id="body" class="help-page container">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <span>@Html.ActionLink("Home", "Index", null, new {@class="glyphicon glyphicon-home"})</span>
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        @Html.DisplayForModel()
+    </section>
+</div>

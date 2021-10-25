@@ -1,0 +1,70 @@
+@using System.Web.Http
+@using System.Web.Http.Controllers
+@using System.Web.Http.Description
+@using System.Collections.ObjectModel
+@using System.Web.Optimization
+@using EOS2.Web.Areas.Help
+@model Collection<ApiDescription>
+
+@{
+    ViewBag.Title = "EOS2 Web API Help Page";
+
+    // Group APIs by controller
+    ILookup<HttpControllerDescriptor, ApiDescription> apiGroups = Model.OrderBy(d => d.ActionDescriptor.ControllerDescriptor.ControllerName).ToLookup(api => api.ActionDescriptor.ControllerDescriptor);
+}
+@Styles.Render("~/Content/css")
+@*<link type="text/css" href="~/Areas/HelpPage/HelpPage.css" rel="stylesheet" />*@
+<div class="container">
+    <header class="help-page">
+        <div class="content-wrapper">
+            <div class="float-left">
+                <h1>@ViewBag.Title</h1>
+            </div>
+        </div>
+    </header>
+    <div id="body" class="help-page">
+        <section class="featured">
+            <div class="content-wrapper">
+                <h2>Eurotherm Online Services (EOS) API</h2>
+                <p>
+                    <i>The solution for anywhere, anytime management and analysis of plant information & regulatory status.</i>
+                </p>
+                <p>
+                    [TODO put some more details in here]
+                </p>
+            </div>
+        </section>
+        <br/>
+        <section class="content-wrapper main-content clear-fix">
+            @foreach (var group in apiGroups)
+            {
+                @Html.DisplayFor(m => group, "ApiGroup")
+            }
+        </section>
+        @*<section>
+            <table class="help-page-table">
+                <thead>
+                    <tr><th>API</th><th>Description</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var api in Model)
+                    {
+                        <tr>
+                            <td class="api-name"><a href="@Url.Action("Api", "Help", new { apiId = api.GetFriendlyId() })">@api.HttpMethod.Method @api.RelativePath</a></td>
+                            <td class="api-documentation">
+                                @if (api.Documentation != null)
+                                {
+                                    <p>@api.Documentation</p>
+                                }
+                                else
+                                {
+                                    <p>No documentation available.</p>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </section>*@
+    </div>
+</div>

@@ -1,0 +1,2180 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+
+#: locale\AdditionalTranslations.poa:100
+msgid "-"
+msgstr ""
+
+#: Extensions\InternationalizationHelpers.cs:18
+#: Extensions\InternationalizationHelpers.cs:31
+msgid "" + selectListItem.Text + ""
+msgstr ""
+
+#: Attributes\StringLengthI18nAttribute.cs:22
+msgid "" + string.Format(CultureInfo.CurrentCulture, ErrorMessageString, name, this.MinimumLength, this.MaximumLength).Replace("[[[", string.Empty).Replace(""
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Edit.cshtml:22
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Edit.cshtml:22
+msgid "%0 - %1 - New User"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Edit.cshtml:11
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Edit.cshtml:11
+msgid "%0 - %1 - User Details - %2"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Index.cshtml:7
+#: Areas\Organizations\Views\Users\Index.cshtml:8
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:7
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:8
+msgid "%0 - %1 Users"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Edit.cshtml:26
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Edit.cshtml:26
+msgid "%0 - New User"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Edit.cshtml:15
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Edit.cshtml:15
+msgid "%0 - User Details - %1"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\DisplayTemplates\I18nString.cshtml:3
+#: Views\Shared\DisplayTemplates\I18nString.cshtml:3
+msgid "@Model"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:101
+msgid "1"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:102
+msgid "2"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:103
+msgid "3"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:14
+msgid "3-Yearly"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:104
+msgid "4"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:12
+msgid "4-Monthly"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:5
+#: locale\AdditionalTranslations.poa:11
+msgid "4-Weekly"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:105
+msgid "5"
+msgstr ""
+
+#: Attributes\UniqueCertificateNumberAttribute.cs:23
+msgid "A certificate with that Certificate Number already exists for this customer."
+msgstr ""
+
+#: Attributes\CertificateUploadAttribute.cs:23
+msgid "A file must be supplied to be uploaded"
+msgstr ""
+
+#: Attributes\UniqueEquipmentAttribute.cs:32
+msgid "A piece of Equipment with that Name already exists for this Plant Area."
+msgstr ""
+
+#: Attributes\UniqueEquipmentAttribute.cs:26
+msgid "A piece of Equipment with that Serial Number already exists."
+msgstr ""
+
+#: Attributes\UniquePlantAreaAttribute.cs:26
+msgid "A Plant Area with that name already exists."
+msgstr ""
+
+#: Attributes\UniqueScheduleAttribute.cs:31
+msgid "A Schedule of that Type & Furnace Class already exists for this Equipment."
+msgstr ""
+
+#: Attributes\UniqueScheduleAttribute.cs:25
+msgid "A Schedule with that Name already exists for this Equipment."
+msgstr ""
+
+#: Attributes\UniqueSiteAttribute.cs:27
+msgid "A site with this name already Exists."
+msgstr ""
+
+#: Attributes\UniqueUserNameAttribute.cs:28
+msgid "A user with this name already Exists."
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Security\AccessDenied.cshtml:3
+#: obj\Release\Package\PackageTmp\Views\Security\AccessDenied.cshtml:6
+#: Views\Security\AccessDenied.cshtml:3
+#: Views\Security\AccessDenied.cshtml:6
+msgid "Access Denied"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:8
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Organizations.cshtml:8
+msgid "Add %0"
+msgstr ""
+
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:113
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:67
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:113
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:67
+msgid "Add channels"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Equipments.cshtml:8
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Equipments.cshtml:8
+msgid "Add Equipment"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Instruments.cshtml:7
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Instruments.cshtml:7
+msgid "Add Instrument"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_PlantAreas.cshtml:7
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_PlantAreas.cshtml:7
+msgid "Add Plant Area"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Schedules.cshtml:7
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Schedules.cshtml:7
+msgid "Add Schedule"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Sites.cshtml:6
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Sites.cshtml:6
+msgid "Add Site"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Index.cshtml:23
+#: Areas\Organizations\Views\Users\Index.cshtml:29
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:23
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:29
+msgid "Add User"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:21
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:21
+#: Areas\Organizations\ViewModels\Site\CustomerSiteEditViewModel.cs:22
+msgid "Address"
+msgstr ""
+
+#: Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:112
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:112
+msgid "All channels have been allocated"
+msgstr ""
+
+#: Areas\Organizations\Views\Equipment\_InstrumentsAttached.cshtml:56
+#: Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:7
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:8
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Equipment\_InstrumentsAttached.cshtml:56
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:7
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:8
+msgid "Allocated Channels"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:60
+msgid "AMS2750 Instrument"
+msgstr ""
+
+#: Attributes\UniqueInstrumentAttribute.cs:32
+msgid "An instrument with that Name already exists for this Plant Area."
+msgstr ""
+
+#: Attributes\UniqueInstrumentAttribute.cs:26
+msgid "An Instrument with that Serial Number already exists."
+msgstr ""
+
+#: Attributes\UniqueOrganizationAttribute.cs:31
+msgid "An organization with that name already Exists."
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:39
+msgid "Analyser"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:44
+msgid "Any Notes for Equipment"
+msgstr ""
+
+#: Areas\Organizations\Views\Equipment\_InstrumentsAttached.cshtml:16
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Equipment\_InstrumentsAttached.cshtml:16
+msgid "Attach To Channels"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\InstrumentChannels\ChannelsViewModel.cs:26
+#: Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:80
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:81
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:34
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:80
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:81
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:34
+msgid "Attached to equipment"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Language.cshtml:6
+#: Views\Shared\_Language.cshtml:6
+msgid "Auto"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:17
+msgid "Autoclave"
+msgstr ""
+
+#: Areas\Organizations\Views\Instrument\AvailableInstruments.cshtml:3
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Instrument\AvailableInstruments.cshtml:3
+msgid "Available Instruments"
+msgstr ""
+
+#: Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:48
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:49
+#: Areas\Organizations\Views\InstrumentChannels\View.cshtml:57
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:48
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:49
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\View.cshtml:57
+msgid "Back"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:40
+msgid "Bench Multimeter"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:13
+msgid "Bi-Annual"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:7
+msgid "Bi-Monthly"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:4
+msgid "Bi-Weekly"
+msgstr ""
+
+#: Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:81
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:82
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:35
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:81
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:82
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:35
+msgid "Calibation Schedule"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:35
+msgid "Calibration Frequency"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\InstrumentChannels\ChannelsViewModel.cs:32
+#: Areas\Organizations\ViewModels\InstrumentChannels\ChannelsViewModel.cs:32
+msgid "Calibration Schedule"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:41
+msgid "Caliper"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\EditOrganization.cshtml:52
+#: Areas\Organizations\Views\Customer\EditSite.cshtml:54
+#: Areas\Organizations\Views\Equipment\View.cshtml:72
+#: Areas\Organizations\Views\Instrument\View.cshtml:91
+#: Areas\Organizations\Views\PlantArea\EditPlantArea.cshtml:43
+#: Areas\Organizations\Views\PortalAgent\View.cshtml:54
+#: Areas\Organizations\Views\Schedule\Edit.cshtml:77
+#: Areas\Organizations\Views\ServiceProvider\View.cshtml:54
+#: Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:72
+#: Areas\Organizations\Views\Site\View.cshtml:57
+#: Areas\Organizations\Views\Site\View.cshtml:61
+#: Areas\Organizations\Views\Users\Edit.cshtml:115
+#: Areas\Organizations\Views\Users\Edit.cshtml:119
+#: Areas\Organizations\Views\Users\Password.cshtml:45
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\EditOrganization.cshtml:52
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\EditSite.cshtml:54
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Equipment\View.cshtml:72
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Instrument\View.cshtml:91
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\PlantArea\EditPlantArea.cshtml:43
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\PortalAgent\View.cshtml:54
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Schedule\Edit.cshtml:77
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\ServiceProvider\View.cshtml:54
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:72
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Site\View.cshtml:57
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Site\View.cshtml:61
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Edit.cshtml:115
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Edit.cshtml:119
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Password.cshtml:45
+msgid "Cancel"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:42
+msgid "Centre Gauge"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateDetailViewModel.cs:12
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:33
+#: Areas\Organizations\Views\Shared\_Certificates.cshtml:11
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Certificates.cshtml:11
+msgid "Certificate"
+msgstr ""
+
+#: Areas\Organizations\Controllers\CertificateController.cs:83
+msgid "Certificate %0 saved successfully"
+msgstr ""
+
+#: Areas\Organizations\Controllers\CertificateController.cs:79
+msgid "Certificate %0 uploaded successfully"
+msgstr ""
+
+#: Areas\Organizations\Views\Certificate\CertificateUpload.cshtml:5
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Certificate\CertificateUpload.cshtml:5
+msgid "Certificate Details"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\Common\CertificateViewModel.cs:12
+#: Areas\Organizations\ViewModels\Shared\CertificateViewModel.cs:12
+msgid "Certificate Number"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:38
+msgid "Certificate Type"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:37
+msgid "Certificate Type must be selected"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\InstrumentChannels\ChannelsViewModel.cs:20
+#: Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:79
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:80
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:33
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:79
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:80
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:33
+msgid "Channel Type"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Shared\ChannelViewModel.cs:19
+msgid "Channel type is required"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\InstrumentChannels\ChannelsViewModel.cs:17
+msgid "Channel type is Required"
+msgstr ""
+
+#: Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:55
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:56
+#: Areas\Organizations\Views\InstrumentChannels\View.cshtml:6
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:9
+#: Areas\Organizations\Views\Shared\_Instruments.cshtml:58
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:55
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:56
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\View.cshtml:6
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:9
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Instruments.cshtml:58
+msgid "Channels"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:65
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:65
+msgid "Choose a new "
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:43
+msgid "Circular Recorder"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:44
+msgid "Clampmeter"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Account\SessionExpired.cshtml:15
+#: Views\Account\SessionExpired.cshtml:15
+msgid "Click here to Log back in"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:21
+#: Areas\Organizations\ViewModels\Site\CustomerSiteEditViewModel.cs:22
+msgid "Company address"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:40
+msgid "Compare Email Address"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:40
+msgid "Comparison Email Address"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:45
+msgid "Compound Thickness Gauge"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:46
+msgid "Conductivity Meter"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:23
+msgid "Confirm Password"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:47
+msgid "Controller"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:48
+msgid "Controller/Recorder"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:18
+msgid "Conveyor Oven"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:49
+msgid "Cord Thickness Gauge"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:50
+msgid "Cord Twist"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:46
+#: Views\Shared\_Personas.cshtml:46
+msgid "Customer Administrator"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\EditOrganization.cshtml:8
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\EditOrganization.cshtml:8
+msgid "Customer Details"
+msgstr ""
+
+#: Areas\Organizations\Controllers\CustomerController.cs:75
+msgid "Customer saved"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:54
+#: Views\Shared\_Personas.cshtml:54
+msgid "Customer Site Manager"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\Index.cshtml:5
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\Index.cshtml:5
+#: obj\Release\Package\PackageTmp\Views\Manage\Index.cshtml:38
+#: obj\Release\Package\PackageTmp\Views\Shared\_NavBar2.cshtml:23
+#: Views\Manage\Index.cshtml:38
+#: Views\Shared\_NavBar2.cshtml:23
+msgid "Customers"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:51
+msgid "Decade Box"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:52
+msgid "Depth Gauge"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:24
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:23
+#: Areas\Organizations\ViewModels\PlantArea\PlantAreaEditViewModel.cs:24
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:26
+msgid "Description"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:24
+msgid "Description of Equipment"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:23
+msgid "Description of Instrument"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\PlantArea\PlantAreaEditViewModel.cs:24
+msgid "Description of Plant Area"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:26
+msgid "Description of Schedule"
+msgstr ""
+
+#: Areas\Organizations\Views\Instrument\_AttachedEquipment.cshtml:44
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Instrument\_AttachedEquipment.cshtml:44
+msgid "Detach"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Certificates.cshtml:53
+#: Areas\Organizations\Views\Shared\_Equipments.cshtml:49
+#: Areas\Organizations\Views\Shared\_Instruments.cshtml:48
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:41
+#: Areas\Organizations\Views\Shared\_PlantAreas.cshtml:43
+#: Areas\Organizations\Views\Shared\_Schedules.cshtml:44
+#: Areas\Organizations\Views\Shared\_Sites.cshtml:39
+#: Areas\Organizations\Views\Users\Index.cshtml:60
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Certificates.cshtml:53
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Equipments.cshtml:49
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Instruments.cshtml:48
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Organizations.cshtml:41
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_PlantAreas.cshtml:43
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Schedules.cshtml:44
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Sites.cshtml:39
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:60
+msgid "Details"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:53
+msgid "Digital Micrometer"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:54
+msgid "Digital Thermometer"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:19
+msgid "Drying Oven"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\EditOrganization.cshtml:3
+#: Areas\Organizations\Views\Customer\EditSite.cshtml:3
+#: Areas\Organizations\Views\PortalAgent\View.cshtml:4
+#: Areas\Organizations\Views\ServiceProvider\View.cshtml:4
+#: Areas\Organizations\Views\Site\View.cshtml:6
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\EditOrganization.cshtml:3
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\EditSite.cshtml:3
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\PortalAgent\View.cshtml:4
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\ServiceProvider\View.cshtml:4
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Site\View.cshtml:6
+msgid "Edit"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Index.cshtml:45
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:45
+msgid "Email"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:34
+msgid "Email Address"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:43
+msgid "Email addresses do not match"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:27
+#: Areas\Organizations\ViewModels\Common\CertificateViewModel.cs:15
+#: Areas\Organizations\ViewModels\Shared\CertificateViewModel.cs:15
+msgid "End Date"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:30
+msgid "End Date must be after Start Date"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:27
+msgid "End Date of the Certificate"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:14
+#: Views\Shared\_Personas.cshtml:14
+msgid "EOS Owner"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Equipments.cshtml:10
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Equipments.cshtml:10
+msgid "Equipment"
+msgstr ""
+
+#: Areas\Organizations\Controllers\EquipmentController.cs:54
+msgid "Equipment %0 saved successfully"
+msgstr ""
+
+#: Areas\Organizations\Views\Instrument\_AttachedEquipment.cshtml:5
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Instrument\_AttachedEquipment.cshtml:5
+msgid "Equipment Attached"
+msgstr ""
+
+#: Areas\Organizations\Views\Equipment\View.cshtml:6
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Equipment\View.cshtml:6
+msgid "Equipment Details"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\InstrumentChannels\ChannelsViewModel.cs:23
+msgid "Equipment is Required"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\InstrumentChannels\ChannelsViewModel.cs:26
+msgid "Equipment the channel is connected"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:41
+msgid "Equipment Type"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Shared\ChannelViewModel.cs:24
+msgid "Equipment type is required"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:9
+#: Views\Home\Index.cshtml:9
+msgid "Eurothem Online Services Portal"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:29
+#: Views\Shared\_Layout.cshtml:29
+msgid "Eurotherm Online Services"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:11
+#: Views\Shared\_Layout.cshtml:11
+msgid "Eurotherm Online Services Portal"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:28
+#: Areas\Organizations\Views\Users\Index.cshtml:44
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:44
+msgid "Family Name"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:28
+msgid "Family Name of the User"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:55
+msgid "Feeler Gauge"
+msgstr ""
+
+#: Attributes\CertificateUploadAttribute.cs:37
+msgid "File must be of type "
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:20
+msgid "Fluidised Bed"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:21
+msgid "Freezer"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\Schedule.cs:19
+#: Areas\Organizations\ViewModels\Common\ScheduleViewModel.cs:19
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:30
+#: Areas\Organizations\ViewModels\Shared\Schedule.cs:19
+#: Areas\Organizations\ViewModels\Shared\ScheduleViewModel.cs:19
+msgid "Frequency"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:35
+msgid "Frequency of Calibration of Instrument"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:30
+msgid "Frequency of Schedule"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:22
+msgid "Furnace"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\FurnaceClass.cs:10
+#: Areas\Organizations\ViewModels\Common\FurnaceClass.cs:10
+#: Areas\Organizations\ViewModels\Common\FurnaceClassViewModel.cs:10
+#: Areas\Organizations\ViewModels\Common\FurnaceClassViewModel.cs:10
+#: Areas\Organizations\ViewModels\Common\Schedule.cs:12
+#: Areas\Organizations\ViewModels\Common\ScheduleViewModel.cs:12
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:23
+#: Areas\Organizations\ViewModels\Shared\FurnaceClass.cs:10
+#: Areas\Organizations\ViewModels\Shared\FurnaceClass.cs:10
+#: Areas\Organizations\ViewModels\Shared\FurnaceClassViewModel.cs:10
+#: Areas\Organizations\ViewModels\Shared\FurnaceClassViewModel.cs:10
+#: Areas\Organizations\ViewModels\Shared\Schedule.cs:12
+#: Areas\Organizations\ViewModels\Shared\ScheduleViewModel.cs:12
+msgid "Furnace Class"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:23
+msgid "Gas Generator"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:56
+msgid "Graphic Recorder"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:9
+msgid "Half-Yearly"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:57
+msgid "Handheld Multimeter"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:58
+msgid "Handheld Thermometer"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:59
+msgid "Hardness"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:63
+msgid "Has the Instrument been removed"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:60
+msgid "Height Gauge"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:24
+msgid "HIP Furnace"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:61
+msgid "Humidity Sensor"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:62
+msgid "Humidity Transmitter"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:63
+msgid "I/P Converter"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:19
+#: Areas\Organizations\Views\Users\Index.cshtml:40
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Organizations.cshtml:19
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:40
+msgid "Id"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\Index.cshtml:3
+#: Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:5
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:6
+#: Areas\Organizations\Views\InstrumentChannels\View.cshtml:4
+#: Areas\Organizations\Views\PortalAgent\Index.cshtml:3
+#: Areas\Organizations\Views\ServiceProvider\Index.cshtml:3
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\Index.cshtml:3
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:5
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:6
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\View.cshtml:4
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\PortalAgent\Index.cshtml:3
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\ServiceProvider\Index.cshtml:3
+#: obj\Release\Package\PackageTmp\Views\Manage\Index.cshtml:6
+#: Views\Manage\Index.cshtml:6
+msgid "Index"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:64
+msgid "Indicator"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:65
+msgid "Infra-red Thermometer"
+msgstr ""
+
+#: Areas\Organizations\Controllers\InstrumentController.cs:61
+msgid "Instrument %0 saved successfully"
+msgstr ""
+
+#: Areas\Organizations\Views\Instrument\View.cshtml:7
+#: Areas\Organizations\Views\InstrumentChannels\View.cshtml:10
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Instrument\View.cshtml:7
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\View.cshtml:10
+msgid "Instrument Details"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:63
+msgid "Instrument Removed"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:32
+msgid "Instrument Type"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Instruments.cshtml:9
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Instruments.cshtml:9
+msgid "Instruments"
+msgstr ""
+
+#: Areas\Organizations\Views\Equipment\_InstrumentsAttached.cshtml:20
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Equipment\_InstrumentsAttached.cshtml:20
+msgid "Instruments Attached"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:66
+msgid "Insulation Tester"
+msgstr ""
+
+#: Controllers\AccountController.cs:100
+msgid "Invalid URI : %0"
+msgstr ""
+
+#: Areas\Organizations\Builders\Users\UserForOrganizationEditDomainModelBuilder.cs:31
+msgid "Invalid User Id"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:60
+msgid "Is an AMS2750 Instrument"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:38
+msgid "Is Instrument subject to SAT"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:67
+msgid "Lateral Run Out"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:68
+msgid "Load Cell"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:28
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:45
+msgid "Make"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:28
+msgid "Make of Equipment"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:45
+msgid "Make of Instrument"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Manage\Index.cshtml:10
+#: obj\Release\Package\PackageTmp\Views\Shared\_NavBar.cshtml:7
+#: Views\Manage\Index.cshtml:10
+#: Views\Shared\_NavBar.cshtml:7
+msgid "Manage"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:45
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Organizations.cshtml:45
+msgid "Manage Users"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:17
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:20
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:46
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:51
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:56
+#: Areas\Organizations\ViewModels\PlantArea\PlantAreaEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:15
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:17
+#: Areas\Organizations\ViewModels\Site\CustomerSiteEditViewModel.cs:18
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:24
+#: PI\Models\Site.cs:16
+msgid "Maximum Length is 120 Characters"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:13
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:29
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:47
+msgid "Maximum Length is 60 Characters"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:69
+msgid "Micrometer"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Index.cshtml:43
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:43
+msgid "Middle Name"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:23
+msgid "Middle Name/Initial"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:70
+msgid "Millivolt Source"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\Equipment.cs:16
+#: Areas\Organizations\ViewModels\Common\EquipmentViewModel.cs:16
+#: Areas\Organizations\ViewModels\Common\Instrument.cs:16
+#: Areas\Organizations\ViewModels\Common\InstrumentViewModel.cs:20
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:32
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:50
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:16
+#: Areas\Organizations\ViewModels\Shared\EquipmentViewModel.cs:16
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:16
+#: Areas\Organizations\ViewModels\Shared\InstrumentViewModel.cs:20
+msgid "Model"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:32
+msgid "Model of Equipment"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:50
+msgid "Model of Instrument"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:6
+msgid "Monthly"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\Equipment.cs:9
+#: Areas\Organizations\ViewModels\Common\EquipmentViewModel.cs:9
+#: Areas\Organizations\ViewModels\Common\Instrument.cs:9
+#: Areas\Organizations\ViewModels\Common\InstrumentViewModel.cs:13
+#: Areas\Organizations\ViewModels\Common\PlantArea.cs:9
+#: Areas\Organizations\ViewModels\Common\PlantAreaViewModel.cs:9
+#: Areas\Organizations\ViewModels\Common\Schedule.cs:9
+#: Areas\Organizations\ViewModels\Common\ScheduleViewModel.cs:9
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:16
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:18
+#: Areas\Organizations\ViewModels\PlantArea\PlantAreaEditViewModel.cs:18
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:14
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:18
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:16
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:9
+#: Areas\Organizations\ViewModels\Shared\EquipmentViewModel.cs:9
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:9
+#: Areas\Organizations\ViewModels\Shared\InstrumentViewModel.cs:13
+#: Areas\Organizations\ViewModels\Shared\PlantArea.cs:9
+#: Areas\Organizations\ViewModels\Shared\PlantAreaViewModel.cs:9
+#: Areas\Organizations\ViewModels\Shared\Schedule.cs:9
+#: Areas\Organizations\ViewModels\Shared\ScheduleViewModel.cs:9
+#: Areas\Organizations\ViewModels\Site\CustomerSiteEditViewModel.cs:17
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:18
+#: Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:78
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:79
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:32
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:20
+#: Areas\Organizations\Views\Shared\_Sites.cshtml:27
+#: Areas\Organizations\Views\Users\Index.cshtml:42
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:78
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:79
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:32
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Organizations.cshtml:20
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Sites.cshtml:27
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:42
+msgid "Name"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Shared\ChannelViewModel.cs:13
+msgid "Name is required"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:16
+msgid "Name of Company"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\Equipment.cs:9
+#: Areas\Organizations\ViewModels\Common\EquipmentViewModel.cs:9
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:9
+#: Areas\Organizations\ViewModels\Shared\EquipmentViewModel.cs:9
+msgid "Name of Equipment"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\Instrument.cs:9
+#: Areas\Organizations\ViewModels\Common\InstrumentViewModel.cs:13
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:18
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:9
+#: Areas\Organizations\ViewModels\Shared\InstrumentViewModel.cs:13
+msgid "Name of Instrument"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\PlantArea.cs:9
+#: Areas\Organizations\ViewModels\Common\PlantAreaViewModel.cs:9
+#: Areas\Organizations\ViewModels\PlantArea\PlantAreaEditViewModel.cs:18
+#: Areas\Organizations\ViewModels\Shared\PlantArea.cs:9
+#: Areas\Organizations\ViewModels\Shared\PlantAreaViewModel.cs:9
+msgid "Name of Plant Area"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:14
+msgid "Name of Portal Agent"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:18
+msgid "Name of Schedule"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:16
+msgid "Name of Service Provider"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Site\CustomerSiteEditViewModel.cs:17
+msgid "Name of site"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:18
+msgid "Name of User"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:25
+msgid "NDT Oven"
+msgstr ""
+
+#: Areas\Organizations\Views\Certificate\CertificateUpload.cshtml:9
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Certificate\CertificateUpload.cshtml:9
+msgid "New Certificate Upload"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\EditOrganization.cshtml:12
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\EditOrganization.cshtml:12
+msgid "New Customer"
+msgstr ""
+
+#: Areas\Organizations\Views\Equipment\View.cshtml:10
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Equipment\View.cshtml:10
+msgid "New Equipment"
+msgstr ""
+
+#: Areas\Organizations\Views\Instrument\View.cshtml:11
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Instrument\View.cshtml:11
+msgid "New Instrument"
+msgstr ""
+
+#: Areas\Organizations\Views\PlantArea\EditPlantArea.cshtml:9
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\PlantArea\EditPlantArea.cshtml:9
+msgid "New Plant Area"
+msgstr ""
+
+#: Areas\Organizations\Views\PortalAgent\View.cshtml:13
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\PortalAgent\View.cshtml:13
+msgid "New Portal Agent"
+msgstr ""
+
+#: Areas\Organizations\Views\Schedule\Edit.cshtml:10
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Schedule\Edit.cshtml:10
+msgid "New Schedule"
+msgstr ""
+
+#: Areas\Organizations\Views\ServiceProvider\View.cshtml:13
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\ServiceProvider\View.cshtml:13
+msgid "New Service Provider"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\EditSite.cshtml:12
+#: Areas\Organizations\Views\Site\View.cshtml:15
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\EditSite.cshtml:12
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Site\View.cshtml:15
+msgid "New Site"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:2
+msgid "None"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Error\NotFound.cshtml:4
+#: Views\Error\NotFound.cshtml:4
+msgid "Not Found"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:44
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:27
+msgid "Notes"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:27
+msgid "Notes for Instrument"
+msgstr ""
+
+#: Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:77
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:78
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:31
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\AvailableChannels.cshtml:77
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:78
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:31
+msgid "Number"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Shared\ChannelViewModel.cs:16
+msgid "Number is required"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:41
+msgid "Number of Channels"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:42
+msgid "Number of Channels must be between 0 and 100"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:41
+msgid "Number of channels on Instrument"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Language.cshtml:7
+#: Views\Shared\_Language.cshtml:7
+msgid "Ok"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Error\Error.cshtml:4
+#: obj\Release\Package\PackageTmp\Views\Error\ServerError.cshtml:4
+#: Views\Error\Error.cshtml:4
+#: Views\Error\ServerError.cshtml:4
+msgid "Opps!"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:22
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Organizations.cshtml:22
+msgid "Organization Types"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:26
+msgid "Other"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:27
+#: locale\AdditionalTranslations.poa:71
+msgid "Oven"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:72
+msgid "Override"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:73
+msgid "Overtemp"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:28
+msgid "Paint Oven"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:74
+msgid "Paper Chart Recorder"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:17
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:17
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:25
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:33
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:41
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:49
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:57
+#: ViewModels\Account\SignInViewModel.cs:11
+#: Views\Shared\_Personas.cshtml:17
+#: Views\Shared\_Personas.cshtml:25
+#: Views\Shared\_Personas.cshtml:33
+#: Views\Shared\_Personas.cshtml:41
+#: Views\Shared\_Personas.cshtml:49
+#: Views\Shared\_Personas.cshtml:57
+msgid "Password"
+msgstr ""
+
+#: Areas\Organizations\Controllers\UsersController.cs:194
+msgid "Password Updated successfully"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:26
+msgid "Passwords do not match"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:5
+#: Views\Shared\_Personas.cshtml:5
+msgid "Personas"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:46
+msgid "Phone Number"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:75
+msgid "PI Tape"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:29
+msgid "Pit Furnace"
+msgstr ""
+
+#: Areas\Organizations\Controllers\PlantAreaController.cs:58
+msgid "Plant Area %0 saved successfully"
+msgstr ""
+
+#: Areas\Organizations\Views\PlantArea\EditPlantArea.cshtml:5
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\PlantArea\EditPlantArea.cshtml:5
+msgid "Plant Area Details"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_PlantAreas.cshtml:9
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_PlantAreas.cshtml:9
+msgid "Plant Areas"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:76
+msgid "PLC"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:18
+msgid "Please enter a Certificate Number"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:22
+msgid "Please enter a confirmation password"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:13
+msgid "Please enter a name for the Portal Agent"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:15
+msgid "Please enter a name for the Service Provider"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:17
+msgid "Please enter a name for the user"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:16
+#: ViewModels\Account\SignInViewModel.cs:12
+msgid "Please enter a password"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:24
+msgid "Please enter a Start Date"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:11
+msgid "Please enter a User Name for the user"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:36
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:42
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:49
+msgid "Please enter a valid phone number"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:33
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:39
+msgid "Please enter an email address"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:29
+msgid "Please enter an End Date"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\PlantArea\PlantAreaEditViewModel.cs:23
+msgid "Please enter the Description of your plant area"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:15
+msgid "Please enter the name for your company"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:18
+msgid "Please enter the name for your equipment"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:17
+msgid "Please enter the name for your instrument"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\PlantArea\PlantAreaEditViewModel.cs:17
+msgid "Please enter the name for your plant area"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:17
+msgid "Please enter the name for your schedule"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Site\CustomerSiteEditViewModel.cs:16
+msgid "Please enter the name for your site"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:25
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:23
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:25
+msgid "Please enter the ZIP Code of your main site"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Site\CustomerSiteEditViewModel.cs:26
+msgid "Please enter the ZIP Code of your site"
+msgstr ""
+
+#: ViewModels\Account\SignInViewModel.cs:8
+msgid "Please enter your User Name"
+msgstr ""
+
+#: Areas\Organizations\Views\Equipment\View.cshtml:62
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:131
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:138
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:144
+#: Areas\Organizations\Views\Instrument\View.cshtml:63
+#: Areas\Organizations\Views\Instrument\View.cshtml:68
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:96
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:103
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:110
+#: Areas\Organizations\Views\Schedule\Edit.cshtml:44
+#: Areas\Organizations\Views\Schedule\Edit.cshtml:67
+#: Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:36
+#: Areas\Organizations\Views\Shared\EditorTemplates\Channel.cshtml:33
+#: Areas\Organizations\Views\Shared\EditorTemplates\Channel.cshtml:38
+#: Areas\Organizations\Views\Shared\EditorTemplates\Channel.cshtml:43
+#: Areas\Organizations\Views\Shared\EditorTemplates\EquipmentChannel.cshtml:37
+#: Areas\Organizations\Views\Shared\EditorTemplates\EquipmentChannel.cshtml:44
+#: Areas\Organizations\Views\Shared\EditorTemplates\EquipmentChannel.cshtml:49
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Equipment\View.cshtml:62
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:131
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:138
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:144
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Instrument\View.cshtml:63
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Instrument\View.cshtml:68
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:96
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:103
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:110
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Schedule\Edit.cshtml:44
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Schedule\Edit.cshtml:67
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:36
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\EditorTemplates\Channel.cshtml:33
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\EditorTemplates\Channel.cshtml:38
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\EditorTemplates\Channel.cshtml:43
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\EditorTemplates\EquipmentChannel.cshtml:37
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\EditorTemplates\EquipmentChannel.cshtml:44
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\EditorTemplates\EquipmentChannel.cshtml:49
+msgid "Please Select ..."
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\CalibrationFrequency.cs:7
+#: Areas\Organizations\ViewModels\Common\CalibrationFrequencyViewModel.cs:7
+#: Areas\Organizations\ViewModels\Shared\CalibrationFrequency.cs:7
+#: Areas\Organizations\ViewModels\Shared\CalibrationFrequencyViewModel.cs:7
+msgid "Please select a Calibration Frequency"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\Frequency.cs:7
+#: Areas\Organizations\ViewModels\Common\FrequencyViewModel.cs:7
+#: Areas\Organizations\ViewModels\Shared\Frequency.cs:7
+#: Areas\Organizations\ViewModels\Shared\FrequencyViewModel.cs:7
+msgid "Please select a Frequency"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\FurnaceClass.cs:7
+#: Areas\Organizations\ViewModels\Common\FurnaceClassViewModel.cs:7
+#: Areas\Organizations\ViewModels\Shared\FurnaceClass.cs:7
+#: Areas\Organizations\ViewModels\Shared\FurnaceClassViewModel.cs:7
+msgid "Please select a Furnace Class"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\EquipmentType.cs:7
+#: Areas\Organizations\ViewModels\Common\EquipmentTypeViewModel.cs:7
+#: Areas\Organizations\ViewModels\Common\InstrumentType.cs:7
+#: Areas\Organizations\ViewModels\Common\InstrumentTypeViewModel.cs:7
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:37
+#: Areas\Organizations\ViewModels\Shared\EquipmentType.cs:7
+#: Areas\Organizations\ViewModels\Shared\EquipmentTypeViewModel.cs:7
+#: Areas\Organizations\ViewModels\Shared\InstrumentType.cs:7
+#: Areas\Organizations\ViewModels\Shared\InstrumentTypeViewModel.cs:7
+msgid "Please select a Type"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\AvailableInstrumentsViewModel.cs:10
+msgid "Please select an Instrument"
+msgstr ""
+
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:114
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:114
+msgid "Please use the form below to set up the channels for the Instrument"
+msgstr ""
+
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:68
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:68
+msgid "Please use the form below to set up the initial set of channels for the Instrument"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:30
+msgid "Portable"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:77
+msgid "Portable Field Test Calibrator"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:22
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:30
+#: Views\Shared\_Personas.cshtml:22
+#: Views\Shared\_Personas.cshtml:30
+msgid "Portal Agent"
+msgstr ""
+
+#: Areas\Organizations\Views\PortalAgent\View.cshtml:9
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\PortalAgent\View.cshtml:9
+msgid "Portal Agent Details"
+msgstr ""
+
+#: Areas\Organizations\Controllers\PortalAgentController.cs:67
+msgid "Portal Agent saved"
+msgstr ""
+
+#: Areas\Organizations\Views\PortalAgent\Index.cshtml:5
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\PortalAgent\Index.cshtml:5
+#: obj\Release\Package\PackageTmp\Views\Manage\Index.cshtml:18
+#: obj\Release\Package\PackageTmp\Views\Shared\_NavBar2.cshtml:13
+#: Views\Manage\Index.cshtml:18
+#: Views\Shared\_NavBar2.cshtml:13
+msgid "Portal Agents"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:19
+msgid "Portal Agents address "
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:78
+msgid "Power Meter"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:31
+msgid "Press"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:79
+msgid "Pressure Gauge"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:80
+msgid "Pressure Switch"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:81
+msgid "Pressure Transducer"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:82
+msgid "Programmer/Controller"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:8
+msgid "Quarterly"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:32
+msgid "Quench Bath"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:83
+msgid "Recorder"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:33
+msgid "Rotary Hearth"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:34
+msgid "Salt Bath"
+msgstr ""
+
+#: C:\Development\EOS\trunk\EOS2\EOS2.Model\Enums\ScheduleType.cs:9
+#: locale\AdditionalTranslations.poa:108
+msgid "SAT"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:84
+msgid "SAT Instrument"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\EditOrganization.cshtml:50
+#: Areas\Organizations\Views\Customer\EditSite.cshtml:52
+#: Areas\Organizations\Views\Equipment\View.cshtml:71
+#: Areas\Organizations\Views\EquipmentChannels\View.cshtml:149
+#: Areas\Organizations\Views\Instrument\View.cshtml:89
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:118
+#: Areas\Organizations\Views\PlantArea\EditPlantArea.cshtml:42
+#: Areas\Organizations\Views\PortalAgent\View.cshtml:52
+#: Areas\Organizations\Views\Schedule\Edit.cshtml:76
+#: Areas\Organizations\Views\ServiceProvider\View.cshtml:52
+#: Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:71
+#: Areas\Organizations\Views\Shared\EditorTemplates\Channel.cshtml:47
+#: Areas\Organizations\Views\Shared\EditorTemplates\EquipmentChannel.cshtml:55
+#: Areas\Organizations\Views\Site\View.cshtml:54
+#: Areas\Organizations\Views\Users\Edit.cshtml:110
+#: Areas\Organizations\Views\Users\Password.cshtml:43
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\EditOrganization.cshtml:50
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\EditSite.cshtml:52
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Equipment\View.cshtml:71
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\EquipmentChannels\View.cshtml:149
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Instrument\View.cshtml:89
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:118
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\PlantArea\EditPlantArea.cshtml:42
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\PortalAgent\View.cshtml:52
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Schedule\Edit.cshtml:76
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\ServiceProvider\View.cshtml:52
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:71
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\EditorTemplates\Channel.cshtml:47
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\EditorTemplates\EquipmentChannel.cshtml:55
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Site\View.cshtml:54
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Edit.cshtml:110
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Password.cshtml:43
+msgid "Save"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:85
+msgid "Scales"
+msgstr ""
+
+#: Areas\Organizations\Controllers\ScheduleController.cs:56
+msgid "Schedule %0 saved successfully"
+msgstr ""
+
+#: Areas\Organizations\Views\Schedule\Edit.cshtml:6
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Schedule\Edit.cshtml:6
+msgid "Schedule Details"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Shared\ChannelViewModel.cs:29
+msgid "Schedule is required"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:39
+msgid "Schedule Type"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\InstrumentChannels\ChannelsViewModel.cs:29
+msgid "Schedule type must be set"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Schedules.cshtml:9
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Schedules.cshtml:9
+msgid "Schedules"
+msgstr ""
+
+#: Areas\Organizations\Builders\Instrument\AvailableInstrumentsInPlantAreaViewModelBuilder.cs:47
+#: Areas\Organizations\Builders\Instrument\AvailableInstrumentsInPlantAreaViewModelBuilder.cs:52
+msgid "Select Instrument"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\Equipment.cs:19
+#: Areas\Organizations\ViewModels\Common\EquipmentViewModel.cs:19
+#: Areas\Organizations\ViewModels\Common\Instrument.cs:19
+#: Areas\Organizations\ViewModels\Common\InstrumentViewModel.cs:23
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:36
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:55
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:19
+#: Areas\Organizations\ViewModels\Shared\EquipmentViewModel.cs:19
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:19
+#: Areas\Organizations\ViewModels\Shared\InstrumentViewModel.cs:23
+msgid "Serial Number"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:36
+msgid "Serial Number of Equipment"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:55
+msgid "Serial Number of Instrument"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:38
+#: Views\Shared\_Personas.cshtml:38
+msgid "Service Provider"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:21
+msgid "Service Provider address"
+msgstr ""
+
+#: Areas\Organizations\Views\ServiceProvider\View.cshtml:9
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\ServiceProvider\View.cshtml:9
+msgid "Service Provider Details"
+msgstr ""
+
+#: Areas\Organizations\Controllers\ServiceProviderController.cs:92
+msgid "Service Provider Saved"
+msgstr ""
+
+#: Areas\Organizations\Views\ServiceProvider\Index.cshtml:5
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\ServiceProvider\Index.cshtml:5
+#: obj\Release\Package\PackageTmp\Views\Manage\Index.cshtml:28
+#: obj\Release\Package\PackageTmp\Views\Shared\_NavBar2.cshtml:18
+#: Views\Manage\Index.cshtml:28
+#: Views\Shared\_NavBar2.cshtml:18
+msgid "Service Providers"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Account\SessionExpired.cshtml:3
+#: Views\Account\SessionExpired.cshtml:3
+msgid "Session Expired"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Index.cshtml:63
+#: Areas\Organizations\Views\Users\Password.cshtml:4
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:63
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Password.cshtml:4
+msgid "Set Password"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Password.cshtml:7
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Password.cshtml:7
+msgid "Set Password for "
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Account\SignIn.cshtml:3
+#: obj\Release\Package\PackageTmp\Views\Account\SignIn.cshtml:6
+#: obj\Release\Package\PackageTmp\Views\Account\SignIn.cshtml:26
+#: obj\Release\Package\PackageTmp\Views\Shared\_SignInOut.cshtml:14
+#: Views\Account\SignIn.cshtml:3
+#: Views\Account\SignIn.cshtml:6
+#: Views\Account\SignIn.cshtml:26
+#: Views\Shared\_SignInOut.cshtml:14
+msgid "Sign In"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_SignInOut.cshtml:8
+#: Views\Shared\_SignInOut.cshtml:8
+msgid "Sign Out"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_SignInOut.cshtml:7
+#: Views\Shared\_SignInOut.cshtml:7
+msgid "Signed in as"
+msgstr ""
+
+#: Areas\Organizations\Controllers\SiteController.cs:71
+msgid "Site %0 saved successfully"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\EditSite.cshtml:8
+#: Areas\Organizations\Views\Site\View.cshtml:11
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Customer\EditSite.cshtml:8
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Site\View.cshtml:11
+msgid "Site Details"
+msgstr ""
+
+#: Areas\Organizations\Views\Site\Index.cshtml:3
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Site\Index.cshtml:3
+msgid "Site Details For Customer"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Sites.cshtml:8
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Sites.cshtml:8
+#: obj\Release\Package\PackageTmp\Views\Shared\_NavBar2.cshtml:28
+#: Views\Shared\_NavBar2.cshtml:28
+msgid "Sites"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:33
+msgid "Special Conditions"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:33
+msgid "Special Conditions of Schedule"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:22
+msgid "Start Date"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Certificate\CertificateEditViewModel.cs:22
+msgid "Start Date of the Certificate"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:38
+msgid "Subject to SAT"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:86
+msgid "Survey Recorder"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:87
+msgid "Temperature Logger"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:88
+msgid "Temperature Transmitter"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:35
+msgid "Test Equipment"
+msgstr ""
+
+#: Attributes\StringLengthI18nAttribute.cs:11
+msgid "The %0 must be between %2 and %1 characters long."
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:8
+#: Views\Shared\_Personas.cshtml:8
+msgid "The following accounts have been created to allow you to use the EOS system in the guise of a user. The user you pick will control what you can see and what you can do."
+msgstr ""
+
+#: App_GlobalResources\Validation.Designer.cs:64
+msgid "The value (%0) is not valid."
+msgstr ""
+
+#: Areas\Organizations\Controllers\CertificateController.cs:99
+msgid "There was an issue downloading certificate %0 "
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:89
+msgid "Thickness Gauge"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:90
+msgid "Timer"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\User\Index.cshtml:4
+#: Views\User\Index.cshtml:4
+msgid "title"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:91
+msgid "Tooth Depth Gauge"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:92
+msgid "Torque"
+msgstr ""
+
+#: C:\Development\EOS\trunk\EOS2\EOS2.Model\Enums\ScheduleType.cs:13
+#: locale\AdditionalTranslations.poa:109
+msgid "TUS"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\CertificateViewModel.cs:20
+#: Areas\Organizations\ViewModels\Common\Equipment.cs:13
+#: Areas\Organizations\ViewModels\Common\EquipmentViewModel.cs:13
+#: Areas\Organizations\ViewModels\Common\Instrument.cs:13
+#: Areas\Organizations\ViewModels\Common\InstrumentViewModel.cs:17
+#: Areas\Organizations\ViewModels\Common\Schedule.cs:16
+#: Areas\Organizations\ViewModels\Common\ScheduleViewModel.cs:16
+#: Areas\Organizations\ViewModels\Shared\CertificateViewModel.cs:19
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:13
+#: Areas\Organizations\ViewModels\Shared\EquipmentViewModel.cs:13
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:13
+#: Areas\Organizations\ViewModels\Shared\InstrumentViewModel.cs:17
+#: Areas\Organizations\ViewModels\Shared\Schedule.cs:16
+#: Areas\Organizations\ViewModels\Shared\ScheduleViewModel.cs:16
+msgid "Type"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\InstrumentChannels\ChannelsViewModel.cs:20
+msgid "Type of Channel"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\Equipment.cs:13
+#: Areas\Organizations\ViewModels\Common\EquipmentViewModel.cs:13
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:41
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:13
+#: Areas\Organizations\ViewModels\Shared\EquipmentViewModel.cs:13
+msgid "Type of Equipment"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Common\Instrument.cs:13
+#: Areas\Organizations\ViewModels\Common\InstrumentViewModel.cs:17
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:32
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:13
+#: Areas\Organizations\ViewModels\Shared\InstrumentViewModel.cs:17
+msgid "Type of Instrument"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Schedule\ScheduleEditViewModel.cs:39
+msgid "Type of Schedule"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:71
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:71
+msgid "Upload"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Certificates.cshtml:9
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Certificates.cshtml:9
+msgid "Upload Certificate"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\User\Index.cshtml:8
+#: Views\User\Index.cshtml:8
+msgid "USER INDEX PAGE"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:16
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:24
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:32
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:40
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:48
+#: obj\Release\Package\PackageTmp\Views\Shared\_Personas.cshtml:56
+#: Views\Shared\_Personas.cshtml:16
+#: Views\Shared\_Personas.cshtml:24
+#: Views\Shared\_Personas.cshtml:32
+#: Views\Shared\_Personas.cshtml:40
+#: Views\Shared\_Personas.cshtml:48
+#: Views\Shared\_Personas.cshtml:56
+msgid "User Login"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:12
+#: Areas\Organizations\Views\Users\Index.cshtml:41
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:41
+#: ViewModels\Account\SignInViewModel.cs:7
+msgid "User Name"
+msgstr ""
+
+#: Areas\Organizations\Controllers\UsersController.cs:135
+msgid "User saved successfully"
+msgstr ""
+
+#: Areas\Organizations\Controllers\UsersController.cs:164
+msgid "User Updated successfully"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Index.cshtml:12
+#: Areas\Organizations\Views\Users\Index.cshtml:13
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:12
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Users\Index.cshtml:13
+#: obj\Release\Package\PackageTmp\Views\Shared\_NavBar2.cshtml:33
+#: Views\Shared\_NavBar2.cshtml:33
+msgid "Users"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:34
+msgid "Users Email Address"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:12
+msgid "Users Logon Name"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:17
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:23
+msgid "Users Logon Password"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:23
+msgid "Users Middle Name or Intial/s"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:46
+msgid "Users Phone Number"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:36
+msgid "Vacuum Furnace"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:93
+msgid "Vacuum Gauge"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:94
+msgid "Vacuum Transmitter"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:95
+msgid "Vernier Caliper"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:96
+msgid "Vernier Height"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Certificates.cshtml:52
+#: Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:58
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Certificates.cshtml:52
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_CertificateUpload.cshtml:58
+msgid "View PDF"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:3
+msgid "Weekly"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:97
+msgid "Weights"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:19
+#: Views\Home\Index.cshtml:19
+msgid "Welcome"
+msgstr ""
+
+#: Areas\Organizations\Builders\Customer\CertificateEditViewModelBuilder.cs:35
+#: Areas\Organizations\Builders\ServiceProvider\ServiceProviderViewModelBuilder.cs:33
+#: Areas\Organizations\Builders\Users\UsersForOrganizationTypeListViewModelBuilder.cs:49
+msgid "wrong criteria type"
+msgstr ""
+
+#: locale\AdditionalTranslations.poa:10
+msgid "Yearly"
+msgstr ""
+
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:130
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:130
+msgid "You are missing some required values, please complete and try again"
+msgstr ""
+
+#: Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:69
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\InstrumentChannels\_Channels.cshtml:69
+msgid "You must enter the number of channels on the instrument, what type of channels to create, the name of the equipment the channels are connected to (if any) and the initial scheduling frequency"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Account\SessionExpired.cshtml:6
+#: Views\Account\SessionExpired.cshtml:6
+msgid "Your Session has Expired"
+msgstr ""
+
+#: obj\Release\Package\PackageTmp\Views\Account\SessionExpired.cshtml:11
+#: Views\Account\SessionExpired.cshtml:11
+msgid "Your session has expired. If you want to keep using the site you will need to log back in"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:26
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:24
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:26
+#: Areas\Organizations\ViewModels\Site\CustomerSiteEditViewModel.cs:27
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:21
+#: Areas\Organizations\Views\Shared\_Sites.cshtml:28
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Organizations.cshtml:21
+#: obj\Release\Package\PackageTmp\Areas\Organizations\Views\Shared\_Sites.cshtml:28
+msgid "ZIP Code"
+msgstr ""
+
+#~ msgid "A Customer with that name already Exists."
+#~ msgstr ""
+
+#~ msgid "A Furnace Class with that Name already exists for this Equipment."
+#~ msgstr ""
+
+#~ msgid "Account Expired - %0"
+#~ msgstr ""
+
+#~ msgid "Account Locked - %0"
+#~ msgstr ""
+
+#~ msgid "Add Customer Organization"
+#~ msgstr ""
+
+#~ msgid "Add Furnace Class"
+#~ msgstr ""
+
+#~ msgid ""
+"An Instrument with that Serial Number already exists.[[[", new[] { "SerialNumber" });\n"
+"                "
+#~ msgstr ""
+
+#~ msgid "Attach Selected Equipment"
+#~ msgstr ""
+
+#~ msgid "Attach Selected Instrument"
+#~ msgstr ""
+
+#~ msgid "Certificates"
+#~ msgstr ""
+
+#~ msgid "Customer Organization Details"
+#~ msgstr ""
+
+#~ msgid "Customer Organizations"
+#~ msgstr ""
+
+#~ msgid "Description of Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Emails addresses do not match"
+#~ msgstr ""
+
+#~ msgid "End Date must be supplied"
+#~ msgstr ""
+
+#~ msgid "Engineer Man Days of TUS for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Equipment %0 detached successfully"
+#~ msgstr ""
+
+#~ msgid "Equipment attached successfully"
+#~ msgstr ""
+
+#~ msgid "File cannot be larger than "
+#~ msgstr ""
+
+#~ msgid "File must be of type: "
+#~ msgstr ""
+
+#~ msgid "Frequency of SAT for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Frequency of TUS for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Furnace Class %0 saved successfully"
+#~ msgstr ""
+
+#~ msgid "Furnace Class Class"
+#~ msgstr ""
+
+#~ msgid "Furnace Class Details"
+#~ msgstr ""
+
+#~ msgid "Furnace Classes"
+#~ msgstr ""
+
+#~ msgid "Instrument %0 detached successfully"
+#~ msgstr ""
+
+#~ msgid "Instrument attached successfully"
+#~ msgstr ""
+
+#~ msgid "Invalid URI"
+#~ msgstr ""
+
+#~ msgid "Name of Furnace Class"
+#~ msgstr ""
+
+#~ msgid "New Customer Organization"
+#~ msgstr ""
+
+#~ msgid "New Furnace Class"
+#~ msgstr ""
+
+#~ msgid ""
+"Please enter a Certificate Number")]\n"
+"        [Display(Name = "[[[Certificate Number"
+#~ msgstr ""
+
+#~ msgid "Please enter a log in UserName for the user"
+#~ msgstr ""
+
+#~ msgid "Please enter the name for your furnace class"
+#~ msgstr ""
+
+#~ msgid "Please enter the Postal Code of your main site"
+#~ msgstr ""
+
+#~ msgid "Please Select"
+#~ msgstr ""
+
+#~ msgid "Please Select ... "
+#~ msgstr ""
+
+#~ msgid ""
+"Please Select ... ", new { @class = "form-control" })\n"
+"                    @Html.ValidationMessageFor(m => m.Type)\n"
+"                </div>\n"
+"            }\n"
+"            <div class="form-group">\n"
+"                @Html.LabelFor(m => m.CertificateNumber)\n"
+"                @Html.TextBoxFor(m => m.CertificateNumber, new { @class = "form-control" })\n"
+"                @Html.ValidationMessageFor(m => m.CertificateNumber)\n"
+"            </div>\n"
+"            <div class="form-group">\n"
+"                @Html.LabelFor(m => m.StartDate)\n"
+"                @Html.TextBox("StartDate",  Model.StartDate.HasValue ? Convert.ToDateTime(Model.StartDate).ToShortDateString() : "", new { @class = "form-control" })\n"
+"                @Html.ValidationMessageFor(m => m.StartDate)\n"
+"            </div>\n"
+"            <div class="form-group">\n"
+"                @Html.LabelFor(m => m.EndDate)\n"
+"                @Html.TextBox("EndDate",  Model.EndDate.HasValue ? Convert.ToDateTime(Model.EndDate).ToShortDateString() : "", new { @class = "form-control" })\n"
+"                @Html.ValidationMessageFor(m => m.EndDate)\n"
+"            </div>\n"
+"            <div class="form-group">\n"
+"                @Html.LabelFor(m => m.Certificate)\n"
+"                <input type="file" name="cert" class="form-control" />\n"
+"                @Html.ValidationMessageFor(m => m.Certificate)\n"
+"            </div>\n"
+"            <button type="submit" class="btn btn-primary">[[[Upload"
+#~ msgstr ""
+
+#~ msgid ""
+"Please Select ... ", new { @class = "form-control" })\n"
+"                @Html.ValidationMessageFor(m => m.Type)\n"
+"            </div>\n"
+"            <div class="form-group">\n"
+"                @Html.LabelFor(m => m.CertificateNumber)\n"
+"                @Html.TextBoxFor(m => m.CertificateNumber, new { @class = "form-control" })\n"
+"                @Html.ValidationMessageFor(m => m.CertificateNumber)\n"
+"            </div>\n"
+"            <div class="form-group">\n"
+"                @Html.LabelFor(m => m.StartDate)\n"
+"                @Html.TextBox("StartDate",  Model.StartDate.HasValue ? Convert.ToDateTime(Model.StartDate).ToShortDateString() : "", new { @class = "form-control" })\n"
+"                @Html.ValidationMessageFor(m => m.StartDate)\n"
+"            </div>\n"
+"            <div class="form-group">\n"
+"                @Html.LabelFor(m => m.EndDate)\n"
+"                @Html.TextBox("EndDate",  Model.EndDate.HasValue ? Convert.ToDateTime(Model.EndDate).ToShortDateString() : "", new { @class = "form-control" })\n"
+"                @Html.ValidationMessageFor(m => m.EndDate)\n"
+"            </div>\n"
+"            <div class="form-group">\n"
+"                @Html.LabelFor(m => m.Certificate)\n"
+"                <input type="file" name="cert" class="form-control" />\n"
+"                @Html.ValidationMessageFor(m => m.Certificate)\n"
+"            </div>\n"
+"            <button type="submit" class="btn btn-primary">[[[Upload"
+#~ msgstr ""
+
+#~ msgid "Please select a type"
+#~ msgstr ""
+
+#~ msgid "Postal Code"
+#~ msgstr ""
+
+#~ msgid "SAT Frequency"
+#~ msgstr ""
+
+#~ msgid "SAT Special Conditions"
+#~ msgstr ""
+
+#~ msgid "SignIn Failed - %0"
+#~ msgstr ""
+
+#~ msgid "Special Conditions of SAT for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Special Conditions of TUS for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Start Date must be supplied"
+#~ msgstr ""
+
+#~ msgid "Sync Date of TUS for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "The {0} must be between {2} and {1} characters long."
+#~ msgstr ""
+
+#~ msgid "The language code %0 is not supported."
+#~ msgstr ""
+
+#~ msgid "The requested certificate could not be found."
+#~ msgstr ""
+
+#~ msgid "The requested certificate has not been stored in EOS."
+#~ msgstr ""
+
+#~ msgid "TUS Engineer Man Days"
+#~ msgstr ""
+
+#~ msgid "TUS Frequency"
+#~ msgstr ""
+
+#~ msgid "TUS Special Conditions"
+#~ msgstr ""
+
+#~ msgid "TUS Sync Date"
+#~ msgstr ""
+
+#~ msgid "TUS Sync Date must be supplied"
+#~ msgstr ""
+
+#~ msgid "Unknown Account - %0"
+#~ msgstr ""
+
+#~ msgid "View"
+#~ msgstr ""
+
+#~ msgid "Zip Code"
+#~ msgstr ""
+

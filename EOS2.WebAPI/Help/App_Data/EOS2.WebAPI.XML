@@ -1,0 +1,1167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EOS2.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:EOS2.WebAPI.App_Start.UnityWebApiActivator">
+            <summary>Provides the bootstrapping for integrating Unity with WebApi when it is hosted in ASP.NET</summary>
+        </member>
+        <member name="M:EOS2.WebAPI.App_Start.UnityWebApiActivator.Start">
+            <summary>Integrates Unity when the application starts.</summary>
+        </member>
+        <member name="M:EOS2.WebAPI.App_Start.UnityWebApiActivator.Shutdown">
+            <summary>Disposes the Unity container when the application is shut down.</summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.ApiDescriptionExtensions.GetFriendlyId(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Generates an URI-friendly ID for the <see cref="T:System.Web.Http.Description.ApiDescription"/>. E.g. "Get-Values-id_name" instead of "GetValues/{id}?name={name}"
+            </summary>
+            <param name="description">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The ID as a string.</returns>
+        </member>
+        <member name="T:EOS2.WebAPI.Areas.Help.HelpConfig">
+            <summary>
+            Use this class to customize the Help Page.
+            For example you can set a custom <see cref="T:System.Web.Http.Description.IDocumentationProvider"/> to supply the documentation
+            or you can provide the samples for the requests/responses.
+            </summary>
+        </member>
+        <member name="T:EOS2.WebAPI.Areas.Help.Controllers.HelpController">
+            <summary>
+            The controller that will handle requests for the help page.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetDocumentationProvider(System.Web.Http.HttpConfiguration,System.Web.Http.Description.IDocumentationProvider)">
+            <summary>
+            Sets the documentation provider for help page.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="documentationProvider">The documentation provider.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetSampleObjects(System.Web.Http.HttpConfiguration,System.Collections.Generic.IDictionary{System.Type,System.Object})">
+            <summary>
+            Sets the objects that will be used by the formatters to produce sample requests/responses.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sampleObjects">The sample objects.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetSampleRequest(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String)">
+            <summary>
+            Sets the sample request directly for the specified media type and action.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample request.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetSampleRequest(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String,System.String[])">
+            <summary>
+            Sets the sample request directly for the specified media type and action with parameters.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample request.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetSampleResponse(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String)">
+            <summary>
+            Sets the sample request directly for the specified media type of the action.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample response.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetSampleResponse(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String,System.String[])">
+            <summary>
+            Sets the sample response directly for the specified media type of the action with specific parameters.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample response.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetSampleForMediaType(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Sets the sample directly for all actions with the specified media type.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample.</param>
+            <param name="mediaType">The media type.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetSampleForType(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.Type)">
+            <summary>
+            Sets the sample directly for all actions with the specified type and media type.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="type">The parameter type or return type of an action.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetActualRequestType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String)">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate request samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetActualRequestType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String,System.String[])">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate request samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetActualResponseType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String)">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> returned as part of the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate response samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetActualResponseType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String,System.String[])">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> returned as part of the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate response samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.GetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Gets the help page sample generator.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <returns>The help page sample generator.</returns>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.SetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration,EOS2.Web.Areas.Help.HelpPageSampleGenerator)">
+            <summary>
+            Sets the help page sample generator.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sampleGenerator">The help page sample generator.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.GetModelDescriptionGenerator(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Gets the model description generator.
+            </summary>
+            <param name="config">The configuration.</param>
+            <returns>The <see cref="T:EOS2.Web.Areas.Help.ModelDescriptions.ModelDescriptionGenerator"/></returns>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.HelpPageConfigurationExtensions.GetHelpPageApiModel(System.Web.Http.HttpConfiguration,System.String)">
+            <summary>
+            Gets the model that represents an API displayed on the help page. The model is initialized on the first call and cached for subsequent calls.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="apiDescriptionId">The <see cref="T:System.Web.Http.Description.ApiDescription"/> ID.</param>
+            <returns>
+            An <see cref="T:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel"/>
+            </returns>
+        </member>
+        <member name="T:EOS2.Web.Areas.Help.ModelDescriptions.ModelDescription">
+            <summary>
+            Describes a type model.
+            </summary>
+        </member>
+        <member name="T:EOS2.Web.Areas.Help.ModelDescriptions.ModelDescriptionGenerator">
+            <summary>
+            Generates model descriptions for given types.
+            </summary>
+        </member>
+        <member name="T:EOS2.Web.Areas.Help.ModelDescriptions.ModelNameAttribute">
+            <summary>
+            Use this attribute to change the name of the <see cref="T:EOS2.Web.Areas.Help.ModelDescriptions.ModelDescription"/> generated for a type.
+            </summary>
+        </member>
+        <member name="T:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel">
+            <summary>
+            The model that represents an API displayed on the help page.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel"/> class.
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.ApiDescription">
+            <summary>
+            Gets or sets the <see cref="P:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.ApiDescription"/> that describes the API.
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.UriParameters">
+            <summary>
+            Gets or sets the <see cref="T:EOS2.Web.Areas.Help.ModelDescriptions.ParameterDescription"/> collection that describes the URI parameters for the API.
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.RequestDocumentation">
+            <summary>
+            Gets or sets the documentation for the request.
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.RequestModelDescription">
+            <summary>
+            Gets or sets the <see cref="T:EOS2.Web.Areas.Help.ModelDescriptions.ModelDescription"/> that describes the request body.
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.RequestBodyParameters">
+            <summary>
+            Gets the request body parameter descriptions.
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.ResourceDescription">
+            <summary>
+            Gets or sets the <see cref="T:EOS2.Web.Areas.Help.ModelDescriptions.ModelDescription"/> that describes the resource.
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.ResourceProperties">
+            <summary>
+            Gets the resource property descriptions.
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.SampleRequests">
+            <summary>
+            Gets the sample requests associated with the API.
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.SampleResponses">
+            <summary>
+            Gets the sample responses associated with the API.
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Areas.Help.Models.HelpPageApiModel.ErrorMessages">
+            <summary>
+            Gets the error messages associated with this model.
+            </summary>
+        </member>
+        <member name="T:EOS2.Web.Areas.Help.HelpPageSampleGenerator">
+            <summary>
+            This class will generate the samples for the help page.
+            </summary>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleGenerator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EOS2.Web.Areas.Help.HelpPageSampleGenerator"/> class.
+            </summary>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleGenerator.GetSampleRequests(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the request body samples for a given <see cref="T:System.Web.Http.Description.ApiDescription"/>.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleGenerator.GetSampleResponses(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the response body samples for a given <see cref="T:System.Web.Http.Description.ApiDescription"/>.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleGenerator.GetSample(System.Web.Http.Description.ApiDescription,EOS2.Web.Areas.Help.SampleDirection)">
+            <summary>
+            Gets the request or response body samples.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or for a response.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleGenerator.GetActionSample(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Type,System.Net.Http.Formatting.MediaTypeFormatter,System.Net.Http.Headers.MediaTypeHeaderValue,EOS2.Web.Areas.Help.SampleDirection)">
+            <summary>
+            Search for samples that are provided directly through <see cref="P:EOS2.Web.Areas.Help.HelpPageSampleGenerator.ActionSamples"/>.
+            </summary>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+            <param name="type">The CLR type.</param>
+            <param name="formatter">The formatter.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or for a response.</param>
+            <returns>The sample that matches the parameters.</returns>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleGenerator.GetSampleObject(System.Type)">
+            <summary>
+            Gets the sample object that will be serialized by the formatters. 
+            First, it will look at the <see cref="P:EOS2.Web.Areas.Help.HelpPageSampleGenerator.SampleObjects"/>. If no sample object is found, it will try to create
+            one using <see cref="M:EOS2.Web.Areas.Help.HelpPageSampleGenerator.DefaultSampleObjectFactory(EOS2.Web.Areas.Help.HelpPageSampleGenerator,System.Type)"/> (which wraps an <see cref="T:EOS2.Web.Areas.Help.ObjectGenerator"/>) and other
+            factories in <see cref="P:EOS2.Web.Areas.Help.HelpPageSampleGenerator.SampleObjectFactories"/>.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The sample object.</returns>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleGenerator.ResolveHttpRequestMessageType(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Resolves the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The type.</returns>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleGenerator.ResolveType(System.Web.Http.Description.ApiDescription,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},EOS2.Web.Areas.Help.SampleDirection,System.Collections.ObjectModel.Collection{System.Net.Http.Formatting.MediaTypeFormatter}@)">
+            <summary>
+            Resolves the type of the action parameter or return value when <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/> is used.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or a response.</param>
+            <param name="formatters">The formatters.</param>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleGenerator.WriteSampleObjectUsingFormatter(System.Net.Http.Formatting.MediaTypeFormatter,System.Object,System.Type,System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Writes the sample object using formatter.
+            </summary>
+            <param name="formatter">The formatter.</param>
+            <param name="value">The value.</param>
+            <param name="type">The type.</param>
+            <param name="mediaType">Type of the media.</param>
+            <returns></returns>
+        </member>
+        <member name="P:EOS2.Web.Areas.Help.HelpPageSampleGenerator.ActualHttpMessageTypes">
+            <summary>
+            Gets CLR types that are used as the content of <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/>.
+            </summary>
+        </member>
+        <member name="P:EOS2.Web.Areas.Help.HelpPageSampleGenerator.ActionSamples">
+            <summary>
+            Gets the objects that are used directly as samples for certain actions.
+            </summary>
+        </member>
+        <member name="P:EOS2.Web.Areas.Help.HelpPageSampleGenerator.SampleObjects">
+            <summary>
+            Gets the objects that are serialized as samples by the supported formatters.
+            </summary>
+        </member>
+        <member name="P:EOS2.Web.Areas.Help.HelpPageSampleGenerator.SampleObjectFactories">
+            <summary>
+            Gets factories for the objects that the supported formatters will serialize as samples. Processed in order,
+            stopping when the factory successfully returns a non-<see langref="null"/> object.
+            </summary>
+            <remarks>
+            Collection includes just <see cref="M:EOS2.Web.Areas.Help.ObjectGenerator.GenerateObject(System.Type)"/> initially. Use
+            <code>SampleObjectFactories.Insert(0, func)</code> to provide an override and
+            <code>SampleObjectFactories.Add(func)</code> to provide a fallback.</remarks>
+        </member>
+        <member name="T:EOS2.Web.Areas.Help.HelpPageSampleKey">
+            <summary>
+            This is used to identify the place where the sample should be applied.
+            </summary>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Creates a new <see cref="T:EOS2.Web.Areas.Help.HelpPageSampleKey"/> based on media type.
+            </summary>
+            <param name="mediaType">The media type.</param>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,System.Type)">
+            <summary>
+            Creates a new <see cref="T:EOS2.Web.Areas.Help.HelpPageSampleKey"/> based on media type and CLR type.
+            </summary>
+            <param name="mediaType">The media type.</param>
+            <param name="type">The CLR type.</param>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleKey.#ctor(EOS2.Web.Areas.Help.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new <see cref="T:EOS2.Web.Areas.Help.HelpPageSampleKey"/> based on <see cref="P:EOS2.Web.Areas.Help.HelpPageSampleKey.SampleDirection"/>, controller name, action name and parameter names.
+            </summary>
+            <param name="sampleDirection">The <see cref="P:EOS2.Web.Areas.Help.HelpPageSampleKey.SampleDirection"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,EOS2.Web.Areas.Help.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new <see cref="T:EOS2.Web.Areas.Help.HelpPageSampleKey"/> based on media type, <see cref="P:EOS2.Web.Areas.Help.HelpPageSampleKey.SampleDirection"/>, controller name, action name and parameter names.
+            </summary>
+            <param name="mediaType">The media type.</param>
+            <param name="sampleDirection">The <see cref="P:EOS2.Web.Areas.Help.HelpPageSampleKey.SampleDirection"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="P:EOS2.Web.Areas.Help.HelpPageSampleKey.ControllerName">
+            <summary>
+            Gets the name of the controller.
+            </summary>
+            <value>
+            The name of the controller.
+            </value>
+        </member>
+        <member name="P:EOS2.Web.Areas.Help.HelpPageSampleKey.ActionName">
+            <summary>
+            Gets the name of the action.
+            </summary>
+            <value>
+            The name of the action.
+            </value>
+        </member>
+        <member name="P:EOS2.Web.Areas.Help.HelpPageSampleKey.MediaType">
+            <summary>
+            Gets the media type.
+            </summary>
+            <value>
+            The media type.
+            </value>
+        </member>
+        <member name="P:EOS2.Web.Areas.Help.HelpPageSampleKey.ParameterNames">
+            <summary>
+            Gets the parameter names.
+            </summary>
+        </member>
+        <member name="P:EOS2.Web.Areas.Help.HelpPageSampleKey.SampleDirection">
+            <summary>
+            Gets the <see cref="P:EOS2.Web.Areas.Help.HelpPageSampleKey.SampleDirection"/>.
+            </summary>
+        </member>
+        <member name="T:EOS2.Web.Areas.Help.ImageSample">
+            <summary>
+            This represents an image sample on the help page. There's a display template named ImageSample associated with this class.
+            </summary>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.ImageSample.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EOS2.Web.Areas.Help.ImageSample"/> class.
+            </summary>
+            <param name="source">The URL of an image.</param>
+        </member>
+        <member name="T:EOS2.Web.Areas.Help.InvalidSample">
+            <summary>
+            This represents an invalid sample on the help page. There's a display template named InvalidSample associated with this class.
+            </summary>
+        </member>
+        <member name="T:EOS2.Web.Areas.Help.ObjectGenerator">
+            <summary>
+            This class will create an object of a given type and populate it with sample data.
+            </summary>
+        </member>
+        <member name="M:EOS2.Web.Areas.Help.ObjectGenerator.GenerateObject(System.Type)">
+            <summary>
+            Generates an object for a given type. The type needs to be public, have a public default constructor and settable public properties/fields. Currently it supports the following types:
+            Simple types: <see cref="T:System.Int32"/>, <see cref="T:System.String"/>, <see cref="T:System.Enum"/>, <see cref="T:System.DateTime"/>, <see cref="T:System.Uri"/>, etc.
+            Complex types: POCO types.
+            Nullables: <see cref="T:System.Nullable`1"/>.
+            Arrays: arrays of simple types or complex types.
+            Key value pairs: <see cref="T:System.Collections.Generic.KeyValuePair`2"/>
+            Tuples: <see cref="T:System.Tuple`1"/>, <see cref="T:System.Tuple`2"/>, etc
+            Dictionaries: <see cref="T:System.Collections.Generic.IDictionary`2"/> or anything deriving from <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            Collections: <see cref="T:System.Collections.Generic.IList`1"/>, <see cref="T:System.Collections.Generic.IEnumerable`1"/>, <see cref="T:System.Collections.Generic.ICollection`1"/>, <see cref="T:System.Collections.IList"/>, <see cref="T:System.Collections.IEnumerable"/>, <see cref="T:System.Collections.ICollection"/> or anything deriving from <see cref="T:System.Collections.Generic.ICollection`1"/> or <see cref="T:System.Collections.IList"/>.
+            Queryables: <see cref="T:System.Linq.IQueryable"/>, <see cref="T:System.Linq.IQueryable`1"/>.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>An object of the given type.</returns>
+        </member>
+        <member name="T:EOS2.Web.Areas.Help.SampleDirection">
+            <summary>
+            Indicates whether the sample is used for request or response
+            </summary>
+        </member>
+        <member name="T:EOS2.Web.Areas.Help.TextSample">
+            <summary>
+            This represents a preformatted text sample on the help page. There's a display template named TextSample associated with this class.
+            </summary>
+        </member>
+        <member name="T:EOS2.WebAPI.Areas.Help.XmlDocumentationProvider">
+            <summary>
+            A custom <see cref="T:System.Web.Http.Description.IDocumentationProvider"/> that reads the API documentation from an XML documentation file.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Areas.Help.XmlDocumentationProvider.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EOS2.WebAPI.Areas.Help.XmlDocumentationProvider"/> class.
+            </summary>
+            <param name="documentPath">The physical path to XML document.</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ChannelController.Get">
+            <summary>
+            Gets you a list of Channels.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ChannelController.GetByInstrument(System.Int32)">
+            <summary>
+            Gets you a list of Channels by InstrumentId.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ChannelController.GetByEquipment(System.Int32)">
+            <summary>
+            Gets you a list of Channels by EquipmentId.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ChannelController.Get(System.Int32)">
+            <summary>
+            Gets an indiviual Channel by Id
+            </summary>
+            <param name="id">Unique Identifier for Channel</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ChannelController.Post(EOS2.WebAPI.Models.Channel)">
+            <summary>
+            Create a new Channel
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ChannelController.Put(System.Int32,EOS2.WebAPI.Models.Channel)">
+            <summary>
+            Replace an existing Channel.
+            </summary>
+            <param name="id">Unique Identifier for Channel</param>
+            <param name="channel">The Channel to store</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ChannelController.Patch(System.Int32,System.Web.Http.OData.Delta{EOS2.WebAPI.Models.Channel})">
+            <summary>
+            Update an existing Channel.
+            </summary>
+            <param name="id">Unique Identifier for Channel</param>
+            <param name="channel">The items to update</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ChannelController.Delete(System.Int32)">
+            <summary>
+            Delete an existing Channel by Id.
+            </summary>
+            <param name="id">Unique Identifier for Channel</param>
+        </member>
+        <member name="T:EOS2.WebAPI.Controllers.EquipmentController">
+            <summary>
+            Retrieve and maintain Equipment details. 
+            Examples of Equipment - Furnace, Oven, Quench Bath 
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.EquipmentController.Get">
+            <summary>
+            Gets you a list of Equipment.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.EquipmentController.GetForPlantArea2(System.Int32)">
+            <summary>
+            Gets you a list of Equipment within a Plant Area.
+            </summary>
+            <param name="plantAreaId">Unique Identifier for Plant Area</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.EquipmentController.Get(System.Int32)">
+            <summary>
+            Gets an indiviual piece of Equipment by Id
+            </summary>
+            <param name="id">Unique Identifier for Equipment</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.EquipmentController.Post(EOS2.WebAPI.Models.Equipment)">
+            <summary>
+            Create a new piece of Equipment
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.EquipmentController.Put(System.Int32,EOS2.WebAPI.Models.Equipment)">
+            <summary>
+            Replace an existing piece of Equipment.
+            </summary>
+            <param name="id">Unique Identifier for Equipment</param>
+            <param name="equipment">The Equipment to store</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.EquipmentController.Patch(System.Int32,System.Web.Http.OData.Delta{EOS2.WebAPI.Models.Equipment})">
+            <summary>
+            Update an existing piece of Equipment.
+            </summary>
+            <param name="id">Unique Identifier for Equipment</param>
+            <param name="equipment">The items to update</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.EquipmentController.Delete(System.Int32)">
+            <summary>
+            Delete an existing piece of Equipment by Id.
+            </summary>
+            <param name="id">Unique Identifier for Equipment</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.EventController.Get">
+            <summary>
+            Gets you a list of Events.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.EventController.Get(System.Int32)">
+            <summary>
+            Gets an indiviual Event by Id
+            </summary>
+            <param name="id">Unique Identifier for an Event</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.InstrumentController.Get">
+            <summary>
+            Gets you a list of Instruments.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.InstrumentController.GetForPlantArea(System.Int32)">
+            <summary>
+            Gets you a list of Instruments within a Plant Area.
+            </summary>
+            <param name="plantAreaId">Unique Identifier for Plant Area</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.InstrumentController.Get(System.Int32)">
+            <summary>
+            Gets an indiviual Instrument by Id
+            </summary>
+            <param name="id">Unique Identifier for Instrument</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.InstrumentController.Post(EOS2.WebAPI.Models.Instrument)">
+            <summary>
+            Create a new Instrument
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.InstrumentController.Put(System.Int32,EOS2.WebAPI.Models.Instrument)">
+            <summary>
+            Replace an existing Instrument.
+            </summary>
+            <param name="id">Unique Identifier for Instrument</param>
+            <param name="instrument">The instrument to store</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.InstrumentController.Patch(System.Int32,System.Web.Http.OData.Delta{EOS2.WebAPI.Models.Instrument})">
+            <summary>
+            Update an existing Instrument.
+            </summary>
+            <param name="id">Unique Identifier for Instrument</param>
+            <param name="instrument">The items to update</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.InstrumentController.Delete(System.Int32)">
+            <summary>
+            Delete an existing Instrument by Id.
+            </summary>
+            <param name="id">Unique Identifier for Instrument</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.OrganizationController.Get">
+            <summary>
+            Gets you a list of Customers.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.OrganizationController.Get(System.Int32)">
+            <summary>
+            Gets an indiviual Customer by Id
+            </summary>
+            <param name="id">Unique Identifier for Customer</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.OrganizationController.Post(EOS2.WebAPI.Models.Organization)">
+            <summary>
+            Create a new Customer
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.OrganizationController.Put(System.Int32,EOS2.WebAPI.Models.Organization)">
+            <summary>
+            Replace an existing Customer.
+            </summary>
+            <param name="id">Unique Identifier for Customer</param>
+            <param name="customer">The Customer to store</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.OrganizationController.Patch(System.Int32,System.Web.Http.OData.Delta{EOS2.WebAPI.Models.Organization})">
+            <summary>
+            Update an existing Customer.
+            </summary>
+            <param name="id">Unique Identifier for Customer</param>
+            <param name="customer">The items to update</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.OrganizationController.Delete(System.Int32)">
+            <summary>
+            Delete an existing Customer by Id.
+            </summary>
+            <param name="id">Unique Identifier for Customer</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.PlantAreaController.Get">
+            <summary>
+            Gets you a list of Plant Areas.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.PlantAreaController.GetForSite(System.Int32)">
+            <summary>
+            Gets you a list of Plant Areas within a Site.
+            </summary>
+            <param name="siteId">Unique Identifier for Site</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.PlantAreaController.Get(System.Int32)">
+            <summary>
+            Gets an indiviual Plant Area by Id
+            </summary>
+            <param name="id">Unique Identifier for Plant Area</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.PlantAreaController.Post(EOS2.WebAPI.Models.PlantArea)">
+            <summary>
+            Create a new Plant Area
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.PlantAreaController.Put(System.Int32,EOS2.WebAPI.Models.PlantArea)">
+            <summary>
+            Replace an existing Plant Area.
+            </summary>
+            <param name="id">Unique Identifier for Equipment</param>
+            <param name="plantArea">The Plant Area to store</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.PlantAreaController.Patch(System.Int32,System.Web.Http.OData.Delta{EOS2.WebAPI.Models.PlantArea})">
+            <summary>
+            Update an existing Plant Area.
+            </summary>
+            <param name="id">Unique Identifier for Plant Area</param>
+            <param name="plantArea">The items to update</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.PlantAreaController.Delete(System.Int32)">
+            <summary>
+            Delete an existing piece of Equipment by Id.
+            </summary>
+            <param name="id">Unique Identifier for Equipment</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ReferenceDataController.Get">
+            <summary>
+            Gets all the Reference Data in one hit.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ReferenceDataController.GetInstrumentTypes">
+            <summary>
+            Gets the list of Instrument Types.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ReferenceDataController.GetEquipmentTypes">
+            <summary>
+            Gets the list of Equipment Types.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ReferenceDataController.GetChannelTypes">
+            <summary>
+            Gets the list of Channel Types.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ReferenceDataController.GetCertificateTypes">
+            <summary>
+            Gets the list of Certificate Types.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.ReferenceDataController.GetCalibrationFrequencies">
+            <summary>
+            Gets the list of Calibration Frequencies.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.SiteController.Get">
+            <summary>
+            Gets you a list of Sites.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.SiteController.GetForCustomer(System.Int32)">
+            <summary>
+            Gets you a list of Sites for a Customer.
+            </summary>
+            <param name="customerId">Unique Identifier for Customer</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.SiteController.Get(System.Int32)">
+            <summary>
+            Gets an indiviual Site by Id
+            </summary>
+            <param name="id">Unique Identifier for Site</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.SiteController.Post(EOS2.WebAPI.Models.Site)">
+            <summary>
+            Create a new Site
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.SiteController.Put(System.Int32,EOS2.WebAPI.Models.Site)">
+            <summary>
+            Replace an existing Site.
+            </summary>
+            <param name="id">Unique Identifier for Site</param>
+            <param name="site">The Site to store</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.SiteController.Patch(System.Int32,System.Web.Http.OData.Delta{EOS2.WebAPI.Models.Site})">
+            <summary>
+            Update an existing Site.
+            </summary>
+            <param name="id">Unique Identifier for Site</param>
+            <param name="site">The items to update</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.SiteController.Delete(System.Int32)">
+            <summary>
+            Delete an existing site by Id.
+            </summary>
+            <param name="id">Unique Identifier for Site</param>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.UserController.Get">
+            <summary>
+            Gets you a list of eCAT Engineers.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.UserController.GetForServiceProvider(System.Int32)">
+            <summary>
+            Gets you a list of eCAT Engineers for a Service Provider.
+            </summary>
+        </member>
+        <member name="M:EOS2.WebAPI.Controllers.UserController.Get(System.Int32)">
+            <summary>
+            Gets an indiviual eCAT Engineer by Id
+            </summary>
+            <param name="id">Unique Identifier for eCAT Engineer</param>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Channel.Id">
+            <summary>
+            The Unique Identifier of the Channel
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Channel.Name">
+            <summary>
+            The Name of the Channel
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Channel.Number">
+            <summary>
+            The Number of the Channel
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Channel.ChannelTypeId">
+            <summary>
+            The Type of the Channel
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Channel.EquipmentId">
+            <summary>
+            The Unique Identifier of the Equipment attached to the Channel
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Channel.InstrumentId">
+            <summary>
+            The Unique Identifier of the Instrument of this Channel
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Channel.ScheduleFrequencyId">
+            <summary>
+            The Unique Identifier of the Schedule Frequency of this Channel
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Channel.EventId">
+            <summary>
+            The Unique Identifier of the next Event the Channel is included in
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Engineer.Id">
+            <summary>
+            The Unique Identifier of the eCAT Engineer
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Engineer.UserName">
+            <summary>
+            The User Name of the eCAT Engineer
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Engineer.PIN">
+            <summary>
+            The Hashed PIN of the eCAT Engineer
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Engineer.ServiceProviderId">
+            <summary>
+            The Unique Identifier of the Service Provider of the Engineer
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Equipment.Id">
+            <summary>
+            The Unique Identifier of the piece of Equipment
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Equipment.Name">
+            <summary>
+            The Name of the piece of Equipment
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Equipment.Description">
+            <summary>
+            The Description of the piece of Equipment
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Equipment.Make">
+            <summary>
+            The Make of the piece of Equipment
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Equipment.Model">
+            <summary>
+            The Model of the piece of Equipment
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Equipment.SerialNumber">
+            <summary>
+            The Serial Number of the piece of Equipment
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Equipment.TypeId">
+            <summary>
+            The Unique Identifier of the Equipment Type of the piece of Equipment
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Equipment.Notes">
+            <summary>
+            The Notes of the piece of Equipment
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Equipment.PlantAreaId">
+            <summary>
+            The Unique Identifier of the Plant Area of the piece of Equipment
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Event.Id">
+            <summary>
+            The Unique Identifier of the Event
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Event.Name">
+            <summary>
+            The Name of the Event
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Event.EventDate">
+            <summary>
+            The planned start date for the Event
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Event.RaisedByUser">
+            <summary>
+            The details of the User who raised the Event
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Event.RaisedDate">
+            <summary>
+            The Date the Event was raised
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Event.MainEngineer">
+            <summary>
+            The details of the Main Engineer for the Event
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Event.AdditionalEngineers">
+            <summary>
+            The collection of Additional Engineers for the Event
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Event.StatusId">
+            <summary>
+            The Unique Identifier of the Status of the Event
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Event.StatusChangedDate">
+            <summary>
+            The Date of the last change to the Status of the Event
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Event.StatusChangedUser">
+            <summary>
+            The details of the User that last changed the Status of the Event
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Event.IssuedFormatId">
+            <summary>
+            The Unique Identifier of the Issued Format of the Event
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.Id">
+            <summary>
+            Unique Identifier for Instrument
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.Name">
+            <summary>
+            Name for Instrument
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.Description">
+            <summary>
+            Description for Instrument
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.Notes">
+            <summary>
+            Notes for Instrument
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.IsSAT">
+            <summary>
+            Is SAT applicable to the Instrument 
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.ChannelCount">
+            <summary>
+            The number of Channels on the Instrument
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.Make">
+            <summary>
+            The Make or Manafacturer of the Instrument
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.Model">
+            <summary>
+            The model of Instrument
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.SerialNumber">
+            <summary>
+            Unique Serial Number for Instrument
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.IsAMS2750">
+            <summary>
+            Is the Instrument regulated by AMS2750
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.IsRemoved">
+            <summary>
+            Has the Instrument been removed
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.TypeId">
+            <summary>
+            The Unique Identifier of the Instrument Type of the Instrument
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.FrequencyId">
+            <summary>
+            The Unique Identifier of the Frequency of the Instrument
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Instrument.PlantAreaId">
+            <summary>
+            The Unique Identifier of the Plant Area of the Instrument
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Organization.Id">
+            <summary>
+            The Unique Identifier of the Organization
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Organization.Name">
+            <summary>
+            The Name of the Organization
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Organization.Address">
+            <summary>
+            The Address of the Organization
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Organization.PostalCode">
+            <summary>
+            The Postal Code of the Organization
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.PlantArea.Id">
+            <summary>
+            The Unique Identifier of the Plant Area
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.PlantArea.Name">
+            <summary>
+            The Name of the Plant Area
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.PlantArea.SiteId">
+            <summary>
+            The Unique Identifier of the Site for the Plant Area
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.ReferenceData.InstrumentTypes">
+            <summary>
+            The list of Instrument Types
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.ReferenceData.EquipmentTypes">
+            <summary>
+            The list of Equipment Types
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.ReferenceData.ChannelTypes">
+            <summary>
+            The list of Chennel Types
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.ReferenceData.CertificateTypes">
+            <summary>
+            The list of Certificate Types
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.ReferenceData.CalibrationFrequencies">
+            <summary>
+            The list of Calibration Frequencies
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.ReferenceDataItem.Id">
+            <summary>
+            The Unique Identifier of the Reference Data Item within its Type
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.ReferenceDataItem.Name">
+            <summary>
+            The Name of the Reference Data Item
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Site.Id">
+            <summary>
+            The Unique Identifier of the Site 
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Site.Name">
+            <summary>
+            The Name of the Site
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Site.Address">
+            <summary>
+            The Address of the Site
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Site.PostalCode">
+            <summary>
+            The Postal Code of the Site
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.Site.CustomerId">
+            <summary>
+            The Unique Identifier of the Customer of the Site
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.User.Id">
+            <summary>
+            The Unique Identifier of the User
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.User.UserName">
+            <summary>
+            The User Name of the User
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.User.Name">
+            <summary>
+            The Given Name of the User
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.User.FamilyName">
+            <summary>
+            The Family Name of the User
+            </summary>
+        </member>
+        <member name="P:EOS2.WebAPI.Models.User.MiddleName">
+            <summary>
+            The Middle Name of the User
+            </summary>
+        </member>
+        <member name="T:EOS2.WebAPI.VersionConstraint">
+            <summary>
+            A Constraint implementation that matches an HTTP header against an expected version value.
+            </summary>
+        </member>
+        <member name="T:EOS2.WebAPI.VersionedRoute">
+            <summary>
+            Provides an attribute route that's restricted to a specific version of the api.
+            </summary>
+        </member>
+    </members>
+</doc>

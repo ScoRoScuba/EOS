@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!-- ============== StyleCop ============== -->
+  <UsingTask AssemblyFile="$(MSBuildProjectDirectory)\..\packages\MSBuild.Extension.Pack.1.5.0\tools\net40\MSBuild.ExtensionPack.StyleCop.dll" TaskName="MSBuild.ExtensionPack.CodeQuality.StyleCop" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAAD7E4E-5F5D-4DB7-A86F-6CB1B17C3CA2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EOS2.Web.BDD.Specs</RootNamespace>
+    <AssemblyName>EOS2.Web.BDD.Specs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>7db07c61</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\Eos2BDDStaticAnalysis.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\Eos2BDDStaticAnalysis.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'CodeAnalysis|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\CodeAnalysis\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\Eos2BDDStaticAnalysis.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Mvc">
+      <HintPath>..\packages\Unity.Mvc.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core">
+      <HintPath>..\packages\NUnitTestAdapter.1.2\lib\nunit.core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.core.interfaces">
+      <HintPath>..\packages\NUnitTestAdapter.1.2\lib\nunit.core.interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NUnit.Expect">
+      <HintPath>..\packages\NUnit.Expect.1.0.0.2\lib\net40\NUnit.Expect.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.util">
+      <HintPath>..\packages\NUnitTestAdapter.1.2\lib\nunit.util.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NUnit.VisualStudio.TestAdapter">
+      <HintPath>..\packages\NUnitTestAdapter.1.2\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow, Version=1.9.0.77, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=2.44.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Selenium.WebDriver.2.44.0\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.44.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Selenium.Support.2.44.0\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="Channels\Feature\1040-CreateChannelsOnAnInstrument.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>1040-CreateChannelsOnAnInstrument.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Channels\Feature\1041-EditChannels.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>1041-EditChannels.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Channels\Feature\1042-ManageChannelAssociationForEquipemt.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>1042-ManageChannelAssociationForEquipemt.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Channels\Steps\CreateChannelsOnAnInstrumentSteps.cs" />
+    <Compile Include="Channels\Steps\EditChannelsSteps.cs" />
+    <Compile Include="Channels\Steps\ManageChannelAssociationForEquipemtSteps.cs" />
+    <Compile Include="Channels\Steps\SharedSteps.cs" />
+    <Compile Include="Common\GlobalSteps.cs" />
+    <Compile Include="Common\OrganisationMaintenance.cs" />
+    <Compile Include="Common\SiteMaintenance.cs" />
+    <Compile Include="Common\UserMaintenance.cs" />
+    <Compile Include="Organizations\Feature\381-ViewOrganizationDetails.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>381-ViewOrganizationDetails.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations\Feature\387-EditAnOrganization.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>387-EditAnOrganization.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations\Feature\598-CreatePortalAgentOrganization.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>598-CreatePortalAgentOrganization.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations\Steps\EditAnOrganizationSteps.cs" />
+    <Compile Include="PageObjects\AddOrganizationPage.cs" />
+    <Compile Include="PageObjects\OrganizationsServiceProviderPage.cs" />
+    <Compile Include="PageObjects\OrganizationsUserPage.cs" />
+    <Compile Include="PageObjects\SetPasswordPage.cs" />
+    <Compile Include="ServiceProvider\Feature\340-ViewPlantArea.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>340-ViewPlantArea.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\343-CalibrationCertificateEditView.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>343-CalibrationCertificateEditView.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\349-CalibrationCertificateUpload.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>349-CalibrationCertificateUpload.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\415-CreateEquipment.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>415-CreateEquipment.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\418-CreateInstrument.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>418-CreateInstrument.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\419-EditPlantArea1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>419-EditPlantArea.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\420-EditSite.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>420-EditSite.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\421-EditEquipment.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>421-EditEquipment.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\423-EditInstrument.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>423-EditInstrument.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\541-ViewInstruments.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>541-ViewInstruments.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations\Feature\396-CreateAUserAgainstAnOrganization.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>396-CreateAUserAgainstAnOrganization.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations\Feature\396-CreateNewUserAccount.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>396-CreateNewUserAccount.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations\Feature\537-CreateAnOrganization.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>537-CreateAnOrganization.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations\Feature\597-CreateServiceProviderOrganization.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>597-CreateServiceProviderOrganization.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations\Steps\CreateAnOrganizationSteps.cs" />
+    <Compile Include="Organizations\Steps\CreateAUserAgainstAnOrganizationSteps.cs" />
+    <Compile Include="Organizations\Steps\CreateNewUserAccountSteps.cs" />
+    <Compile Include="Organizations\Steps\CreatePortalAgentOrganizationSteps.cs" />
+    <Compile Include="Organizations\Steps\CreateServiceProviderOrganizationSteps.cs" />
+    <Compile Include="Organizations\Steps\SharedSteps.cs" />
+    <Compile Include="Organizations\Steps\ViewOrganizationDetailsSteps.cs" />
+    <Compile Include="PageObjects\OrganizationsPortalAgentsIndexPage.cs" />
+    <Compile Include="ServiceProvider\Feature\416-CreateSite.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>416-CreateSite.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\599-CreateCustomerOrganization.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>599-CreateCustomerOrganization.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\602-ListCustomerOrganizations.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>602-ListCustomerOrganizations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\684-EditCustomerOrganization.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>684-EditCustomerOrganization.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\685-ViewCustomerOrganizationDetails.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>685-ViewCustomerOrganizationDetails.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\688-ListSites.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>688-ListSites.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\694-SelectPlantArea.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>694-SelectPlantArea.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\891-CreateSchedule.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>891-CreateSchedule.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Feature\892-EditSchedule.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>892-EditSchedule.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProvider\Steps\CalibrationCertificateEditViewSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\CalibrationCertificateUploadSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\CreateCustomerOrganizationSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\CreateEquipmentSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\CreateInstrumentSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\CreateScheduleSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\CreateSiteSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\EditCustomerOrganizationSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\EditInstrumentSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\EditScheduleSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\EditSiteSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\ListCustomerOrganizationsSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\ListSitesSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\SharedSteps.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="PageObjects\BasePageObject.cs" />
+    <Compile Include="PageObjects\HomePage.cs" />
+    <Compile Include="PageObjects\OrganizationsCustomerPage.cs" />
+    <Compile Include="PageObjects\SignInPage.cs" />
+    <Compile Include="Internationalization\Feature\698-Internationalization.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>698-Internationalization.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Internationalization\Steps\InternationalizationSteps.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceProvider\Steps\ViewCustomerOrganizationDetailsSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\ViewInstrumentsSteps.cs" />
+    <Compile Include="ServiceProvider\Steps\ViewPlantAreaSteps.cs" />
+    <Compile Include="SetUp\BeforeAfterTests.cs" />
+    <Compile Include="SetUp\DatabaseMaintenance.cs" />
+    <Compile Include="SiteOrganization\Feature\414-CreatePlantArea.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>414-CreatePlantArea.feature</DependentUpon>
+    </Compile>
+    <Compile Include="SiteOrganization\Steps\CreatePlantAreaSteps.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Channels\Feature\1040-CreateChannelsOnAnInstrument.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>1040-CreateChannelsOnAnInstrument.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Channels\Feature\1041-EditChannels.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>1041-EditChannels.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Channels\Feature\1042-ManageChannelAssociationForEquipemt.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>1042-ManageChannelAssociationForEquipemt.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Organizations\Feature\381-ViewOrganizationDetails.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>381-ViewOrganizationDetails.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Organizations\Feature\387-EditAnOrganization.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>387-EditAnOrganization.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Organizations\Feature\396-CreateAUserAgainstAnOrganization.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>396-CreateAUserAgainstAnOrganization.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Organizations\Feature\396-CreateNewUserAccount.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>396-CreateNewUserAccount.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Organizations\Feature\537-CreateAnOrganization.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>537-CreateAnOrganization.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Organizations\Feature\597-CreateServiceProviderOrganization.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>597-CreateServiceProviderOrganization.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Organizations\Feature\598-CreatePortalAgentOrganization.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>598-CreatePortalAgentOrganization.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\340-ViewPlantArea.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>340-ViewPlantArea.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\343-CalibrationCertificateEditView.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>343-CalibrationCertificateEditView.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\349-CalibrationCertificateUpload.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>349-CalibrationCertificateUpload.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\415-CreateEquipment.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>415-CreateEquipment.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\416-CreateSite.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>416-CreateSite.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\418-CreateInstrument.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>418-CreateInstrument.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\419-EditPlantArea.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>419-EditPlantArea1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\420-EditSite.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>420-EditSite.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\421-EditEquipment.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>421-EditEquipment.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\423-EditInstrument.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>423-EditInstrument.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\541-ViewInstruments.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>541-ViewInstruments.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\599-CreateCustomerOrganization.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>599-CreateCustomerOrganization.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\602-ListCustomerOrganizations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>602-ListCustomerOrganizations.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\684-EditCustomerOrganization.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>684-EditCustomerOrganization.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\685-ViewCustomerOrganizationDetails.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>685-ViewCustomerOrganizationDetails.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\688-ListSites.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>688-ListSites.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Internationalization\Feature\698-Internationalization.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>698-Internationalization.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="ServiceProvider\Feature\694-SelectPlantArea.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>694-SelectPlantArea.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\891-CreateSchedule.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>891-CreateSchedule.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceProvider\Feature\892-EditSchedule.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>892-EditSchedule.feature.cs</LastGenOutput>
+    </None>
+    <None Include="SiteOrganization\Feature\414-CreatePlantArea.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>414-CreatePlantArea.feature.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\CustomDictionary.xml">
+      <Link>CustomDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IEDriverServer.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EOS2.Common\EOS2.Common.csproj">
+      <Project>{0334CE55-A4AB-462A-82DE-9175F01C487B}</Project>
+      <Name>EOS2.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Identity.Model\EOS2.Identity.Model.csproj">
+      <Project>{ab382a90-3622-4817-a070-0490ca3e7a4c}</Project>
+      <Name>EOS2.Identity.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Identity.Repository\EOS2.Identity.Repository.csproj">
+      <Project>{94F269D5-ED0A-400D-9020-2831812320B6}</Project>
+      <Name>EOS2.Identity.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Identity.Services\EOS2.Identity.Services.csproj">
+      <Project>{66a4af24-358b-4099-a830-c66b900f7a7f}</Project>
+      <Name>EOS2.Identity.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Infrastructure.DependencyInjection\EOS2.Infrastructure.DependencyInjection.csproj">
+      <Project>{35e179a3-79c7-4c9e-936b-1650bf92d5b6}</Project>
+      <Name>EOS2.Infrastructure.DependencyInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Infrastructure.Interfaces\EOS2.Infrastructure.Interfaces.csproj">
+      <Project>{ede237b7-41e2-4078-b4b4-7582d0daff5d}</Project>
+      <Name>EOS2.Infrastructure.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Model\EOS2.Model.csproj">
+      <Project>{19d68560-be9b-4e17-a4e7-aaeca7a664cf}</Project>
+      <Name>EOS2.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Repository\EOS2.Repository.csproj">
+      <Project>{6ac082ea-a49e-42bc-afc6-0535631a7e96}</Project>
+      <Name>EOS2.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="ExecuteStyleCop">
+    <!-- Run the StyleCop MSBuild task -->
+    <MSBuild.ExtensionPack.CodeQuality.StyleCop TaskAction="Scan" SourceFiles="@(Compile)" ShowOutput="true" ForceFullAnalysis="true" CacheResults="false" logFile="$(MSBuildProjectDirectory)\StyleCopLog.txt" SettingsFile="$(MSBuildProjectDirectory)\..\Settings.StyleCop">
+      <Output TaskParameter="Succeeded" PropertyName="AllPassed" />
+      <Output TaskParameter="ViolationCount" PropertyName="Violations" />
+      <Output TaskParameter="FailedFiles" ItemName="Failures" />
+    </MSBuild.ExtensionPack.CodeQuality.StyleCop>
+    <Message Text="Succeeded: $(AllPassed), Violations: $(Violations)" />
+    <Message Text="%(Failures.Identity) - Failed on Line %(Failures.LineNumber). %(Failures.CheckId): %(Failures.Message)" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)Drivers\chromedriver.exe" "$(TargetDir)chromedriver.exe"
+copy "$(ProjectDir)Drivers\IEDriverServer.exe" "$(TargetDir)IEDriverServer.exe"</PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+</Project>

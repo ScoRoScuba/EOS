@@ -1,0 +1,72 @@
+﻿@model EOS2.Web.Areas.Organizations.ViewModels.InstrumentChannels.ChannelsViewModel
+
+@{
+    ViewBag.Title = "[[[Index]]]";
+}
+<h2>[[[Channels]]]</h2>
+<hr />
+<div class ="readonly-fieldset">
+    <div class="row">
+        <h3>[[[Instrument Details]]]</h3>
+        <div class="col-md-6">
+
+            <div class="row">
+                <label class="col-md-5 control-label">Name</label>
+                <div class="col-md-7">
+                    <p class="form-control-static">@Html.DisplayTextFor(m => m.Instrument.Name)</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="col-md-5 control-label">Make</label>
+                <div class="col-md-7">
+                    <p class="form-control-static">@Html.DisplayTextFor(m => m.Instrument.Make)</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="col-md-5 control-label">Model</label>
+                <div class="col-md-7">
+                    <p class="form-control-static">@Html.DisplayTextFor(m => m.Instrument.Model)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            
+            <div class="row">
+                <label class="col-md-6 control-label">Serial Number</label>
+                <div class="col-md-6">
+                    <p class="form-control-static">@Html.DisplayTextFor(m => m.Instrument.SerialNumber)</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="col-md-4 control-label">Instrument Type</label>
+                <div class="col-md-8">
+                    <p class="form-control-static">@Html.DisplayTextFor(m => m.Instrument.Type.Name)</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group input-options pull-right">
+                @{
+                    @Html.RouteLink("[[[Back]]]","CustomerOrganization_SitePlantArea",new {
+               Model.CustomerId, Model.SiteId, Model.PlantAreaId
+               },new {
+               @class = "btn btn-default"
+               });
+                }
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        @Html.Partial("_Channels",Model)
+    </div>
+
+</div>
+
+

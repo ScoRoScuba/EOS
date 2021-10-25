@@ -1,0 +1,65 @@
+﻿@using EOS2.Web.Areas.Organizations.ViewModels.Common
+@using EOS2.Web.Enums
+@using CertificateType = EOS2.Model.Enums.CertificateType
+@model Tuple<IEnumerable<CertificateViewModel>, EOS2.Web.ViewModels.BaseViewModel>
+
+<div class="panel panel-default">
+    <div class="panel-heading clearfix">
+        <a class="btn btn-default btn-sm pull-right" href="@Url.RouteUrl("CustomerOrganization_SitePlantAreaInstrumentCertificateUpload", new { CustomerId = Model.Item2.CustomerId, SiteId = Model.Item2.SiteId, PlantAreaId = Model.Item2.PlantAreaId, InstrumentId = Model.Item2.InstrumentId, certificateType = CertificateType.Calibration })">
+            <span class="glyphicon glyphicon-upload"></span> [[[Upload Certificate]]]
+        </a>
+        <h3 class="panel-title">[[[Certificate]]]</h3>
+    </div>
+    <div class="panel-body">
+
+        @if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessageCertificates"] as string))
+        {
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                @(TempData["ControllerActionMessageCertificates"] as string)
+            </div>
+        }
+        @if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessageCertificatesFailure"] as string))
+        {
+            <div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                @(TempData["ControllerActionMessageCertificatesFailure"] as string)
+            </div>
+        }
+
+        @if (Model.Item1.Any())
+        {
+            <table class="table table-condensed table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(m => m.Item1.FirstOrDefault().CertificateNumber)</th>
+                        <th>@Html.DisplayNameFor(m => m.Item1.FirstOrDefault().Type)</th>
+                        <th>@Html.DisplayNameFor(m => m.Item1.FirstOrDefault().EndDate)</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Item1)
+                    {
+                        <tr>
+                            @{
+                        var currentItem = item;
+                            }
+                            <td>@Html.DisplayFor(i => currentItem.CertificateNumber)</td>
+                            <td>@Html.DisplayFor(i => currentItem.Type.Name)</td>
+                            <td>@Html.DisplayFor(i => currentItem.EndDate)</td>
+                            <td>@Html.RouteLink("[[[View PDF]]]", "CustomerOrganization_SitePlantAreaInstrumentCertificateDownload", new { CustomerId = Model.Item2.CustomerId, SiteId = Model.Item2.SiteId, PlantAreaId = Model.Item2.PlantAreaId, InstrumentId = Model.Item2.InstrumentId, CertificateId = currentItem.Id, controllerAction = ControllerAction.InstrumentViewInstrument }, new { @class = "btn btn-default btn-sm" })</td>
+                            <td>@Html.RouteLink("[[[Details]]]", "CustomerOrganization_SitePlantAreaInstrumentCertificate", new { CustomerId = Model.Item2.CustomerId, SiteId = Model.Item2.SiteId, PlantAreaId = Model.Item2.PlantAreaId, InstrumentId = Model.Item2.InstrumentId, CertificateId = currentItem.Id }, new { @class = "btn btn-default btn-sm" })</td>
+                </tr>
+                }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,26 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Eurotherm",
+    "Address": "Faraday Close, Worthing, West Sussex",
+    "PostalCode": "BN13 3PL"
+  },
+  {
+    "Id": 2,
+    "Name": "Asiatherm",
+    "Address": "6/F, Golden Industrial Center, Block 4, 182-190 Tai Lin Pai Road, Kwai Chung, NEW TERRITORIES, HONG KONG, PEOPLE'S REPUBLIC OF CHINA",
+    "PostalCode": "HONG KONG HAS NO POSTAL CODES !!!!"
+  },
+  {
+    "Id": 3,
+    "Name": "Afrotherm",
+    "Address": "1234 Church Street, Colloyn, PRETORIA, SOUTH AFRICA",
+    "PostalCode": "0083"
+  },
+  {
+    "Id": 4,
+    "Name": "Yankietherm",
+    "Address": "2259 Kalakaua Avenue, Honolulu, United States",
+    "PostalCode": "HI 96815"
+  }
+]

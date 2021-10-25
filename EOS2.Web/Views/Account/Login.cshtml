@@ -1,0 +1,39 @@
+﻿@model EOS2.Web.ViewModels.Account.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <fieldset class="editor small signin">
+        <legend>Login</legend>
+        <div>
+            @Html.LabelFor(m => m.UserName)
+            @Html.TextBoxFor(m => m.UserName)
+            @Html.ValidationMessageFor(m => m.UserName)
+        </div>
+
+        <div>
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password)
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="SignIn" />
+        </div>
+    </fieldset>
+
+    @Html.HiddenFor(m => m.ReturnUrl)
+}
+
+<script type="text/javascript">
+    $(function () {
+        $("#UserName").focus();
+    });
+</script>
+

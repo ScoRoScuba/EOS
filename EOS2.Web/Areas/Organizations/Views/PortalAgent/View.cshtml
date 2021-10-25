@@ -1,0 +1,56 @@
+﻿@model EOS2.Web.Areas.Organizations.ViewModels.PortalAgents.PortalAgentEditViewModel
+           
+@{
+    ViewBag.Title = "[[[Edit]]]";
+}
+
+@if (Model.Id > 0)
+{
+    <h2>[[[Portal Agent Details]]] - @Html.DisplayFor(m => m.Name)</h2>
+}
+else
+{
+    <h2>[[[New Portal Agent]]]</h2>
+}
+
+           
+@using (Html.BeginForm("Save", "PortalAgent"))
+{
+
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.Id)
+
+    if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessage"] as string))
+    {
+        <div class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert"
+                    aria-hidden="true">
+                &times;
+            </button>
+            @(TempData["ControllerActionMessage"] as string)
+        </div>
+    }
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Address)
+        @Html.TextAreaFor(m => m.Address, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.PostalCode)
+        @Html.TextBoxFor(m => m.PostalCode, new { @class = "form-control input-postalcode" })
+        @Html.ValidationMessageFor(m => m.PostalCode)
+    </div>
+
+    <div class="form-group input-options">
+        <button type="submit" class="btn btn-primary">[[[Save]]]</button>
+
+        @Html.ActionLink("[[[Cancel]]]", "Index", "PortalAgent", null, new { @class = "btn btn-default" })
+    </div>
+}

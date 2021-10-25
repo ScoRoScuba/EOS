@@ -1,0 +1,15 @@
+﻿@using System.Security.Claims
+
+@if (ClaimsPrincipal.Current.Claims.Any(c => c.Type == ClaimTypes.Actor && c.Value == "EOS2User"))
+{
+    <li>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">[[[Signed in as]]] : @ClaimsPrincipal.Current.Identity.Name</a></li>
+            <li>@Html.ActionLink("[[[Sign Out]]]", "SignOut", "Account", new { area = "" }, null)</li>
+        </ul>
+    </li>
+}
+else
+{
+    <li>@Html.ActionLink("[[[Sign In]]]", "SignIn", "Account", new { area = "" }, null)</li>
+}

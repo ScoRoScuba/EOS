@@ -1,0 +1,75 @@
+﻿@model EOS2.Web.Areas.Organizations.ViewModels.Equipments.EquipmentEditViewModel
+
+<div class="panel panel-default">
+    <div class="panel-heading clearfix">
+        <div class="pull-right">
+            
+            
+            <a class="btn btn-default btn-sm pull-right" href="@Url.RouteUrl("CustomerOrganization_SitePlantAreaEquipmentAvailableInstruments",
+                new
+                    {
+                        CustomerId = Model.CustomerId,
+                        SiteId = Model.SiteId,
+                        PlantAreaId = Model.PlantAreaId,
+                        EquipmentId = Model.Id
+                    })">
+                <span class="glyphicon glyphicon-plus"></span> [[[Attach To Channels]]]
+            </a>
+            
+        </div>
+        <h3 class="panel-title">[[[Instruments Attached]]]</h3>
+    </div>
+
+    <div class="panel-body">
+
+        @if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessageInstrument"] as string))
+        {
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    &times;
+                </button>
+                @(TempData["ControllerActionMessageInstrument"] as string)
+            </div>
+        }
+
+        @if (Model.AttachedInstruments.Any())
+        {
+            <table class="table table-condensed table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(m => m.AttachedInstruments.FirstOrDefault().Name)</th>
+                        <th>@Html.DisplayNameFor(m => m.AttachedInstruments.FirstOrDefault().Type)</th>
+                        <th>@Html.DisplayNameFor(m => m.AttachedInstruments.FirstOrDefault().Model)</th>
+                        <th>@Html.DisplayNameFor(m => m.AttachedInstruments.FirstOrDefault().SerialNumber)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var instrument in Model.AttachedInstruments)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(i => instrument.Name)</td>
+                            <td>@Html.DisplayFor(i => instrument.Type.Name)</td>
+                            <td>@Html.DisplayFor(i => instrument.Model)</td>
+                            <td>@Html.DisplayFor(i => instrument.SerialNumber)</td>
+                            <td>
+                                @Html.RouteLink("[[[Allocated Channels]]]", "CustomerOrganization_SitePlantAreaEquipmentAllocatedChannels", new { Model.CustomerId, Model.SiteId, Model.PlantAreaId, Model.EquipmentId, InstrumentId = instrument.Id}, new { @class = "btn btn-default btn-sm" })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

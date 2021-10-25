@@ -1,0 +1,7 @@
+[
+    { "Id": 1, "Name": "Thomas", "Description": "Description for 1", "Notes": "Here are some notes for 1", "IsSAT": false, "ChannelCount": 10, "Make": "KelTec", "Model": "Recorder", "SerialNumber": "KTRC0001-01", "IsAMS2750": true, "IsRemoved": false, "TypeId": 1, "FrequencyId": 1, "PlantAreaId": 1 },
+    { "Id": 2, "Name": "Annie", "Description": "Description for 2", "Notes": "Here are some notes for 2", "IsSAT": true, "ChannelCount": 20, "Make": "KelTec", "Model": "Recorder", "SerialNumber": "KTRC0001-02", "IsAMS2750": false, "IsRemoved": false, "TypeId": 2, "FrequencyId": 3, "PlantAreaId": 1 },
+    { "Id": 3, "Name": "Clarabel", "Description": "Description for 3", "Notes": "Here are some notes for 3", "IsSAT": false, "ChannelCount": 30, "Make": "KelTec", "Model": "Recorder", "SerialNumber": "KTRC0001-03", "IsAMS2750": true, "IsRemoved": true, "TypeId": 4, "FrequencyId": 5, "PlantAreaId": 2 },
+    { "Id": 4, "Name": "Edward", "Description": "Description for 4", "Notes": "Here are some notes for 4", "IsSAT": false, "ChannelCount": 40, "Make": "KelTec", "Model": "Recorder", "SerialNumber": "KTRC0001-04", "IsAMS2750": true, "IsRemoved": true, "TypeId": 3, "FrequencyId": 5, "PlantAreaId": 2 },
+    { "Id": 5, "Name": "Gordon", "Description": "Description for 5", "Notes": "Here are some notes for 5", "IsSAT": false, "ChannelCount": 50, "Make": "KelTec", "Model": "Recorder", "SerialNumber": "KTRC0001-05", "IsAMS2750": true, "IsRemoved": true, "TypeId": 1, "FrequencyId": 5, "PlantAreaId": 2 }
+]

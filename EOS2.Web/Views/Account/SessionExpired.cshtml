@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "[[[Session Expired]]]";
+}
+
+<h2>[[[Your Session has Expired]]]</h2>
+<hr />
+
+<div class="row">  
+    <div class="col-md-8">
+        <p>[[[Your session has expired. If you want to keep using the site you will need to log back in]]]</p>        
+    </div>            
+    <div class="col-md-4">
+        <a class="btn btn-default btn-sm pull-right" href="@Url.Action("SignIn","Account")">
+            <span class="glyphicon glyphicon-plus"></span> [[[Click here to Log back in]]]
+        </a>
+    </div>
+</div>    
+
+

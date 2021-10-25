@@ -1,0 +1,62 @@
+﻿@model EOS2.Web.Areas.Organizations.ViewModels.Schedule.EquipmentScheduleViewModel
+
+<div class="panel panel-default">
+    <div class="panel-heading clearfix">
+        <a class="btn btn-default btn-sm pull-right" 
+href="@Url.RouteUrl("CustomerOrganization_NewSitePlantAreaEquipmentSchedule", new { CustomerId = @Model.CustomerId, SiteId = @Model.SiteId, PlantAreaId = @Model.PlantAreaId, EquipmentId = @Model.EquipmentId})">
+            <span class="glyphicon glyphicon-plus"></span> [[[Add Schedule]]]
+        </a>
+        <h3 class="panel-title">[[[Schedules]]]</h3>
+    </div>
+    <div class="panel-body">
+
+        @if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessageSchedule"] as string))
+        {
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                @(TempData["ControllerActionMessageSchedule"] as string)
+            </div>
+        }
+
+        @if (Model.Schedules.Any())
+        {
+            <table class="table table-condensed table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(m => m.Schedules.First().Name)</th>
+                        <th>@Html.DisplayNameFor(m => m.Schedules.First().FurnaceClass)</th>
+                        <th>@Html.DisplayNameFor(m => m.Schedules.First().Type)</th>
+                        <th>@Html.DisplayNameFor(m => m.Schedules.First().Frequency)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Schedules)
+                    {
+                        <tr>
+                            @{
+                        var currentItem = item;
+                            }
+                            <td>@Html.DisplayFor(i => currentItem.Name)</td>
+                            <td>@Html.DisplayFor(i => currentItem.FurnaceClass.Name)</td>
+                            <td>@Html.DisplayFor(i => currentItem.Type.Name)</td>
+                            <td>@Html.DisplayFor(i => currentItem.Frequency.Name)</td>
+                            <td>@Html.RouteLink("[[[Details]]]", "CustomerOrganization_SitePlantAreaEquipmentSchedule", new
+                                                                                                                            {
+                                                                                                                                Model.CustomerId,
+                                                                                                                                Model.SiteId,
+                                                                                                                                Model.PlantAreaId,
+                                                                                                                                Model.EquipmentId,
+                                                                                                                                scheduleId = currentItem.Id
+                                                                                                                            }, new { @class = "btn btn-default btn-sm" })</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+
+
+

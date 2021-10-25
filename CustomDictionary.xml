@@ -1,0 +1,36 @@
+<Dictionary>
+  <Words>
+    <Recognized>
+      <Word>Mvc</Word>
+      <Word>BDD</Word>
+      <Word>EOS</Word>
+      <Word>EOS2</Word>
+      <Word>Elmah</Word>
+      <Word>ELMAH</Word>
+      <Word>Equipments</Word>
+      <Word>Eurotherm</Word>
+      <Word>Api</Word>
+      <Word>Uk</Word>
+      <Word>Poab</Word>
+      <Word>p</Word>
+      <Word>I18n</Word>
+      <Word>Callback</Word>
+    </Recognized>
+  </Words>
+  <Acronyms>
+     <CasingExceptions>
+        <Acronym>API</Acronym>
+        <Acronym>BDD</Acronym>
+        <Acronym>EOS</Acronym>
+        <Acronym>EOS2</Acronym>
+        <Acronym>PIN</Acronym>
+        <Acronym>SQL</Acronym>
+        <Acronym>QA</Acronym>
+        <Acronym>dbSet</Acronym>
+        <Acronym>SAT</Acronym>
+        <Acronym>TUS</Acronym>
+        <Acronym>AMS</Acronym>
+        <Acronym>I18n</Acronym>
+     </CasingExceptions>
+  </Acronyms>
+</Dictionary>

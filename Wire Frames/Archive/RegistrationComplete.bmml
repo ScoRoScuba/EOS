@@ -1,0 +1,40 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1137" measuredH="664" mockupW="879" mockupH="624">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="260" y="40" w="877" h="624" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>EOS2%20-%20Home%20Dash%20Board%09%0Ahttp%3A//eos2.eurotherm.co.uk/dashboard</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::MenuBar" x="260" y="181" w="877" h="29" measuredW="301" measuredH="29" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>About%20EOS2%2C%20Support%2C%20Log%20In%2C%20Register</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Title" x="275" y="123" w="-1" h="-1" measuredW="109" measuredH="43" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>EOS2</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="258" y="110" w="879" h="529" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Canvas" x="439" y="139" w="474" h="291" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::PointyButton" x="818" y="378" w="-1" h="-1" measuredW="54" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <direction>center</direction>
+        <href>CustoerDashboard%26bm%3BCustoerDashboard.bmml%26bm%3BCustoerDashboard.bmml%26bm%3BCustoerDashboard.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22560%2C338%2C614%2C365%22%20href%3D%22CustoerDashboard.bmml%22%20alt%3D%22CustoerDashboard%22%20id%3D%2216%22/%3E</map>
+        <newLayout>true</newLayout>
+        <text>Finish</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Paragraph" x="541" y="179" w="275" h="180" measuredW="275" measuredH="80" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>You%20have%20finished%20the%20registration%20process.%0A%20%0APlease%20bear%20with%20us%20while%20we%20confirm%20your%20registration.%20%0A%20%0AOnce%20complate%20you%20will%20receive%20an%20email%20confirming%20your%20application%20and%20further%20instructions%0A%20%0AShould%20there%20be%20any%20issues%20we%20will%20contact%20you%20shortly%20%0A%20%0A%20%0A%20</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

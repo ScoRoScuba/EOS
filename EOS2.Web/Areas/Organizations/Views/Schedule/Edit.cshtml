@@ -1,0 +1,91 @@
+﻿@using EOS2.Web.Extensions
+@model EOS2.Web.Areas.Organizations.ViewModels.Schedules.ScheduleEditViewModel
+
+@if (Model.Id > 0)
+{
+    <h2>[[[Schedule Details]]] - @Html.DisplayFor(m => m.StoredName)</h2>
+}
+else
+{
+    <h2>[[[New Schedule]]]</h2>
+}
+<hr />
+<div class=""></div>
+@using (Html.BeginRouteForm("CustomerOrganization_SaveSitePlantAreaEquipmentSchedule",
+                                                    new
+                                                    {
+                                                        CustomerId = Model.CustomerId,
+                                                        SiteId = Model.SiteId,
+                                                        PlantAreaId = Model.PlantAreaId,
+                                                        EquipmentId = Model.EquipmentId
+                                                    }))
+{
+
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.Id)
+
+    if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessageSchedule"] as string))
+    {
+        <div class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            @(TempData["ControllerActionMessageSchedule"] as string)
+        </div>
+    }
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Name)
+        @Html.HiddenFor(m => m.StoredName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.FurnaceClass)
+        @Html.DropDownListI18NFor(m => m.FurnaceClass.Id, new SelectList(Model.FurnaceClasses, "Id", "Name"), "[[[Please Select ...]]]", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.FurnaceClass.Id)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Description)
+        @Html.TextAreaFor(m => m.Description, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Description)
+    </div>
+    <div class="form-group">
+            @Html.LabelFor(m => m.Type)
+        <div class="btn-group" data-toggle="buttons">
+            @foreach (var scheduleType in Model.ScheduleTypes)
+            {
+                <label class="@(Model.Type != null && scheduleType.Id == Model.Type.Id ? "btn btn-default active" : "btn btn-default")">
+                    @Html.RadioButtonFor(model => model.Type.Id, scheduleType.Id, new { name = "Type.Id" })
+                    @Html.Label(scheduleType.Name)
+                </label>
+            }
+        </div>
+        @Html.ValidationMessageFor(m => m.Type)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Frequency)
+        @Html.DropDownListI18NFor(m => m.Frequency.Id, new SelectList(Model.Frequencies, "Id", "Name"), "[[[Please Select ...]]]", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Frequency.Id)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.SpecialConditions)
+        @Html.TextAreaFor(m => m.SpecialConditions, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.SpecialConditions)
+    </div>
+    <div class="form-group input-options">
+        <button type="submit" class="btn btn-primary">[[[Save]]]</button>
+        @Html.RouteLink("[[[Cancel]]]", "CustomerOrganization_SitePlantAreaEquipment", 
+                                    new { EquipmentId = Model.EquipmentId, 
+                                            CustomerId = @Model.CustomerId, 
+                                            SiteId = @Model.SiteId, 
+                                            PlantAreaId = @Model.PlantAreaId},         
+                                    new { @class = "btn btn-default" })
+    </div>
+}
+
+
+
+
+
+
+

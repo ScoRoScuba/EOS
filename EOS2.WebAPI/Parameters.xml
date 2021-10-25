@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+  <parameter name="Version String" description="Please enter the version of EOS.API being deployed" defaultValue="__VERSION__" tags="">
+    <parameterEntry kind="XmlFile" scope="Web.config" match="/configuration/appSettings/add[@key='VersionString']/@value">
+    </parameterEntry>
+  </parameter>
+</parameters>

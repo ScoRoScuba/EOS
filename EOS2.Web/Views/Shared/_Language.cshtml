@@ -1,0 +1,9 @@
+﻿@model EOS2.Web.ViewModels.BaseViewModel
+@using (Html.BeginForm("SetLanguage", "Account", new { area = "" }))
+{
+    <div id="langform" class="nav navbar-nav language">
+        @Html.Hidden("LanguageReturnUrl", Request.Url)
+        @Html.DropDownListFor(m => m.SelectedLanguageId, new SelectList(Model.AvailableLanguages, "Key", "NativeNameTitleCase"), "[[[Auto]]]", (!ViewData.ModelState.IsValid) ?  new { @disabled = "disabled"} : null)
+        <button type="submit" class="btn btn-xs" disabled=@(!ViewData.ModelState.IsValid)>[[[Ok]]]</button>
+    </div>
+}

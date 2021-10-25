@@ -1,0 +1,11 @@
+﻿@using System.Security.Claims
+
+@if (ClaimsPrincipal.Current.Claims.Any(c => c.Type == ClaimTypes.Actor && c.Value == "EOS2User"))
+{
+    if (ClaimsPrincipal.Current.Claims.Any(a => a.Type == "OrganizationType" && ( a.Value == "ServiceProvider" || a.Value == "EOSOwner ")) )
+    {
+        <li>@Html.ActionLink("[[[Manage]]]", "Index", "Manage", new { area = "" }, new {} )</li>
+    }   
+    
+        
+}

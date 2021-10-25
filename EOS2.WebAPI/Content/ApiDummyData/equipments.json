@@ -1,0 +1,68 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Edward",
+    "Description": "Description for Edward",
+    "Make": "Eurotherm",
+    "Model": "AAA111",
+    "SerialNumber": "EUAA000100010001",
+    "TypeId": 2,
+    "Notes": "Notes for Edward",
+    "PlantAreaId": 1
+  },
+  {
+    "Id": 2,
+    "Name": "Percy",
+    "Description": "Description for Percy",
+    "Make": "Eurotherm",
+    "Model": "BBB222",
+    "SerialNumber": "EUBB000200020002",
+    "TypeId": 3,
+    "Notes": "Notes for Percy",
+    "PlantAreaId": 1
+  },
+  {
+    "Id": 3,
+    "Name": "Toby",
+    "Description": "Description for Toby",
+    "Make": "Eurotherm",
+    "Model": "CCC333",
+    "SerialNumber": "EUCC000300030003",
+    "TypeId": 2,
+    "Notes": "Notes for Toby",
+    "PlantAreaId": 2
+  },
+  {
+    "Id": 4,
+    "Name": "Freddie",
+    "Description": "Description for Freddie",
+    "Make": "Eurotherm",
+    "Model": "DDD444",
+    "SerialNumber": "EUDD000400040004",
+    "TypeId": 5,
+    "Notes": "Notes for Freddie",
+    "PlantAreaId": 1
+  },
+  {
+    "Id": 5,
+    "Name": "Henry",
+    "Description": "Description for Henry",
+    "Make": "Eurotherm",
+    "Model": "EEE555",
+    "SerialNumber": "EUEE000500050005",
+    "TypeId": 3,
+    "Notes": "Notes for Henry",
+    "PlantAreaId": 1
+  },
+  {
+    "Id": 6,
+    "Name": "Duck",
+    "Description": "Description for Duck",
+    "Make": "Eurotherm",
+    "Model": "FFF666",
+    "SerialNumber": "EUFF000600060006",
+    "TypeId": 4,
+    "Notes": "Notes for Duck",
+    "PlantAreaId": 1
+  }
+]

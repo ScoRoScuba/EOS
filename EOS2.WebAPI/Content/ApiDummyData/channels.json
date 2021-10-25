@@ -1,0 +1,112 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Channel 1",
+    "Number": "0000",
+    "ChannelTypeId": 1,
+    "EquipmentId": 3,
+    "InstrumentId": 2,
+    "ScheduleFrequencyId": 4,
+    "EventId": 1
+  },
+  {
+    "Id": 2,
+    "Name": "Channel 2",
+    "Number": "0001",
+    "ChannelTypeId": 1,
+    "EquipmentId": 3,
+    "InstrumentId": 2,
+    "ScheduleFrequencyId": 4,
+    "EventId": 1
+  },
+  {
+    "Id": 3,
+    "Name": "Channel 3",
+    "Number": "0002",
+    "ChannelTypeId": 1,
+    "EquipmentId": 4,
+    "InstrumentId": 2,
+    "ScheduleFrequencyId": 4,
+    "EventId": 1
+  },
+  {
+    "Id": 4,
+    "Name": "Channel 4",
+    "Number": "0003",
+    "ChannelTypeId": 1,
+    "EquipmentId": 4,
+    "InstrumentId": 2,
+    "ScheduleFrequencyId": 3,
+    "EventId": 1
+  },
+  {
+    "Id": 5,
+    "Name": "Channel 5",
+    "Number": "0004",
+    "ChannelTypeId": 1,
+    "EquipmentId": 4,
+    "InstrumentId": 2,
+    "ScheduleFrequencyId": 3,
+    "EventId": 1
+  },
+  {
+    "Id": 6,
+    "Name": "Channel 6",
+    "Number": "0005",
+    "ChannelTypeId": 1,
+    "EquipmentId": 4,
+    "InstrumentId": 2,
+    "ScheduleFrequencyId": 3,
+    "EventId": 1
+  },
+  {
+    "Id": 7,
+    "Name": "Channel 1",
+    "Number": "0000",
+    "ChannelTypeId": 2,
+    "EquipmentId": 4,
+    "InstrumentId": 1,
+    "ScheduleFrequencyId": 4,
+    "EventId": 1
+  },
+  {
+    "Id": 8,
+    "Name": "Channel 2",
+    "Number": "0001",
+    "ChannelTypeId": 2,
+    "EquipmentId": 4,
+    "InstrumentId": 1,
+    "ScheduleFrequencyId": 4,
+    "EventId": 1
+  },
+  {
+    "Id": 9,
+    "Name": "Channel 3",
+    "Number": "0002",
+    "ChannelTypeId": 1,
+    "EquipmentId": 5,
+    "InstrumentId": 1,
+    "ScheduleFrequencyId": 4,
+    "EventId": 1
+  },
+  {
+    "Id": 10,
+    "Name": "Channel 1",
+    "Number": "0000",
+    "ChannelTypeId": 1,
+    "EquipmentId": 4,
+    "InstrumentId": 3,
+    "ScheduleFrequencyId": 4,
+    "EventId": 2
+  },
+  {
+    "Id": 11,
+    "Name": "Channel 1",
+    "Number": "0000",
+    "ChannelTypeId": 1,
+    "EquipmentId": 0,
+    "InstrumentId": 2,
+    "ScheduleFrequencyId": 0,
+    "EventId": 1
+  }
+]

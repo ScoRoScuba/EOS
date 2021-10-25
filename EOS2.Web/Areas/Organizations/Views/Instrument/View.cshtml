@@ -1,0 +1,104 @@
+﻿@using EOS2.Web.Extensions
+@using EOS2.Web.ViewModels
+@model EOS2.Web.Areas.Organizations.ViewModels.Instruments.InstrumentEditViewModel
+
+@if (Model.Id > 0)
+{
+    <h2>[[[Instrument Details]]] - @Html.DisplayFor(m => m.StoredName)</h2>
+}
+else
+{
+    <h2>[[[New Instrument]]]</h2>
+}
+<hr />
+
+@using (Html.BeginRouteForm("CustomerOrganization_SaveSitePlantAreaInstruments", 
+                                                    new {   
+                                                        CustomerId = Model.CustomerId, 
+                                                        SiteId = Model.SiteId,
+                                                        PlantAreaId = Model.PlantAreaId
+                                                    }))
+{
+
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.Id)
+
+    if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessageInstrument"] as string))
+    {
+        <div class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            @(TempData["ControllerActionMessageInstrument"] as string)
+        </div>
+    }
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Name)
+        @Html.HiddenFor(m => m.StoredName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Description)
+        @Html.TextAreaFor(m => m.Description, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Description)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Make)
+        @Html.TextBoxFor(m => m.Make, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Make)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Model)
+        @Html.TextBoxFor(m => m.Model, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Model)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.SerialNumber)
+        @Html.TextBoxFor(m => m.SerialNumber, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.SerialNumber)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Type)
+        @Html.DropDownListI18NFor(m => m.Type.Id, new SelectList(Model.InstrumentTypes, "Id", "Name"), "[[[Please Select ...]]]", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Type.Id)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.CalibrationFrequency)
+        @Html.DropDownListI18NFor(m => m.CalibrationFrequency.Id, new SelectList(Model.CalibrationFrequencies, "Id", "Name"), "[[[Please Select ...]]]", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.CalibrationFrequency.Id)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.IsSAT)
+        @Html.CheckBoxFor(m => m.IsSAT)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Notes)
+        @Html.TextAreaFor(m => m.Notes, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Notes)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.IsAMS2750)
+        @Html.CheckBoxFor(m => m.IsAMS2750)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.IsRemoved)
+        @Html.CheckBoxFor(m => m.IsRemoved)
+    </div>
+    <div class="form-group input-options">
+        <button type="submit" class="btn btn-primary">[[[Save]]]</button>
+       
+        @Html.RouteLink("[[[Cancel]]]", "CustomerOrganization_SitePlantArea", new { CustomerId = Model.Id, SiteId = Model.SiteId, PlantAreaId = Model.PlantAreaId}, new { @class = "btn btn-default" })
+        
+    </div>
+}    
+@if (Model.Id != 0)
+{
+    @Html.Partial("_Certificates", Tuple.Create(Model.Certificates, (BaseViewModel)Model), new ViewDataDictionary())
+}
+
+
+
+
+
+

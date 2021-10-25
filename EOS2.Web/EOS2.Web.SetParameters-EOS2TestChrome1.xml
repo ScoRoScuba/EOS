@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="EOS2TestChrome1" />
+  <setParameter name="EOS2Database-Web.config Connection String" value="Data Source=10.13.224.72;Initial Catalog=EOS2TestChrome1DB;Persist Security Info=True;User ID=eos2;Password=LetMe1nPlease" />
+  <setParameter name="elmahLoggingdb-Web.config Connection String" value="Data Source=10.13.224.72;Initial Catalog=EOS2TestChrome1DB;Persist Security Info=True;User ID=eos2;Password=LetMe1nPlease" />
+  <setParameter name="Version String" value="unknown" />
+</parameters>

@@ -1,0 +1,44 @@
+﻿@using System.Security.Claims
+@using EOS2.Identity.Model
+@using EOS2.Model.Enums
+
+@{
+    ViewBag.Title = "[[[Index]]]";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>[[[Manage]]]</h2>
+<div class="row">
+    
+    @if (ClaimsPrincipal.Current.Claims.Any(a => a.Type == EOS2ClaimTypes.OrganizationType && a.Value == OrganizationType.EOSOwner.ToString()))
+    {
+        <a href="#">
+            <div class="col-3 sol-sm-3 col-lg-2">
+                <div style="width:100px;height:100px;background-color:grey"></div>
+                <p>[[[Portal Agents]]]</p>
+            </div>
+        </a>
+    }   
+
+    @if (ClaimsPrincipal.Current.Claims.Any(a => a.Type == EOS2ClaimTypes.OrganizationType && (a.Value == OrganizationType.EOSOwner.ToString() || a.Value == OrganizationType.PortalAgent.ToString())))
+    {
+    <a href="#">
+        <div class="col-3 sol-sm-3 col-lg-2">
+            <div style="width:100px;height:100px;background-color:grey"></div>
+            <p>[[[Service Providers]]]</p>
+        </div>
+    </a>
+    }
+    
+    @if (ClaimsPrincipal.Current.Claims.Any(a => a.Type == EOS2ClaimTypes.OrganizationType && (a.Value == OrganizationType.EOSOwner.ToString() || a.Value == OrganizationType.ServiceProvider.ToString())))
+    {
+        <a href="~/Organizations/Customers">
+            <div class="col-3 sol-sm-3 col-lg-2">
+                <div style="width: 100px; height: 100px; background-color: grey"></div>
+                <p>[[[Customers]]]</p>
+            </div>
+        </a>
+    }
+
+</div>
+

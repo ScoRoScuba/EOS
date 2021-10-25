@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!-- ============== StyleCop ============== -->
+  <UsingTask AssemblyFile="$(MSBuildProjectDirectory)\..\packages\MSBuild.Extension.Pack.1.5.0\tools\net40\MSBuild.ExtensionPack.StyleCop.dll" TaskName="MSBuild.ExtensionPack.CodeQuality.StyleCop" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5A1FABA-D0E2-4804-9D82-0B948C5A97D8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EOS2.Data.Migrations</RootNamespace>
+    <AssemblyName>EOS2.Data.Migrations</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\Eos2StaticAnalysis.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\Eos2StaticAnalysis.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'CodeAnalysis|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\CodeAnalysis\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\Eos2StaticAnalysis.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentCommandLineParser, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\FluentCommandLineParser.1.4.0\lib\net35\FluentCommandLineParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandLineOptions.cs" />
+    <Compile Include="Contexts\ElmahLoggingContext.cs" />
+    <Compile Include="Contexts\EOS2DbContext.cs" />
+    <Compile Include="Contexts\SecurityDbContext.cs" />
+    <Compile Include="DataSeeding\DataSeeding.cs" />
+    <Compile Include="ELMAHLogging\201409031250497_Initial.cs" />
+    <Compile Include="ELMAHLogging\201409031250497_Initial.Designer.cs">
+      <DependentUpon>201409031250497_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELMAHLogging\201409261228011_ErrorTable.cs" />
+    <Compile Include="ELMAHLogging\201409261228011_ErrorTable.Designer.cs">
+      <DependentUpon>201409261228011_ErrorTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELMAHLogging\201410200733309_ELMAHErrorTableNameChange.cs" />
+    <Compile Include="ELMAHLogging\201410200733309_ELMAHErrorTableNameChange.Designer.cs">
+      <DependentUpon>201410200733309_ELMAHErrorTableNameChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELMAHLogging\Configuration.cs" />
+    <Compile Include="EOS2DbContext\201409181438123_Initial.cs" />
+    <Compile Include="EOS2DbContext\201409181438123_Initial.Designer.cs">
+      <DependentUpon>201409181438123_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201409261225075_SitePostCode.cs" />
+    <Compile Include="EOS2DbContext\201409261225075_SitePostCode.Designer.cs">
+      <DependentUpon>201409261225075_SitePostCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201410020846202_PlantAreaDescription.cs" />
+    <Compile Include="EOS2DbContext\201410020846202_PlantAreaDescription.Designer.cs">
+      <DependentUpon>201410020846202_PlantAreaDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201410061224363_Equipments.cs" />
+    <Compile Include="EOS2DbContext\201410061224363_Equipments.Designer.cs">
+      <DependentUpon>201410061224363_Equipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201410071605075_Equipments1.cs" />
+    <Compile Include="EOS2DbContext\201410071605075_Equipments1.Designer.cs">
+      <DependentUpon>201410071605075_Equipments1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201410080929229_Instruments.cs" />
+    <Compile Include="EOS2DbContext\201410080929229_Instruments.Designer.cs">
+      <DependentUpon>201410080929229_Instruments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201410141403220_FurnaceClass.cs" />
+    <Compile Include="EOS2DbContext\201410141403220_FurnaceClass.Designer.cs">
+      <DependentUpon>201410141403220_FurnaceClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201410231030259_OrganisationUserRole.cs" />
+    <Compile Include="EOS2DbContext\201410231030259_OrganisationUserRole.Designer.cs">
+      <DependentUpon>201410231030259_OrganisationUserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201410240714115_Schedules.cs" />
+    <Compile Include="EOS2DbContext\201410240714115_Schedules.Designer.cs">
+      <DependentUpon>201410240714115_Schedules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201410300953516_PortalAgentToServiceProviderMapping.cs" />
+    <Compile Include="EOS2DbContext\201410300953516_PortalAgentToServiceProviderMapping.Designer.cs">
+      <DependentUpon>201410300953516_PortalAgentToServiceProviderMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201411131049033_CertificateUpload.cs" />
+    <Compile Include="EOS2DbContext\201411131049033_CertificateUpload.Designer.cs">
+      <DependentUpon>201411131049033_CertificateUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201411201409535_CertificateTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EOS2DbContext\201411201409535_CertificateTypes.Designer.cs">
+      <DependentUpon>201411201409535_CertificateTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201411251153206_ChannelsAndReferenceData.cs" />
+    <Compile Include="EOS2DbContext\201411251153206_ChannelsAndReferenceData.Designer.cs">
+      <DependentUpon>201411251153206_ChannelsAndReferenceData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\201411251510112_CertificateUploadUserName.cs" />
+    <Compile Include="EOS2DbContext\201411251510112_CertificateUploadUserName.Designer.cs">
+      <DependentUpon>201411251510112_CertificateUploadUserName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOS2DbContext\Configuration.cs" />
+    <Compile Include="Model\ConfigurationContextBuilder.cs" />
+    <Compile Include="Model\ConfigurationType.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityContext\201409020936222_Initial.cs" />
+    <Compile Include="SecurityContext\201409020936222_Initial.Designer.cs">
+      <DependentUpon>201409020936222_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityContext\201410271131212_NewUserFields.cs" />
+    <Compile Include="SecurityContext\201410271131212_NewUserFields.Designer.cs">
+      <DependentUpon>201410271131212_NewUserFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityContext\Configuration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EOS2Migrate.bat" />
+    <None Include="EOS2MigrateEOS2TestChrome1.bat" />
+    <None Include="EOS2MigrateEOS2TestFirefox1.bat" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EOS2.Data.Mappings\EOS2.Data.Mappings.csproj">
+      <Project>{a5bd15bc-f830-472b-9ceb-c6558614bc99}</Project>
+      <Name>EOS2.Data.Mappings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Identity.Model\EOS2.Identity.Model.csproj">
+      <Project>{ab382a90-3622-4817-a070-0490ca3e7a4c}</Project>
+      <Name>EOS2.Identity.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Identity.Repository\EOS2.Identity.Repository.csproj">
+      <Project>{94f269d5-ed0a-400d-9020-2831812320b6}</Project>
+      <Name>EOS2.Identity.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Identity.Services\EOS2.Identity.Services.csproj">
+      <Project>{66a4af24-358b-4099-a830-c66b900f7a7f}</Project>
+      <Name>EOS2.Identity.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Infrastructure.Interfaces\EOS2.Infrastructure.Interfaces.csproj">
+      <Project>{ede237b7-41e2-4078-b4b4-7582d0daff5d}</Project>
+      <Name>EOS2.Infrastructure.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Model.Elmah\EOS2.Model.Elmah.csproj">
+      <Project>{33EDE34D-76D1-4300-9BC9-EC9181A409C4}</Project>
+      <Name>EOS2.Model.Elmah</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Model\EOS2.Model.csproj">
+      <Project>{19d68560-be9b-4e17-a4e7-aaeca7a664cf}</Project>
+      <Name>EOS2.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS2.Repository\EOS2.Repository.csproj">
+      <Project>{6AC082EA-A49E-42BC-AFC6-0535631A7E96}</Project>
+      <Name>EOS2.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ELMAHLogging\201409031250497_Initial.resx">
+      <DependentUpon>201409031250497_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELMAHLogging\201409261228011_ErrorTable.resx">
+      <DependentUpon>201409261228011_ErrorTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELMAHLogging\201410200733309_ELMAHErrorTableNameChange.resx">
+      <DependentUpon>201410200733309_ELMAHErrorTableNameChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201409181438123_Initial.resx">
+      <DependentUpon>201409181438123_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201409261225075_SitePostCode.resx">
+      <DependentUpon>201409261225075_SitePostCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201410020846202_PlantAreaDescription.resx">
+      <DependentUpon>201410020846202_PlantAreaDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201410061224363_Equipments.resx">
+      <DependentUpon>201410061224363_Equipments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201410071605075_Equipments1.resx">
+      <DependentUpon>201410071605075_Equipments1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201410080929229_Instruments.resx">
+      <DependentUpon>201410080929229_Instruments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201410141403220_FurnaceClass.resx">
+      <DependentUpon>201410141403220_FurnaceClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201410231030259_OrganisationUserRole.resx">
+      <DependentUpon>201410231030259_OrganisationUserRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201410240714115_Schedules.resx">
+      <DependentUpon>201410240714115_Schedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201410300953516_PortalAgentToServiceProviderMapping.resx">
+      <DependentUpon>201410300953516_PortalAgentToServiceProviderMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201411131049033_CertificateUpload.resx">
+      <DependentUpon>201411131049033_CertificateUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201411201409535_CertificateTypes.resx">
+      <DependentUpon>201411201409535_CertificateTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201411251153206_ChannelsAndReferenceData.resx">
+      <DependentUpon>201411251153206_ChannelsAndReferenceData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOS2DbContext\201411251510112_CertificateUploadUserName.resx">
+      <DependentUpon>201411251510112_CertificateUploadUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityContext\201409020936222_Initial.resx">
+      <DependentUpon>201409020936222_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityContext\201410271131212_NewUserFields.resx">
+      <DependentUpon>201410271131212_NewUserFields.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\CustomDictionary.xml">
+      <Link>CustomDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="ExecuteStyleCop">
+    <!-- Run the StyleCop MSBuild task -->
+    <MSBuild.ExtensionPack.CodeQuality.StyleCop TaskAction="Scan" SourceFiles="@(Compile)" ShowOutput="true" ForceFullAnalysis="true" CacheResults="false" logFile="$(MSBuildProjectDirectory)\StyleCopLog.txt" SettingsFile="$(MSBuildProjectDirectory)\..\Settings.StyleCop">
+      <Output TaskParameter="Succeeded" PropertyName="AllPassed" />
+      <Output TaskParameter="ViolationCount" PropertyName="Violations" />
+      <Output TaskParameter="FailedFiles" ItemName="Failures" />
+    </MSBuild.ExtensionPack.CodeQuality.StyleCop>
+    <Message Text="Succeeded: $(AllPassed), Violations: $(Violations)" />
+    <Message Text="%(Failures.Identity) - Failed on Line %(Failures.LineNumber). %(Failures.CheckId): %(Failures.Message)" />
+  </Target>
+</Project>

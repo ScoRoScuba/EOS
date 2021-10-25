@@ -1,0 +1,57 @@
+﻿@model EOS2.Web.Areas.Organizations.ViewModels.PlantAreas.PlantAreaEditViewModel
+
+@if (Model.Id > 0)
+{
+    <h2>[[[Plant Area Details]]] - @Html.DisplayFor(m => m.StoredName)</h2>
+}
+else
+{
+    <h2>[[[New Plant Area]]]</h2>
+}
+<hr/>
+<div class=""></div>
+@using (Html.BeginRouteForm("CustomerOrganization_SaveSitePlantArea", new { CustomerId = Model.CustomerId, SiteId = Model.SiteId}))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.Id)
+    
+    if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessagePlantArea"] as string))
+    {
+        <div class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert"
+                    aria-hidden="true">
+                &times;
+            </button>
+            @(TempData["ControllerActionMessagePlantArea"] as string)
+        </div>
+    }
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Name)
+        @Html.HiddenFor(m => m.StoredName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Description)
+        @Html.TextAreaFor(m => m.Description, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Description)
+    </div>
+    <div class="form-group input-options">
+        <button type="submit" class="btn btn-primary">[[[Save]]]</button>
+        @Html.RouteLink("[[[Cancel]]]", "CustomerOrganization_Site", new { CustomerId = Model.CustomerId, SiteId = Model.SiteId }, new { @class = "btn btn-default" })
+    </div>
+        
+    if (Model.Id != 0)
+    {
+        @Html.Partial("_Instruments", Tuple.Create(Model.Instruments, Model.CustomerId, Model.SiteId, Model.Id), new ViewDataDictionary())
+        @Html.Partial("_Equipments", Tuple.Create(Model.Equipments, Model.CustomerId, Model.SiteId, Model.Id), new ViewDataDictionary())
+    }
+}
+
+
+
+
+
+

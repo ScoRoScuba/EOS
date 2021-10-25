@@ -1,0 +1,1083 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+
+#: Areas\Organizations\Views\Users\Edit.cshtml:22
+msgid "%0 - %1 - New User"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Edit.cshtml:11
+msgid "%0 - %1 - User Details - %2"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Index.cshtml:8
+#: Areas\Organizations\Views\Users\Index.cshtml:9
+msgid "%0 - %1 Users"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Edit.cshtml:26
+msgid "%0 - New User"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Edit.cshtml:15
+msgid "%0 - User Details - %1"
+msgstr ""
+
+#: Attributes\UniqueCustomerOrganizationAttribute.cs:31
+msgid "A Customer with that name already Exists."
+msgstr "|A Customer with that name already Exists.|"
+
+#: Attributes\UniqueEquipmentAttribute.cs:32
+msgid "A piece of Equipment with that Name already exists for this Plant Area."
+msgstr "|A piece of Equipment with that Name already exists for this Plant Area.|"
+
+#: Attributes\UniqueEquipmentAttribute.cs:26
+msgid "A piece of Equipment with that Serial Number already exists."
+msgstr "|A piece of Equipment with that Serial Number already exists.|"
+
+#: Attributes\UniquePlantAreaAttribute.cs:26
+msgid "A Plant Area with that name already exists."
+msgstr "|A Plant Area with that name already exists.|"
+
+#: Attributes\UniqueScheduleAttribute.cs:31
+msgid "A Schedule of that Type & Furnace Class already exists for this Equipment."
+msgstr "|A Schedule of that Type & Furnace Class already exists for this Equipment.|"
+
+#: Attributes\UniqueScheduleAttribute.cs:25
+msgid "A Schedule with that Name already exists for this Equipment."
+msgstr "|A Schedule with that Name already exists for this Equipment.|"
+
+#: Attributes\UniqueSiteAttribute.cs:27
+msgid "A site with this name already Exists."
+msgstr "|A site with this name already Exists.|"
+
+#: Attributes\UniqueUserNameAttribute.cs:28
+msgid "A user with this name already Exists."
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:8
+msgid "Add %0"
+msgstr ""
+
+#: Areas\Organizations\Views\Shared\_Equipments.cshtml:7
+msgid "Add Equipment"
+msgstr "|Add Equipment|"
+
+#: Areas\Organizations\Views\Shared\_Instruments.cshtml:7
+msgid "Add Instrument"
+msgstr "|Add Instrument|"
+
+#: Areas\Organizations\Views\Shared\_PlantAreas.cshtml:7
+msgid "Add Plant Area"
+msgstr "|Add Plant Area|"
+
+#: Areas\Organizations\Views\Shared\_Schedules.cshtml:7
+msgid "Add Schedule"
+msgstr "|Add Schedule|"
+
+#: Areas\Organizations\Views\Shared\_Sites.cshtml:6
+msgid "Add Site"
+msgstr "|Add Site|"
+
+#: Areas\Organizations\Views\Users\Index.cshtml:24
+#: Areas\Organizations\Views\Users\Index.cshtml:30
+msgid "Add User"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:21
+#: Areas\Organizations\ViewModels\Customer\CustomerSiteEditViewModel.cs:24
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:17
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:19
+msgid "Address"
+msgstr "|Address|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:62
+msgid "AMS2750 Instrument"
+msgstr "|AMS2750 Instrument|"
+
+#: Attributes\UniqueInstrumentAttribute.cs:32
+msgid "An instrument with that Name already exists for this Plant Area."
+msgstr "|An instrument with that Name already exists for this Plant Area.|"
+
+#: Attributes\UniqueInstrumentAttribute.cs:26
+msgid "An Instrument with that Serial Number already exists."
+msgstr "|An Instrument with that Serial Number already exists.|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:44
+msgid "Any Notes for Equipment"
+msgstr "|Any Notes for Equipment|"
+
+#: Areas\Organizations\Views\Instruments\_EquipmentAttached.cshtml:13
+msgid "Attach Selected Equipment"
+msgstr "|Attach Selected Equipment|"
+
+#: Areas\Organizations\Views\Equipments\_InstrumentsAttached.cshtml:13
+msgid "Attach Selected Instrument"
+msgstr "|Attach Selected Instrument|"
+
+#: Views\Shared\_Language.cshtml:6
+msgid "Auto"
+msgstr "|Auto|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:37
+msgid "Calibration Frequency"
+msgstr "|Calibration Frequency|"
+
+#: Areas\Organizations\Views\Customer\EditOrganization.cshtml:52
+#: Areas\Organizations\Views\Customer\EditSite.cshtml:54
+#: Areas\Organizations\Views\Equipments\EditEquipment.cshtml:68
+#: Areas\Organizations\Views\Instruments\EditInstrument.cshtml:90
+#: Areas\Organizations\Views\PlantAreas\EditPlantArea.cshtml:46
+#: Areas\Organizations\Views\PortalAgent\View.cshtml:54
+#: Areas\Organizations\Views\Schedules\EditSchedule.cshtml:70
+#: Areas\Organizations\Views\ServiceProvider\View.cshtml:54
+#: Areas\Organizations\Views\Users\Edit.cshtml:115
+#: Areas\Organizations\Views\Users\Edit.cshtml:119
+#: Areas\Organizations\Views\Users\Password.cshtml:45
+msgid "Cancel"
+msgstr "|Cancel|"
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:21
+#: Areas\Organizations\ViewModels\Customer\CustomerSiteEditViewModel.cs:24
+msgid "Company address"
+msgstr "|Company address|"
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:40
+msgid "Compare Email Address"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:40
+msgid "Comparison Email Address"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:22
+msgid "Confirm Password"
+msgstr ""
+
+#: Views\Shared\_Personas.cshtml:46
+msgid "Customer Administrator"
+msgstr "|Customer Administrator|"
+
+#: Areas\Organizations\Views\Customer\EditOrganization.cshtml:8
+msgid "Customer Details"
+msgstr ""
+
+#: Areas\Organizations\Controllers\CustomerController.cs:74
+msgid "Customer saved"
+msgstr "|Customer saved|"
+
+#: Views\Shared\_Personas.cshtml:54
+msgid "Customer Site Manager"
+msgstr "|Customer Site Manager|"
+
+#: Areas\Organizations\Views\Customer\Index.cshtml:5
+#: Views\Manage\Index.cshtml:38
+#: Views\Shared\_NavBar2.cshtml:23
+msgid "Customers"
+msgstr "|Customers|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:24
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:25
+#: Areas\Organizations\ViewModels\PlantAreas\PlantAreaEditViewModel.cs:25
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:27
+msgid "Description"
+msgstr "|Description|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:24
+msgid "Description of Equipment"
+msgstr "|Description of Equipment|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:25
+msgid "Description of Instrument"
+msgstr "|Description of Instrument|"
+
+#: Areas\Organizations\ViewModels\PlantAreas\PlantAreaEditViewModel.cs:25
+msgid "Description of Plant Area"
+msgstr "|Description of Plant Area|"
+
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:27
+msgid "Description of Schedule"
+msgstr "|Description of Schedule|"
+
+#: Areas\Organizations\Views\Equipments\_InstrumentsAttached.cshtml:56
+#: Areas\Organizations\Views\Instruments\_EquipmentAttached.cshtml:56
+msgid "Detach"
+msgstr "|Detach|"
+
+#: Areas\Organizations\Views\Shared\_Equipments.cshtml:47
+#: Areas\Organizations\Views\Shared\_Instruments.cshtml:47
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:41
+#: Areas\Organizations\Views\Shared\_PlantAreas.cshtml:43
+#: Areas\Organizations\Views\Shared\_Schedules.cshtml:44
+#: Areas\Organizations\Views\Shared\_Sites.cshtml:40
+#: Areas\Organizations\Views\Users\Index.cshtml:61
+msgid "Details"
+msgstr "|Details|"
+
+#: Areas\Organizations\Views\Customer\EditOrganization.cshtml:3
+#: Areas\Organizations\Views\Customer\EditSite.cshtml:3
+#: Areas\Organizations\Views\PortalAgent\View.cshtml:4
+#: Areas\Organizations\Views\ServiceProvider\View.cshtml:4
+msgid "Edit"
+msgstr "|Edit|"
+
+#: Areas\Organizations\Views\Users\Index.cshtml:46
+msgid "Email"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:34
+msgid "Email Address"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:43
+msgid "Emails addresses do not match"
+msgstr ""
+
+#: Views\Shared\_Personas.cshtml:14
+msgid "EOS Owner"
+msgstr "|EOS Owner|"
+
+#: Areas\Organizations\Views\Shared\_Equipments.cshtml:9
+msgid "Equipment"
+msgstr "|Equipment|"
+
+#: Areas\Organizations\Controllers\InstrumentsController.cs:82
+msgid "Equipment %0 detached successfully"
+msgstr "|Equipment %0 detached successfully|"
+
+#: Areas\Organizations\Controllers\EquipmentsController.cs:54
+msgid "Equipment %0 saved successfully"
+msgstr "|Equipment %0 saved successfully|"
+
+#: Areas\Organizations\Views\Instruments\_EquipmentAttached.cshtml:17
+msgid "Equipment Attached"
+msgstr "|Equipment Attached|"
+
+#: Areas\Organizations\Controllers\InstrumentsController.cs:73
+msgid "Equipment attached successfully"
+msgstr "|Equipment attached successfully|"
+
+#: Areas\Organizations\Views\Equipments\EditEquipment.cshtml:5
+msgid "Equipment Details"
+msgstr "|Equipment Details|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:41
+msgid "Equipment Type"
+msgstr "|Equipment Type|"
+
+#: Views\Home\Index.cshtml:9
+msgid "Eurothem Online Services Portal"
+msgstr "|Eurothem Online Services Portal|"
+
+#: Views\Shared\_Layout.cshtml:23
+msgid "Eurotherm Online Services"
+msgstr "|Eurotherm Online Services|"
+
+#: Views\Shared\_Layout.cshtml:10
+msgid "Eurotherm Online Services Portal"
+msgstr "|Eurotherm Online Services Portal|"
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:28
+#: Areas\Organizations\Views\Users\Index.cshtml:45
+msgid "Family Name"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:28
+msgid "Family Name of the User"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:31
+#: Areas\Organizations\ViewModels\Shared\Schedule.cs:18
+msgid "Frequency"
+msgstr "|Frequency|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:37
+msgid "Frequency of Calibration of Instrument"
+msgstr "|Frequency of Calibration of Instrument|"
+
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:31
+msgid "Frequency of Schedule"
+msgstr "|Frequency of Schedule|"
+
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:22
+#: Areas\Organizations\ViewModels\Shared\FurnaceClass.cs:10
+#: Areas\Organizations\ViewModels\Shared\FurnaceClass.cs:10
+#: Areas\Organizations\ViewModels\Shared\Schedule.cs:11
+msgid "Furnace Class"
+msgstr "|Furnace Class|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:65
+msgid "Has the Instrument been removed"
+msgstr "|Has the Instrument been removed|"
+
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:19
+#: Areas\Organizations\Views\Users\Index.cshtml:41
+msgid "Id"
+msgstr "|Id|"
+
+#: Areas\Organizations\Views\Customer\Index.cshtml:3
+#: Areas\Organizations\Views\PortalAgent\Index.cshtml:3
+#: Areas\Organizations\Views\ServiceProvider\Index.cshtml:3
+#: Views\Manage\Index.cshtml:6
+msgid "Index"
+msgstr "|Index|"
+
+#: Areas\Organizations\Controllers\EquipmentsController.cs:82
+msgid "Instrument %0 detached successfully"
+msgstr "|Instrument %0 detached successfully|"
+
+#: Areas\Organizations\Controllers\InstrumentsController.cs:54
+msgid "Instrument %0 saved successfully"
+msgstr "|Instrument %0 saved successfully|"
+
+#: Areas\Organizations\Controllers\EquipmentsController.cs:73
+msgid "Instrument attached successfully"
+msgstr "|Instrument attached successfully|"
+
+#: Areas\Organizations\Views\Instruments\EditInstrument.cshtml:5
+msgid "Instrument Details"
+msgstr "|Instrument Details|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:65
+msgid "Instrument Removed"
+msgstr "|Instrument Removed|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:34
+msgid "Instrument Type"
+msgstr "|Instrument Type|"
+
+#: Areas\Organizations\Views\Shared\_Instruments.cshtml:9
+msgid "Instruments"
+msgstr "|Instruments|"
+
+#: Areas\Organizations\Views\Equipments\_InstrumentsAttached.cshtml:17
+msgid "Instruments Attached"
+msgstr "|Instruments Attached|"
+
+#: Controllers\AccountController.cs:105
+msgid "Invalid URI : %0"
+msgstr ""
+
+#: Areas\Organizations\Builders\Users\UserForOrganizationEditDomainModelBuilder.cs:31
+msgid "Invalid User Id"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:62
+msgid "Is an AMS2750 Instrument"
+msgstr "|Is an AMS2750 Instrument|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:40
+msgid "Is Instrument subject to SAT"
+msgstr "|Is Instrument subject to SAT|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:28
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:47
+msgid "Make"
+msgstr "|Make|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:28
+msgid "Make of Equipment"
+msgstr "|Make of Equipment|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:47
+msgid "Make of Instrument"
+msgstr "|Make of Instrument|"
+
+#: Views\Manage\Index.cshtml:10
+#: Views\Shared\_NavBar.cshtml:7
+msgid "Manage"
+msgstr "|Manage|"
+
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:45
+msgid "Manage Users"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:17
+#: Areas\Organizations\ViewModels\Customer\CustomerSiteEditViewModel.cs:20
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:20
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:21
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:48
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:53
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:58
+#: Areas\Organizations\ViewModels\PlantAreas\PlantAreaEditViewModel.cs:20
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:13
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:18
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:15
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:24
+msgid "Maximum Length is 120 Characters"
+msgstr "|Maximum Length is 120 Characters|"
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:13
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:29
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:47
+msgid "Maximum Length is 60 Characters"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Index.cshtml:44
+msgid "Middle Name"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:23
+msgid "Middle Name/Initial"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:32
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:52
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:16
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:16
+msgid "Model"
+msgstr "|Model|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:32
+msgid "Model of Equipment"
+msgstr "|Model of Equipment|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:52
+msgid "Model of Instrument"
+msgstr "|Model of Instrument|"
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:16
+#: Areas\Organizations\ViewModels\Customer\CustomerSiteEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:20
+#: Areas\Organizations\ViewModels\PlantAreas\PlantAreaEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:12
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:17
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:14
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:9
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:9
+#: Areas\Organizations\ViewModels\Shared\PlantArea.cs:9
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:18
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:20
+#: Areas\Organizations\Views\Shared\_Sites.cshtml:27
+#: Areas\Organizations\Views\Users\Index.cshtml:43
+msgid "Name"
+msgstr "|Name|"
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:16
+msgid "Name of Company"
+msgstr "|Name of Company|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:9
+msgid "Name of Equipment"
+msgstr "|Name of Equipment|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:20
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:9
+msgid "Name of Instrument"
+msgstr "|Name of Instrument|"
+
+#: Areas\Organizations\ViewModels\PlantAreas\PlantAreaEditViewModel.cs:19
+#: Areas\Organizations\ViewModels\Shared\PlantArea.cs:9
+msgid "Name of Plant Area"
+msgstr "|Name of Plant Area|"
+
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:12
+msgid "Name of Portal Agent"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:17
+msgid "Name of Schedule"
+msgstr "|Name of Schedule|"
+
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:14
+msgid "Name of Service Provider"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Customer\CustomerSiteEditViewModel.cs:19
+msgid "Name of site"
+msgstr "|Name of site|"
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:18
+msgid "Name of User"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\EditOrganization.cshtml:12
+msgid "New Customer"
+msgstr ""
+
+#: Areas\Organizations\Views\Equipments\EditEquipment.cshtml:9
+msgid "New Equipment"
+msgstr "|New Equipment|"
+
+#: Areas\Organizations\Views\Instruments\EditInstrument.cshtml:9
+msgid "New Instrument"
+msgstr "|New Instrument|"
+
+#: Areas\Organizations\Views\PlantAreas\EditPlantArea.cshtml:9
+msgid "New Plant Area"
+msgstr "|New Plant Area|"
+
+#: Areas\Organizations\Views\PortalAgent\View.cshtml:13
+msgid "New Portal Agent"
+msgstr ""
+
+#: Areas\Organizations\Views\Schedules\EditSchedule.cshtml:9
+msgid "New Schedule"
+msgstr "|New Schedule|"
+
+#: Areas\Organizations\Views\ServiceProvider\View.cshtml:13
+msgid "New Service Provider"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\EditSite.cshtml:12
+msgid "New Site"
+msgstr "|New Site|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:44
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:29
+msgid "Notes"
+msgstr "|Notes|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:29
+msgid "Notes for Instrument"
+msgstr "|Notes for Instrument|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:43
+msgid "Number of Channels"
+msgstr "|Number of Channels|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:44
+msgid "Number of Channels must be between 0 and 100"
+msgstr "|Number of Channels must be between 0 and 100|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:43
+msgid "Number of channels on Instrument"
+msgstr "|Number of channels on Instrument|"
+
+#: Views\Shared\_Language.cshtml:7
+msgid "Ok"
+msgstr "|Ok|"
+
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:22
+msgid "Organization Types"
+msgstr "|Organization Types|"
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:16
+#: ViewModels\Account\SignInViewModel.cs:10
+#: Views\Shared\_Personas.cshtml:17
+#: Views\Shared\_Personas.cshtml:25
+#: Views\Shared\_Personas.cshtml:33
+#: Views\Shared\_Personas.cshtml:41
+#: Views\Shared\_Personas.cshtml:49
+#: Views\Shared\_Personas.cshtml:57
+msgid "Password"
+msgstr "|Password|"
+
+#: Areas\Organizations\Controllers\UsersController.cs:193
+msgid "Password Updated successfully"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:25
+msgid "Passwords do not match"
+msgstr ""
+
+#: Views\Shared\_Personas.cshtml:5
+msgid "Personas"
+msgstr "|Personas|"
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:46
+msgid "Phone Number"
+msgstr ""
+
+#: Areas\Organizations\Controllers\PlantAreasController.cs:54
+msgid "Plant Area %0 saved successfully"
+msgstr "|Plant Area %0 saved successfully|"
+
+#: Areas\Organizations\Views\PlantAreas\EditPlantArea.cshtml:5
+msgid "Plant Area Details"
+msgstr "|Plant Area Details|"
+
+#: Areas\Organizations\Views\Shared\_PlantAreas.cshtml:9
+msgid "Plant Areas"
+msgstr "|Plant Areas|"
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:21
+msgid "Please enter a confirmation password"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:11
+msgid "Please enter a log in UserName for the user"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:11
+msgid "Please enter a name for the Portal Agent"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:13
+msgid "Please enter a name for the Service Provider"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:17
+msgid "Please enter a name for the user"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:15
+msgid "Please enter a password"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:33
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:39
+msgid "Please enter an email address"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\PlantAreas\PlantAreaEditViewModel.cs:24
+msgid "Please enter the Description of your plant area"
+msgstr "|Please enter the Description of your plant area|"
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:15
+msgid "Please enter the name for your company"
+msgstr "|Please enter the name for your company|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:18
+msgid "Please enter the name for your equipment"
+msgstr "|Please enter the name for your equipment|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:19
+msgid "Please enter the name for your instrument"
+msgstr "|Please enter the name for your instrument|"
+
+#: Areas\Organizations\ViewModels\PlantAreas\PlantAreaEditViewModel.cs:18
+msgid "Please enter the name for your plant area"
+msgstr "|Please enter the name for your plant area|"
+
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:16
+msgid "Please enter the name for your schedule"
+msgstr "|Please enter the name for your schedule|"
+
+#: Areas\Organizations\ViewModels\Customer\CustomerSiteEditViewModel.cs:18
+msgid "Please enter the name for your site"
+msgstr "|Please enter the name for your site|"
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:25
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:21
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:23
+msgid "Please enter the ZIP Code of your main site"
+msgstr "|Please enter the ZIP Code of your main site|"
+
+#: Areas\Organizations\ViewModels\Customer\CustomerSiteEditViewModel.cs:28
+msgid "Please enter the ZIP Code of your site"
+msgstr ""
+
+#: Areas\Organizations\Views\Equipments\EditEquipment.cshtml:57
+#: Areas\Organizations\Views\Instruments\EditInstrument.cshtml:57
+#: Areas\Organizations\Views\Instruments\EditInstrument.cshtml:62
+#: Areas\Organizations\Views\Schedules\EditSchedule.cshtml:37
+#: Areas\Organizations\Views\Schedules\EditSchedule.cshtml:60
+msgid "Please Select ..."
+msgstr "|Please Select ...|"
+
+#: Areas\Organizations\ViewModels\Shared\CalibrationFrequency.cs:7
+msgid "Please select a Calibration Frequency"
+msgstr "|Please select a Calibration Frequency|"
+
+#: Areas\Organizations\ViewModels\Shared\Frequency.cs:7
+msgid "Please select a Frequency"
+msgstr "|Please select a Frequency|"
+
+#: Areas\Organizations\ViewModels\Shared\FurnaceClass.cs:7
+msgid "Please select a Furnace Class"
+msgstr "|Please select a Furnace Class|"
+
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:38
+#: Areas\Organizations\ViewModels\Shared\EquipmentType.cs:7
+#: Areas\Organizations\ViewModels\Shared\InstrumentType.cs:7
+msgid "Please select a Type"
+msgstr "|Please select a Type|"
+
+#: Views\Shared\_Personas.cshtml:22
+#: Views\Shared\_Personas.cshtml:30
+msgid "Portal Agent"
+msgstr "|Portal Agent|"
+
+#: Areas\Organizations\Views\PortalAgent\View.cshtml:9
+msgid "Portal Agent Details"
+msgstr ""
+
+#: Areas\Organizations\Controllers\PortalAgentController.cs:65
+msgid "Portal Agent saved"
+msgstr ""
+
+#: Areas\Organizations\Views\PortalAgent\Index.cshtml:5
+#: Views\Manage\Index.cshtml:18
+#: Views\Shared\_NavBar2.cshtml:13
+msgid "Portal Agents"
+msgstr "|Portal Agents|"
+
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:17
+msgid "Portal Agents address "
+msgstr ""
+
+#: C:\Development\EOS\trunk\EOS2\EOS2.Model\Enums\ScheduleType.cs:9
+msgid "SAT"
+msgstr ""
+
+#: Areas\Organizations\Views\Customer\EditOrganization.cshtml:50
+#: Areas\Organizations\Views\Customer\EditSite.cshtml:52
+#: Areas\Organizations\Views\Equipments\EditEquipment.cshtml:66
+#: Areas\Organizations\Views\Instruments\EditInstrument.cshtml:88
+#: Areas\Organizations\Views\PlantAreas\EditPlantArea.cshtml:44
+#: Areas\Organizations\Views\PortalAgent\View.cshtml:52
+#: Areas\Organizations\Views\Schedules\EditSchedule.cshtml:69
+#: Areas\Organizations\Views\ServiceProvider\View.cshtml:52
+#: Areas\Organizations\Views\Users\Edit.cshtml:110
+#: Areas\Organizations\Views\Users\Password.cshtml:43
+msgid "Save"
+msgstr "|Save|"
+
+#: Areas\Organizations\Controllers\SchedulesController.cs:55
+msgid "Schedule %0 saved successfully"
+msgstr "|Schedule %0 saved successfully|"
+
+#: Areas\Organizations\Views\Schedules\EditSchedule.cshtml:5
+msgid "Schedule Details"
+msgstr "|Schedule Details|"
+
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:40
+msgid "Schedule Type"
+msgstr "|Schedule Type|"
+
+#: Areas\Organizations\Views\Shared\_Schedules.cshtml:9
+msgid "Schedules"
+msgstr "|Schedules|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:36
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:57
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:19
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:19
+msgid "Serial Number"
+msgstr "|Serial Number|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:36
+msgid "Serial Number of Equipment"
+msgstr "|Serial Number of Equipment|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:57
+msgid "Serial Number of Instrument"
+msgstr "|Serial Number of Instrument|"
+
+#: Views\Shared\_Personas.cshtml:38
+msgid "Service Provider"
+msgstr "|Service Provider|"
+
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:19
+msgid "Service Provider address"
+msgstr ""
+
+#: Areas\Organizations\Views\ServiceProvider\View.cshtml:9
+msgid "Service Provider Details"
+msgstr ""
+
+#: Areas\Organizations\Controllers\ServiceProviderController.cs:91
+msgid "Service Provider Saved"
+msgstr ""
+
+#: Areas\Organizations\Views\ServiceProvider\Index.cshtml:5
+#: Views\Manage\Index.cshtml:28
+#: Views\Shared\_NavBar2.cshtml:18
+msgid "Service Providers"
+msgstr "|Service Providers|"
+
+#: Areas\Organizations\Views\Users\Index.cshtml:64
+#: Areas\Organizations\Views\Users\Password.cshtml:4
+msgid "Set Password"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Password.cshtml:7
+msgid "Set Password for "
+msgstr ""
+
+#: Views\Account\SignIn.cshtml:3
+#: Views\Account\SignIn.cshtml:6
+#: Views\Account\SignIn.cshtml:26
+#: Views\Shared\_SignInOut.cshtml:14
+msgid "Sign In"
+msgstr "|Sign In|"
+
+#: Views\Shared\_SignInOut.cshtml:8
+msgid "Sign Out"
+msgstr "|Sign Out|"
+
+#: Views\Shared\_SignInOut.cshtml:7
+msgid "Signed in as"
+msgstr ""
+
+#: Areas\Organizations\Controllers\CustomerController.cs:112
+msgid "Site %0 saved successfully"
+msgstr "|Site %0 saved successfully|"
+
+#: Areas\Organizations\Views\Customer\EditSite.cshtml:8
+msgid "Site Details"
+msgstr "|Site Details|"
+
+#: Areas\Organizations\Views\Shared\_Sites.cshtml:8
+msgid "Sites"
+msgstr "|Sites|"
+
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:34
+msgid "Special Conditions"
+msgstr "|Special Conditions|"
+
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:34
+msgid "Special Conditions of Schedule"
+msgstr "|Special Conditions of Schedule|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:40
+msgid "Subject to SAT"
+msgstr "|Subject to SAT|"
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:17
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:23
+msgid "The {0} must be between {2} and {1} characters long."
+msgstr ""
+
+#: Views\Shared\_Personas.cshtml:8
+msgid "The following accounts have been created to allow you to use the EOS system in the guise of a user. The user you pick will control what you can see and what you can do."
+msgstr "|The following accounts have been created to allow you to use the EOS system in the guise of a user. The user you pick will control what you can see and what you can do.|"
+
+#: Code\LanguageHelper.cs:36
+msgid "The language code %0 is not supported."
+msgstr ""
+
+#: Views\User\Index.cshtml:4
+msgid "title"
+msgstr "|title|"
+
+#: C:\Development\EOS\trunk\EOS2\EOS2.Model\Enums\ScheduleType.cs:13
+msgid "TUS"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:13
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:13
+#: Areas\Organizations\ViewModels\Shared\Schedule.cs:15
+msgid "Type"
+msgstr "|Type|"
+
+#: Areas\Organizations\ViewModels\Equipments\EquipmentEditViewModel.cs:41
+#: Areas\Organizations\ViewModels\Shared\Equipment.cs:13
+msgid "Type of Equipment"
+msgstr "|Type of Equipment|"
+
+#: Areas\Organizations\ViewModels\Instruments\InstrumentEditViewModel.cs:34
+#: Areas\Organizations\ViewModels\Shared\Instrument.cs:13
+msgid "Type of Instrument"
+msgstr "|Type of Instrument|"
+
+#: Areas\Organizations\ViewModels\Schedules\ScheduleEditViewModel.cs:40
+msgid "Type of Schedule"
+msgstr "|Type of Schedule|"
+
+#: Views\User\Index.cshtml:8
+msgid "USER INDEX PAGE"
+msgstr "|USER INDEX PAGE|"
+
+#: Views\Shared\_Personas.cshtml:16
+#: Views\Shared\_Personas.cshtml:24
+#: Views\Shared\_Personas.cshtml:32
+#: Views\Shared\_Personas.cshtml:40
+#: Views\Shared\_Personas.cshtml:48
+#: Views\Shared\_Personas.cshtml:56
+msgid "User Login"
+msgstr "|User Login|"
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:12
+#: Areas\Organizations\Views\Users\Index.cshtml:42
+#: ViewModels\Account\SignInViewModel.cs:7
+msgid "User Name"
+msgstr "|User Name|"
+
+#: Areas\Organizations\Controllers\UsersController.cs:134
+msgid "User saved successfully"
+msgstr ""
+
+#: Areas\Organizations\Controllers\UsersController.cs:163
+msgid "User Updated successfully"
+msgstr ""
+
+#: Areas\Organizations\Views\Users\Index.cshtml:13
+#: Areas\Organizations\Views\Users\Index.cshtml:14
+#: Views\Shared\_NavBar2.cshtml:29
+msgid "Users"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:34
+msgid "Users Email Address"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:12
+msgid "Users Logon Name"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:16
+#: Areas\Organizations\ViewModels\Users\UserPasswordViewModel.cs:22
+msgid "Users Logon Password"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:23
+msgid "Users Middle Name or Intial/s"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Users\UserEditViewModel.cs:46
+msgid "Users Phone Number"
+msgstr ""
+
+#: Views\Home\Index.cshtml:19
+msgid "Welcome"
+msgstr ""
+
+#: Areas\Organizations\Builders\ServiceProvider\ServiceProviderViewModelBuilder.cs:33
+#: Areas\Organizations\Builders\Users\UsersForOrganizationTypeListViewModelBuilder.cs:49
+msgid "wrong criteria type"
+msgstr ""
+
+#: Areas\Organizations\ViewModels\Customer\CustomerEditViewModel.cs:26
+#: Areas\Organizations\ViewModels\Customer\CustomerSiteEditViewModel.cs:29
+#: Areas\Organizations\ViewModels\PortalAgent\PortalAgentEditViewModel.cs:22
+#: Areas\Organizations\ViewModels\ServiceProvider\ServiceProviderEditViewModel.cs:24
+#: Areas\Organizations\Views\Shared\_Organizations.cshtml:21
+#: Areas\Organizations\Views\Shared\_Sites.cshtml:28
+msgid "ZIP Code"
+msgstr "|ZIP Code|"
+
+#~ msgid "@ClaimsPrincipal.Current.Identity.Name"
+#~ msgstr ""
+
+#~ msgid "A Furnace Class with that Name already exists for this Equipment."
+#~ msgstr ""
+
+#~ msgid "Add {0}"
+#~ msgstr ""
+
+#~ msgid "Add Customer Organization"
+#~ msgstr "|Add Customer Organization|"
+
+#~ msgid "Add Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Add Portal Agent"
+#~ msgstr ""
+
+#~ msgid "Add Service Provider"
+#~ msgstr ""
+
+#~ msgid ""
+"An Instrument with that Serial Number already exists.[[[", new[] { "SerialNumber" });\n"
+"                "
+#~ msgstr ""
+
+#~ msgid "Customer"
+#~ msgstr ""
+
+#~ msgid "Customer Organization Details"
+#~ msgstr "|Customer Organization Details|"
+
+#~ msgid "Customer Organizations"
+#~ msgstr "|Customer Organizations|"
+
+#~ msgid "Description of Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Engineer Man Days of TUS for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Family Name/Initial"
+#~ msgstr ""
+
+#~ msgid "Frequency of SAT for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Frequency of TUS for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Furnace Class %0 saved successfully"
+#~ msgstr ""
+
+#~ msgid "Furnace Class Class"
+#~ msgstr ""
+
+#~ msgid "Furnace Class Details"
+#~ msgstr ""
+
+#~ msgid "Furnace Classes"
+#~ msgstr ""
+
+#~ msgid "Invalid URI"
+#~ msgstr "|Invalid URI|"
+
+#~ msgid "Name of Furnace Class"
+#~ msgstr ""
+
+#~ msgid "New Customer Organization"
+#~ msgstr "|New Customer Organization|"
+
+#~ msgid "New Furnace Class"
+#~ msgstr ""
+
+#~ msgid "New User"
+#~ msgstr ""
+
+#~ msgid "Please enter the name for your furnace class"
+#~ msgstr ""
+
+#~ msgid "Please enter the Postal Code of your main site"
+#~ msgstr "|Please enter the Postal Code of your main site|"
+
+#~ msgid "Please enter the Postal Code of your site"
+#~ msgstr ""
+
+#~ msgid "Please Select"
+#~ msgstr "|Please Select|"
+
+#~ msgid "Please select a type"
+#~ msgstr "|Please select a type|"
+
+#~ msgid "Postal Code"
+#~ msgstr "|Postal Code|"
+
+#~ msgid "SAT Frequency"
+#~ msgstr ""
+
+#~ msgid "SAT Special Conditions"
+#~ msgstr ""
+
+#~ msgid "Sign in details"
+#~ msgstr ""
+
+#~ msgid "Special Conditions of SAT for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Special Conditions of TUS for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "Sync Date of TUS for Furnace Class"
+#~ msgstr ""
+
+#~ msgid "The %0 must be between %2 and %1 characters long."
+#~ msgstr ""
+
+#~ msgid "The {0} must be between {1} and {2} characters long."
+#~ msgstr ""
+
+#~ msgid "TUS Engineer Man Days"
+#~ msgstr ""
+
+#~ msgid "TUS Frequency"
+#~ msgstr ""
+
+#~ msgid "TUS Special Conditions"
+#~ msgstr ""
+
+#~ msgid "TUS Sync Date"
+#~ msgstr ""
+
+#~ msgid "TUS Sync Date must be supplied"
+#~ msgstr ""
+
+#~ msgid "User Details"
+#~ msgstr ""
+
+#~ msgid "Zip Code"
+#~ msgstr "|Zip Code|"
+

@@ -1,0 +1,36 @@
+﻿@model EOS2.Web.ViewModels.BaseViewModel
+@using System.Security.Claims
+@using EOS2.Model.Enums;
+@using EOS2.Common.Extensions
+
+@if (ClaimsPrincipal.Current.Claims.Any(c => c.Type == ClaimTypes.Actor && c.Value == "EOS2User"))
+{
+    <div class="row subnav-row">
+        <ul class="nav navbar-nav">
+            @{
+                if (ClaimsPrincipal.Current.Claims.HasOrganizationClaimOf(OrganizationType.EOSOwner))
+                {
+                    <li>@Html.ActionLink("[[[Portal Agents]]]", "Index", OrganizationType.PortalAgent.ToString(), new { area = "Organizations" }, new { })</li>
+                }
+
+                if (ClaimsPrincipal.Current.Claims.HasOrganizationClaimOf(OrganizationType.EOSOwner) || ClaimsPrincipal.Current.Claims.HasOrganizationClaimOf(OrganizationType.PortalAgent))                    
+                {
+                    <li>@Html.ActionLink("[[[Service Providers]]]", "Index", OrganizationType.ServiceProvider.ToString(), new { area = "Organizations" }, new { })</li>
+                }
+
+                if (ClaimsPrincipal.Current.Claims.HasOrganizationClaimOf(OrganizationType.EOSOwner) || ClaimsPrincipal.Current.Claims.HasOrganizationClaimOf(OrganizationType.ServiceProvider))                    
+                {
+                    <li>@Html.ActionLink("[[[Customers]]]", "Index", OrganizationType.Customer.ToString(), new { area = "Organizations" }, new { })</li>
+                }
+
+                if (ClaimsPrincipal.Current.Claims.HasOrganizationClaimOf(OrganizationType.Customer) && ClaimsPrincipal.Current.Claims.HasOrganizationClaimCountOf() == 1)
+                {
+                    <li>@Html.ActionLink("[[[Sites]]]", "SingleCustomerIndex", OrganizationType.Customer.ToString(), new { area = "Organizations" }, new { })</li>
+                }
+            }           
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav navbar-link">@Html.RouteLink("[[[Users]]]", "Organizations_default", new { controller = "Users", action = "Index" }) </li>       
+        </ul>
+    </div>
+}

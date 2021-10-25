@@ -1,0 +1,51 @@
+﻿@using EOS2.Web.Areas.Organizations.ViewModels.Common
+@model Tuple<IEnumerable<PlantAreaViewModel>,int, int>
+
+<div class="panel panel-default">
+    <div class="panel-heading clearfix">
+        <a class="btn btn-default btn-sm pull-right" href="@Url.RouteUrl("CustomerOrganization_NewSitePlantArea", new { CustomerId = @Model.Item2, SiteId = @Model.Item3})">
+            <span class="glyphicon glyphicon-plus"></span> [[[Add Plant Area]]]
+        </a>        
+        <h3 class="panel-title">[[[Plant Areas]]]</h3>
+    </div>
+    <div class="panel-body">
+
+        @if (!string.IsNullOrWhiteSpace(TempData["ControllerActionMessagePlantArea"] as string))
+        {
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert"
+                        aria-hidden="true">
+                    &times;
+                </button>
+                @(TempData["ControllerActionMessagePlantArea"] as string)
+            </div>
+        }
+        
+        @if (Model.Item1.Any())
+        {
+            <table class="table table-condensed table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(m => m.Item1.FirstOrDefault().Name)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Item1)
+                    {
+                        <tr>
+                            <td>
+                                @{
+                                    var currentItem = item;
+                                }
+                                @Html.DisplayFor(i => currentItem.Name)</td>
+                            <td>
+                                @Html.RouteLink("[[[Details]]]", "CustomerOrganization_SitePlantArea", new { CustomerId = @Model.Item2, SiteId = @Model.Item3, PlantAreaId = currentItem.Id }, new { @class = "btn btn-default btn-sm" })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
